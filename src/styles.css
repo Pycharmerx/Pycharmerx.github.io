@@ -30,3 +30,10 @@
 .hero h1{max-width:100%;white-space:normal;font-size:clamp(40px,16cqw,126px);line-height:1.08}
 .hero h1 span{max-width:100%;overflow-wrap:anywhere;text-wrap:balance}
 @media(max-width:700px){.hero h1{font-size:clamp(38px,15cqw,80px)}}
+
+/* Match neighbouring catalogue cards without changing their artwork. */
+.project-grid.view-grid .project:nth-child(n){grid-column:span 6;min-width:0}
+.project-grid.view-grid .project-link{display:flex;flex-direction:column}
+.project-grid.view-grid .case-visual{flex-shrink:0;width:100%;aspect-ratio:1.5}
+.project-grid.view-grid .project-info{display:flex;flex-direction:column;flex:1}
+.project-grid.view-grid .project-brief{flex:1}
