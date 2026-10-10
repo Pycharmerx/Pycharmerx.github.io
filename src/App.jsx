@@ -261,7 +261,7 @@ export function App() {
             <h1 id="hero-title">{copy.hero.title.map((line,index) => <span key={line} className={index ? 'accent' : ''}>{line}</span>)}</h1>
             <p className="hero-description">{copy.hero.description}</p>
             <a className="primary-button" href="#work">{copy.hero.primaryAction}<ArrowRightIcon size={23} aria-hidden="true" /></a>
-            
+
           </motion.div>
           <FullstackLayers language={language} />
         </section>
@@ -281,7 +281,7 @@ export function App() {
               </a>
             </motion.article>; })}</AnimatePresence>
           </div>
-          
+
         </section>
         <section className="expertise-section" id="expertise" aria-labelledby="expertise-title">
           <Reveal><p className="eyebrow">{copy.services.eyebrow}</p><div className="section-heading"><h2 id="expertise-title">{copy.services.title}</h2><p>{copy.services.description}</p></div></Reveal>
