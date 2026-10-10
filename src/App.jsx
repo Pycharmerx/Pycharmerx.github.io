@@ -104,6 +104,7 @@ export function App() {
   const language = route.language;
   const copy = content.locales[language];
   const activeService = copy.services.items.find(service => service.id === serviceId);
+  const ActiveServiceIcon = SERVICE_ICONS[activeService.id];
   const cases = Object.fromEntries(copy.cases.map((project) => [project.id, project]));
   const activeCase = route.caseId ? cases[route.caseId] : null;
   const isCaseOpen = Boolean(activeCase);
@@ -309,19 +310,25 @@ export function App() {
         <section className="expertise-section" id="expertise" aria-labelledby="expertise-title">
           <Reveal><p className="eyebrow">{copy.services.eyebrow}</p><div className="section-heading"><h2 id="expertise-title">{copy.services.title}</h2><p>{copy.services.description}</p></div></Reveal>
           <div className="expertise-layout">
-            <div className="expertise-nav" role="group" aria-label={copy.ui.scope}>{copy.services.items.map((service,index) => {const Icon=SERVICE_ICONS[service.id];return <button type="button" className={serviceId===service.id?'selected':''} aria-pressed={serviceId===service.id} aria-controls="service-panel" key={service.id} onClick={() => setServiceId(service.id)}><span className="service-number">{String(index+1).padStart(2,'0')}</span><Icon size={25} weight="light" aria-hidden="true" /><span>{service.title}</span><ArrowUpRightIcon size={20} aria-hidden="true" /></button>;})}</div>
+            <div className="expertise-nav" role="group" aria-label={copy.ui.scope}>{copy.services.items.map((service,index) => {const Icon=SERVICE_ICONS[service.id];return <button type="button" className={serviceId===service.id?'selected':''} aria-pressed={serviceId===service.id} aria-controls="service-panel" key={service.id} onClick={() => setServiceId(service.id)}>
+              <span className="service-number">{String(index+1).padStart(2,'0')}</span>
+              <Icon className="service-tile-icon" size={30} weight="light" aria-hidden="true" />
+              <span className="service-tile-title">{service.title}</span>
+              <small className="service-tile-stack" aria-hidden="true">{service.stack.slice(0,2).join(' / ')}</small>
+              <ArrowUpRightIcon className="service-tile-arrow" size={19} aria-hidden="true" />
+            </button>;})}</div>
             <motion.div id="service-panel" className={`service-panel service-${activeService.id}`} key={activeService.id} initial={{opacity:0,y:8}} animate={{opacity:1,y:0}} transition={{duration:.25}}>
               <div className="service-topline"><span className="eyebrow">{copy.ui.serviceScope}</span><span className="service-code">/{activeService.id.toUpperCase()}</span></div>
-              <h3>{activeService.title}</h3><p className="service-description">{activeService.description}</p>
+              <div className="service-panel-heading"><span className="service-panel-icon" aria-hidden="true"><ActiveServiceIcon size={29} weight="light" /></span><h3>{activeService.title}</h3></div><p className="service-description">{activeService.description}</p>
               <ul className="service-deliveries">{activeService.scope.map(item => <li key={item}><CheckIcon size={18} aria-hidden="true" />{item}</li>)}</ul>
               <div className="stack-list">{activeService.stack.map(item => <span key={item}>{item}</span>)}</div>
-              <div className="service-cases"><p className="eyebrow">{copy.ui.serviceWork}</p>{activeService.cases.map(id => <a key={id} href={caseHref(id)} onClick={event=>openCase(event,id)} aria-haspopup="dialog">{cases[id].title}<ArrowUpRightIcon size={19} aria-hidden="true" /></a>)}{activeService.id==='ios'?<a href={caseHref('hybrid-ios')} onClick={event=>openCase(event,'hybrid-ios')} aria-haspopup="dialog">{copy.ui.webviewLink}<ArrowUpRightIcon size={19} aria-hidden="true" /></a>:null}</div>
+              <div className="service-cases"><p className="eyebrow">{copy.ui.serviceWork}</p><div className="service-case-grid">{activeService.cases.map(id => <a className="service-case" key={id} href={caseHref(id)} onClick={event=>openCase(event,id)} aria-haspopup="dialog"><img src={projectImage(id)} width="1440" height="960" alt="" loading="lazy" /><span>{cases[id].title}</span><ArrowUpRightIcon size={18} aria-hidden="true" /></a>)}</div>{activeService.id==='ios'?<a className="service-extra-link" href={caseHref('hybrid-ios')} onClick={event=>openCase(event,'hybrid-ios')} aria-haspopup="dialog">{copy.ui.webviewLink}<ArrowUpRightIcon size={19} aria-hidden="true" /></a>:null}</div>
             </motion.div>
           </div>
         </section>
         <section className="about-section" id="about" aria-labelledby="about-title">
-          <Reveal className="about-intro"><p className="eyebrow">{copy.nav.process}</p><h2 id="about-title">{copy.ui.about}</h2><p>{copy.ui.aboutBody}</p><p className="ownership-note">{copy.ui.aboutNote}</p><a className="text-link" href={content.identity.github} target="_blank" rel="noopener noreferrer">GitHub<ArrowUpRightIcon size={20} aria-hidden="true" /></a></Reveal>
-          <div className="process-panel"><p className="eyebrow">{copy.process.eyebrow}</p><div className="process-list">{copy.process.steps.map((step,index)=><details key={step.id} open={index===0?true:undefined}><summary><span>{String(index+1).padStart(2,'0')}</span>{step.title}<PlusIcon className="details-icon" size={20} aria-hidden="true" /></summary><p>{step.description}</p></details>)}</div><div className="tech-note"><h3>{copy.ui.techTitle}</h3><p>{copy.ui.techBody}</p></div></div>
+          <Reveal className="about-intro"><div className="about-topline"><p className="eyebrow">{copy.nav.process}</p><span className="brand-symbol about-mark" aria-hidden="true"><i /><i /><i /></span></div><h2 id="about-title">{copy.ui.about}</h2><p>{copy.ui.aboutBody}</p><div className="about-ownership"><p className="ownership-note">{copy.ui.aboutNote}</p><a className="text-link" href={content.identity.github} target="_blank" rel="noopener noreferrer">GitHub<ArrowUpRightIcon size={20} aria-hidden="true" /></a></div></Reveal>
+          <div className="process-panel"><p className="eyebrow">{copy.process.eyebrow}</p><div className="process-list">{copy.process.steps.map((step,index)=><details key={step.id} open={index===0?true:undefined}><summary><span>{String(index+1).padStart(2,'0')}</span><strong className="process-step-title">{step.title}</strong><PlusIcon className="details-icon" size={20} aria-hidden="true" /></summary><p>{step.description}</p></details>)}</div><div className="tech-note"><h3>{copy.ui.techTitle}</h3><p>{copy.ui.techBody}</p></div></div>
         </section>
         <section className="contact-section" id="contact" aria-labelledby="contact-title"><Reveal><p className="eyebrow">{copy.contact.eyebrow}</p><div className="contact-heading"><h2 id="contact-title">{copy.contact.title}</h2><a className="contact-arrow" href={`mailto:${content.identity.email}`} aria-label={copy.hero.secondaryAction}><ArrowUpRightIcon size={68} weight="light" aria-hidden="true" /></a></div><p className="contact-description">{copy.contact.description}</p><div className="footer-contact"><a className="email-link" ref={emailRef} href={`mailto:${content.identity.email}`} aria-label={`${copy.ui.email}: ${content.identity.email}`}>{content.identity.email}</a><button className="copy-email" type="button" aria-label={copy.ui.copyEmail} title={copy.ui.copyEmail} onClick={copyEmail}>{emailCopied?<CheckIcon size={20} aria-hidden="true" />:<CopyIcon size={20} aria-hidden="true" />}</button><span className="copy-status" role="status" aria-live="polite">{emailCopied?copy.ui.emailCopied:''}</span></div></Reveal></section>
       </main>
