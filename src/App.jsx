@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { motion, AnimatePresence, MotionConfig, useReducedMotion, useScroll } from 'motion/react';
+import { motion, AnimatePresence, MotionConfig, useMotionValue, useSpring, useReducedMotion, useScroll } from 'motion/react';
 import { SquaresFourIcon } from '@phosphor-icons/react/dist/csr/SquaresFour';
 import { BrainIcon } from '@phosphor-icons/react/dist/csr/Brain';
 import { ArrowsLeftRightIcon } from '@phosphor-icons/react/dist/csr/ArrowsLeftRight';
@@ -17,7 +17,6 @@ import { PlusIcon } from '@phosphor-icons/react/dist/csr/Plus';
 import { ArrowUpIcon } from '@phosphor-icons/react/dist/csr/ArrowUp';
 import '@fontsource-variable/manrope';
 import content from './content.json';
-import { ProductPreview, FullstackLayers } from './ProductPreview';
 
 const LANGUAGE_KEY = 'kheladze-portfolio-language-v1';
 const CASE_HISTORY_KEY = 'kheladzePortfolioCase';
@@ -48,6 +47,10 @@ function relativeUrl(url) {
   return `${url.pathname}${url.search}${url.hash}`;
 }
 
+function projectImage(id, detail = false) {
+  return `${import.meta.env.BASE_URL}assets/${detail ? PROJECTS[id].detailImage : PROJECTS[id].image}.webp`;
+}
+
 function isPlainClick(event) {
   return event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
 }
@@ -59,6 +62,26 @@ function Reveal({ children, className = '' }) {
 function ScrollProgress() {
   const { scrollYProgress } = useScroll();
   return <motion.div className="scroll-progress" style={{ scaleX: scrollYProgress }} aria-hidden="true" />;
+}
+
+function HeroScene() {
+  const reducedMotion = useReducedMotion();
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const rotateX = useSpring(x, { stiffness: 100, damping: 22 });
+  const rotateY = useSpring(y, { stiffness: 100, damping: 22 });
+  function move(event) {
+    if (reducedMotion || event.pointerType !== 'mouse') return;
+    const rect = event.currentTarget.getBoundingClientRect();
+    x.set(((event.clientY - rect.top) / rect.height - .5) * -7);
+    y.set(((event.clientX - rect.left) / rect.width - .5) * 9);
+  }
+  return <div className="hero-scene" aria-hidden="true" onPointerMove={move} onPointerLeave={() => { x.set(0); y.set(0); }}>
+    <motion.img initial={{ opacity: 0, scale: .94 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1, ease: [.22, 1, .36, 1] }} style={reducedMotion ? undefined : { rotateX, rotateY }} src={`${import.meta.env.BASE_URL}assets/v4-hero-stack.webp`} width="1254" height="1254" alt="" fetchPriority="high" />
+    <span className="scene-note scene-note-top">INTERFACE<br />LOGIC<br />INTELLIGENCE</span>
+    <span className="scene-note scene-note-bottom">DESIGN<br />BUILD<br />CONNECT</span>
+    <span className="scene-coordinate">SYSTEM / 001</span>
+  </div>;
 }
 
 export function App() {
@@ -257,13 +280,13 @@ export function App() {
       <main id="main" tabIndex={-1}>
         <section className="hero" aria-labelledby="hero-title">
           <motion.div className="hero-copy" initial={{opacity:0,y:18}} animate={{opacity:1,y:0}} transition={{duration:.7,ease:[.22,1,.36,1]}}>
-            <div className="hero-person"><span className="hero-avatar"><img src={`${import.meta.env.BASE_URL}assets/eduard.jpg`} alt="" width="56" height="56"/></span><div><p>{copy.name}</p><span>{copy.hero.eyebrow}</span></div></div>
+            <p className="eyebrow">{copy.hero.eyebrow}</p>
             <h1 id="hero-title">{copy.hero.title.map((line,index) => <span key={line} className={index ? 'accent' : ''}>{line}</span>)}</h1>
             <p className="hero-description">{copy.hero.description}</p>
             <a className="primary-button" href="#work">{copy.hero.primaryAction}<ArrowRightIcon size={23} aria-hidden="true" /></a>
-
+            <p className="hero-footnote">{copy.hero.footnote}</p>
           </motion.div>
-          <FullstackLayers language={language} />
+          <HeroScene />
         </section>
         <nav className="capability-strip" aria-label={copy.ui.scope}>{copy.services.items.map((service,index) => <a href="#expertise" key={service.id} onClick={() => setServiceId(service.id)}><span>{String(index+1).padStart(2,'0')}</span>{copy.hero.capabilities[index]}<ArrowUpRightIcon size={15} aria-hidden="true" /></a>)}</nav>
         <section className="work-section" id="work" aria-labelledby="work-title">
@@ -276,12 +299,12 @@ export function App() {
           <div className={`project-grid view-${view} ${filter !== 'all' ? 'filtered' : ''}`}>
             <AnimatePresence mode="popLayout">{visibleProjects.map((id,index) => { const project = cases[id]; return <motion.article layout="position" initial={{opacity:0,y:reducedMotion?0:24}} whileInView={{opacity:1,y:0}} exit={{opacity:0,transition:{duration:reducedMotion?0:.16}}} viewport={{once:true,amount:.08}} transition={{duration:reducedMotion?0:.5,ease:[.22,1,.36,1],opacity:{duration:reducedMotion?0:.35},layout:{duration:reducedMotion?0:.45}}} className="project" key={id}>
               <a className="project-link" href={caseHref(id)} onClick={event => openCase(event,id)} aria-haspopup="dialog" aria-label={`${copy.ui.detail}: ${project.title}`}>
-                <div className="case-visual"><ProductPreview id={id} language={language} /><span className="view-project-arrow" aria-hidden="true"><ArrowUpRightIcon size={30} /></span></div>
+                <div className="case-visual"><img src={projectImage(id)} alt={`${project.title} · ${copy.ui.concept}`} width="1440" height="960" loading={index < 2 ? 'eager' : 'lazy'} decoding="async" /><span className="project-number">{String(ORDER.indexOf(id)+1).padStart(2,'0')}</span><span className="visual-label">{copy.ui.conceptShort}</span><span className="view-project-arrow" aria-hidden="true"><ArrowUpRightIcon size={30} /></span></div>
                 <div className="project-info"><p className="project-category">{project.category}</p><div className="project-title-row"><h3>{project.title}</h3><ArrowUpRightIcon size={25} aria-hidden="true" /></div><p className="project-brief">{project.brief}</p><div className="project-bottom"><span>{project.stack.slice(0,3).join(' · ')}</span><span className="project-cta">{copy.ui.readCase}<ArrowRightIcon size={16} aria-hidden="true" /></span></div></div>
               </a>
             </motion.article>; })}</AnimatePresence>
           </div>
-
+          <p className="presentation-note">{copy.ui.portfolioNote}</p>
         </section>
         <section className="expertise-section" id="expertise" aria-labelledby="expertise-title">
           <Reveal><p className="eyebrow">{copy.services.eyebrow}</p><div className="section-heading"><h2 id="expertise-title">{copy.services.title}</h2><p>{copy.services.description}</p></div></Reveal>
@@ -296,14 +319,13 @@ export function App() {
             </motion.div>
           </div>
         </section>
-        <section className="solutions-section" aria-labelledby="solutions-title"><div className="solutions-heading"><p className="eyebrow">{copy.solutions.eyebrow}</p><h2 id="solutions-title">{copy.solutions.title}</h2><p>{copy.solutions.description}</p></div><div className="solutions-list">{copy.solutions.items.map((item,index)=><a key={item.title} href={`mailto:${content.identity.email}?subject=${encodeURIComponent(item.title)}`}><span>{String(index+1).padStart(2,'0')}</span><div><h3>{item.title}</h3><p>{item.text}</p></div><ArrowUpRightIcon size={22} aria-hidden="true"/></a>)}</div></section>
         <section className="about-section" id="about" aria-labelledby="about-title">
-          <Reveal className="about-intro"><img className="about-portrait" src={`${import.meta.env.BASE_URL}assets/eduard.jpg`} alt={copy.name} width="1400" height="1400" loading="lazy"/><p className="eyebrow">{copy.nav.process}</p><h2 id="about-title">{copy.ui.about}</h2><div className="about-copy">{copy.ui.aboutParagraphs.map(paragraph=><p key={paragraph}>{paragraph}</p>)}</div><p className="ownership-note">{copy.ui.aboutNote}</p><a className="text-link" href={content.identity.github} target="_blank" rel="noopener noreferrer">GitHub<ArrowUpRightIcon size={20} aria-hidden="true" /></a></Reveal>
+          <Reveal className="about-intro"><p className="eyebrow">{copy.nav.process}</p><h2 id="about-title">{copy.ui.about}</h2><p>{copy.ui.aboutBody}</p><p className="ownership-note">{copy.ui.aboutNote}</p><a className="text-link" href={content.identity.github} target="_blank" rel="noopener noreferrer">GitHub<ArrowUpRightIcon size={20} aria-hidden="true" /></a></Reveal>
           <div className="process-panel"><p className="eyebrow">{copy.process.eyebrow}</p><div className="process-list">{copy.process.steps.map((step,index)=><details key={step.id} open={index===0?true:undefined}><summary><span>{String(index+1).padStart(2,'0')}</span>{step.title}<PlusIcon className="details-icon" size={20} aria-hidden="true" /></summary><p>{step.description}</p></details>)}</div><div className="tech-note"><h3>{copy.ui.techTitle}</h3><p>{copy.ui.techBody}</p></div></div>
         </section>
         <section className="contact-section" id="contact" aria-labelledby="contact-title"><Reveal><p className="eyebrow">{copy.contact.eyebrow}</p><div className="contact-heading"><h2 id="contact-title">{copy.contact.title}</h2><a className="contact-arrow" href={`mailto:${content.identity.email}`} aria-label={copy.hero.secondaryAction}><ArrowUpRightIcon size={68} weight="light" aria-hidden="true" /></a></div><p className="contact-description">{copy.contact.description}</p><div className="footer-contact"><a className="email-link" ref={emailRef} href={`mailto:${content.identity.email}`} aria-label={`${copy.ui.email}: ${content.identity.email}`}>{content.identity.email}</a><button className="copy-email" type="button" aria-label={copy.ui.copyEmail} title={copy.ui.copyEmail} onClick={copyEmail}>{emailCopied?<CheckIcon size={20} aria-hidden="true" />:<CopyIcon size={20} aria-hidden="true" />}</button><span className="copy-status" role="status" aria-live="polite">{emailCopied?copy.ui.emailCopied:''}</span></div></Reveal></section>
       </main>
-      <footer><a className="wordmark" href="#top">{copy.name}<span>.</span></a><span className="footer-note">{copy.ui.footerNote}</span><a className="github-link" href={content.identity.github} target="_blank" rel="noopener noreferrer" aria-label={copy.contact.githubAction}>GitHub<ArrowUpRightIcon size={18} aria-hidden="true" /></a><a className="top-link" href="#top" aria-label={copy.ui.backToTop} title={copy.ui.backToTop}><ArrowUpIcon size={21} aria-hidden="true" /></a></footer>
+      <footer><a className="wordmark" href="#top">{copy.name}<span>.</span></a><span className="footer-note">FULLSTACK ENGINEER · APPLIED AI</span><a className="github-link" href={content.identity.github} target="_blank" rel="noopener noreferrer" aria-label={copy.contact.githubAction}>GitHub<ArrowUpRightIcon size={18} aria-hidden="true" /></a><a className="top-link" href="#top" aria-label={copy.ui.backToTop} title={copy.ui.backToTop}><ArrowUpIcon size={21} aria-hidden="true" /></a></footer>
 
       <dialog className="case-dialog" ref={dialogRef} aria-labelledby="case-title"
         onCancel={(event) => { event.preventDefault(); closeCase(); }}
@@ -327,7 +349,7 @@ export function App() {
             </motion.div>
             <div className="case-cover">
               <figure>
-                <ProductPreview id={activeCase.id} language={language} detail />
+                <img src={projectImage(activeCase.id)} alt={`${activeCase.title} · ${copy.ui.concept}`} width="1440" height="960" decoding="async" />
                 <figcaption>{copy.work.conceptExplanation}</figcaption>
               </figure>
               <div className="case-facts">
@@ -354,12 +376,17 @@ export function App() {
                 </section>
                 <section tabIndex={-1} id="case-modules">
                   <h3>{copy.ui.modules}</h3>
-                  {activeCase.modules ? <div className="module-grid">{activeCase.modules.map(item => <article key={item.title}><CheckIcon size={18} aria-hidden="true"/><h4>{item.title}</h4></article>)}</div>
+                  {activeCase.modules ? <div className="module-grid">{activeCase.modules.map(item => <article key={item.title}><h4>{item.title}</h4><p>{item.text}</p></article>)}</div>
                     : <ul className="delivery-list">{activeCase.implementation.map(item => <li key={item}>{item}</li>)}</ul>}
                 </section>
                 {PROJECTS[activeCase.id].detailImage ? <section tabIndex={-1} id="case-visuals" className="case-visual-section">
                   <h3>{copy.ui.visuals}</h3>
-                  <div className="product-walkthrough">{activeCase.modules?.map((module,index)=><article key={module.title}><span>{String(index+1).padStart(2,'0')}</span><h4>{module.title}</h4><p>{module.text}</p></article>)}</div>
+                  <figure className="walkthrough-figure">
+                    <a href={projectImage(activeCase.id, true)} target="_blank" rel="noopener noreferrer" aria-label={copy.ui.openImage}>
+                      <img src={projectImage(activeCase.id, true)} alt={`${activeCase.title} — ${copy.ui.visuals}. ${copy.ui.galleryNote}`} width="1440" height="960" loading="lazy" decoding="async" />
+                    </a>
+                    <figcaption><span>{copy.ui.galleryNote}</span><a href={projectImage(activeCase.id, true)} target="_blank" rel="noopener noreferrer">{copy.ui.openImage}<ArrowUpRightIcon size={16} aria-hidden="true" /></a></figcaption>
+                  </figure>
                 </section> : null}
                 {activeCase.flow ? <section tabIndex={-1} id="case-flow">
                   <h3>{activeCase.flowTitle || copy.ui.workflow}</h3>

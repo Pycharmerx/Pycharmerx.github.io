@@ -24,3 +24,9 @@
 .case-story section{animation:case-story-enter .45s cubic-bezier(.22,1,.36,1) both}
 @keyframes case-story-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.primary-button:hover svg,.text-link:hover svg,.contact-arrow:hover svg,.top-link:hover svg{transform:none}}
+
+/* Keep translated hero text inside its column. */
+.hero-copy{min-width:0;container-type:inline-size}
+.hero h1{max-width:100%;white-space:normal;font-size:clamp(40px,16cqw,126px);line-height:1.08}
+.hero h1 span{max-width:100%;overflow-wrap:anywhere;text-wrap:balance}
+@media(max-width:700px){.hero h1{font-size:clamp(38px,15cqw,80px)}}

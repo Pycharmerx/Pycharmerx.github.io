@@ -18,39 +18,39 @@
         "language": "Language"
       },
       "hero": {
-        "eyebrow": "Fullstack engineer · 10 years of experience",
+        "eyebrow": "FULLSTACK ENGINEER · APPLIED AI",
         "title": [
-          "Your product.",
-          "Built end to end."
+          "Fullstack.",
+          "Applied AI."
         ],
-        "description": "I build websites, apps and business software. I develop the backend, integrate AI and connect your product to the systems you already use.",
-        "primaryAction": "View projects",
+        "description": "I turn product ideas and complex workflows into software: web platforms, iOS apps, backend systems and applied AI.",
+        "primaryAction": "Explore the work",
         "secondaryAction": "Discuss a project",
         "capabilities": [
-          "Websites",
+          "Web",
           "iOS",
           "Backend",
           "AI agents",
           "ML / CV",
-          "1C integrations"
+          "1C"
         ],
-        "footnote": ""
+        "footnote": "From architecture and interface to integrations and launch."
       },
       "work": {
         "eyebrow": "Portfolio",
-        "title": "Selected work",
-        "description": "Web platforms, mobile apps and automation. Each case covers the problem, my contribution and how the software works.",
+        "title": "Selected engineering",
+        "description": "Explore what each product does, who it serves and how I built it.",
         "caseAction": "View project",
         "closeAction": "Close project",
         "problemLabel": "The task",
         "implementationLabel": "What I built",
         "resultLabel": "How it works",
         "conceptCaption": "Interface concept · Sample data",
-        "conceptExplanation": "Interfaces are reconstructed for this portfolio using sample data. The case describes the work completed."
+        "conceptExplanation": "Presentation concept with illustrative interface screens and sample data."
       },
       "services": {
         "eyebrow": "Services",
-        "title": "What I build",
+        "title": "One product.\nEvery layer.",
         "items": [
           {
             "id": "web",
@@ -135,12 +135,11 @@
           {
             "id": "ml",
             "title": "Machine learning & vision",
-            "description": "Machine learning, computer vision and local models adapted to business needs.",
+            "description": "Models for text and images: classification, semantic search, object detection and segmentation, connected to application workflows.",
             "scope": [
               "Dataset preparation",
               "Model training & evaluation",
-              "Inference through an API",
-              "Local model adaptation and optimization"
+              "Inference through an API"
             ],
             "stack": [
               "PyTorch",
@@ -174,7 +173,7 @@
             ]
           }
         ],
-        "description": "A new product, a specific feature or improvements to an existing system."
+        "description": "Bring a new idea, an existing product or a process that needs to work better. I connect the interface, data and business logic."
       },
       "process": {
         "eyebrow": "Working together",
@@ -205,17 +204,17 @@
       },
       "contact": {
         "eyebrow": "Contact",
-        "title": "Let’s discuss your project",
-        "description": "Tell me what you need to build. If you have a website, designs or a brief, include a link so we can discuss the scope.",
+        "title": "What should we\nbuild next?",
+        "description": "What do you want to build or improve? A short description is enough to start. Share your priorities, any existing product and your target timeline.",
         "emailAction": "Email about a project",
         "githubAction": "GitHub profile"
       },
       "cases": [
         {
           "id": "job-search",
-          "title": "Job-search workspace",
+          "title": "Job-search platform",
           "category": "Web application · AI workflow",
-          "brief": "Find relevant roles, prepare applications and keep track of interviews.",
+          "brief": "Profiles, vacancy matching, application drafts and interview tracking in one browser workspace.",
           "problem": "A job search involves different resumes, job boards, application texts and follow-ups. The product keeps this work connected to the right profile and vacancy.",
           "implementation": [
             "A browser interface for profiles, resumes, applications and interviews.",
@@ -278,7 +277,7 @@
           "id": "campaign-intelligence",
           "title": "Campaign analytics",
           "category": "Analytics / AI assistant",
-          "brief": "Campaign reports and an assistant that answers questions using connected data.",
+          "brief": "Campaign reports and an AI assistant that explains performance using connected data.",
           "problem": "A media-buying team needs to compare accounts, campaigns and reporting periods without rebuilding the same analysis. An answer is useful only when the reader can identify its source, date range and permitted data.",
           "implementation": [
             "Connected reporting data to a scheduled synchronization service and analytical workspace.",
@@ -340,9 +339,9 @@
         },
         {
           "id": "campaign-operations",
-          "title": "Campaign planning",
+          "title": "Campaign operations",
           "category": "Workflow software / API integration",
-          "brief": "Prepare campaign plans, review settings and track execution tasks.",
+          "brief": "A reviewable workflow for campaign plans, approvals and execution jobs.",
           "problem": "Campaign preparation combines accounts, targeting, budgets and creative assignments. An operator needs to verify the complete configuration before execution and later identify which version was approved, who approved it and what happened to the job.",
           "implementation": [
             "Built structured plans with validation and immutable configuration snapshots.",
@@ -403,9 +402,9 @@
         },
         {
           "id": "match-analytics",
-          "title": "Match analysis",
+          "title": "Match analytics",
           "category": "Data processing / Web application",
-          "brief": "Replay analysis for CS2 and Dota 2, with player reports and match events.",
+          "brief": "Personal reports from CS2 and Dota 2 replay files, with supporting match data.",
           "problem": "A replay contains events, participants and timing information, but a player needs a focused review of their own match. Useful analysis must keep calculated statistics connected to source events and show where the replay cannot support a conclusion.",
           "implementation": [
             "Built replay upload, participant selection and background analysis.",
@@ -469,7 +468,7 @@
           "id": "sales-app",
           "title": "Sales team app",
           "category": "iOS · API · Backend",
-          "brief": "Daily sales, targets and training in an iPhone app for the team.",
+          "brief": "Reporting, goals, learning and support in a native business app.",
           "problem": "A sales team needs a place to record daily results, follow goals and access training.",
           "implementation": [
             "SwiftUI dashboards, daily reporting, rankings and learning modules.",
@@ -530,9 +529,9 @@
         },
         {
           "id": "recipe-app",
-          "title": "Recipe app",
+          "title": "Recipe & cooking app",
           "category": "Native iOS · SwiftUI",
-          "brief": "Save recipes and follow each cooking step with a built-in timer.",
+          "brief": "Recipes, saved favorites and a step-by-step cooking mode.",
           "problem": "A recipe needs to be convenient both when choosing a dish and while cooking it.",
           "implementation": [
             "Recipe categories, ingredients and a step-by-step cooking view.",
@@ -592,9 +591,9 @@
         },
         {
           "id": "inventory-app",
-          "title": "Inventory app",
+          "title": "Inventory & quality",
           "category": "Native iOS · Local storage",
-          "brief": "Track product batches, stock movements and quality checks on iPhone.",
+          "brief": "Product batches, stock movements and quality checks.",
           "problem": "An egg-production inventory needs batch-level stock tracking, freshness checks and a movement history.",
           "implementation": [
             "Batch creation, editing and archiving, with stock movement records.",
@@ -672,9 +671,9 @@
         },
         {
           "id": "app-planning",
-          "title": "Product planning",
+          "title": "App planning workspace",
           "category": "Web application · Desktop · AI",
-          "brief": "Turn an app idea into requirements and a structured development brief.",
+          "brief": "A local workspace that turns an app idea into a structured development brief.",
           "problem": "An app concept needs more than a name. Screens, visual rules, data, testing and store materials need to describe the same product before implementation starts.",
           "implementation": [
             "A guided workflow for selecting a visual theme, name and app concept.",
@@ -801,9 +800,9 @@
         },
         {
           "id": "personal-journal",
-          "title": "Personal journal",
+          "title": "Personal journal & trends",
           "category": "Native iOS · Journaling & charts",
-          "brief": "Daily notes, personal goals and a clear view of changes over time.",
+          "brief": "Daily self-ratings, short notes and a visual history of personal goals.",
           "problem": "A single note captures one moment. Reviewing changes over time requires consistent entries, dates and a way to compare them.",
           "implementation": [
             "A daily entry with four rating sliders, a short note and a selected or written goal.",
@@ -929,9 +928,9 @@
         },
         {
           "id": "agent-workflows",
-          "title": "AI workflow automation",
+          "title": "AI agent workflows",
           "category": "AI engineering · Backend",
-          "brief": "Agents that find information, use tools and prepare actions for human review.",
+          "brief": "Multi-step AI workflows that retrieve context, call tools and pause for human approval.",
           "problem": "A request may require several tools and decisions. The process needs to retain context, handle failed calls and distinguish actions that require approval.",
           "implementation": [
             "Connected agents through shared state, routing and step limits in LangGraph.",
@@ -995,9 +994,9 @@
         },
         {
           "id": "knowledge-search",
-          "title": "Document search",
+          "title": "Document search assistant",
           "category": "AI integration · Retrieval",
-          "brief": "Find answers across internal documents, with references to the source material.",
+          "brief": "Search across documents and answers connected to the passages used to write them.",
           "problem": "A useful document assistant must find relevant material before generating an answer. It also needs a clear response when the available context is insufficient.",
           "implementation": [
             "Prepared documents, split them into passages and generated embeddings for retrieval.",
@@ -1061,9 +1060,9 @@
         },
         {
           "id": "enterprise-integration",
-          "title": "1C development & integrations",
+          "title": "1C accounting & integrations",
           "category": "Enterprise development · 1C",
-          "brief": "Contracts, payments, reporting and data exchange across business systems.",
+          "brief": "Selected 1C work on contracts, payments, reporting and exchanges between business systems.",
           "problem": "Accounting changes must fit existing rules and data. Integrations also need to handle interrupted delivery and repeated messages without losing track of processing.",
           "implementation": [
             "Developed customer-side changes for lease contracts, payment schedules and parallel accounting.",
@@ -1138,7 +1137,7 @@
         "menu": "Menu",
         "concept": "Interface concept",
         "privacy": "Project names are omitted. Interface concepts were created for this portfolio.",
-        "about": "Eduard,\nfullstack engineer",
+        "about": "I’m Eduard.\nFullstack engineer.",
         "aboutBody": "I work across interfaces, backend services, mobile apps and applied AI. I design how these parts work together, from user interactions to data processing. My experience includes agent orchestration, document search, computer vision and enterprise integrations.",
         "email": "Write an email",
         "emailCopied": "Email copied",
@@ -1162,11 +1161,11 @@
         "next": "Next project",
         "previous": "Previous project",
         "projectCount": "projects",
-        "readCase": "View project",
+        "readCase": "Explore the case",
         "webviewLink": "Explore the WebView integration",
         "contactProject": "Discuss a similar project",
         "portfolioNote": "Project names are anonymized. The 1C case brings together several assignments. Visuals are presentation concepts, not original screenshots.",
-        "visuals": "Core workflows",
+        "visuals": "Inside the product",
         "value": "What it helps with",
         "galleryNote": "Presentation concept with illustrative interface screens and sample data.",
         "openImage": "View full size",
@@ -1177,45 +1176,12 @@
         "showing": "Shown",
         "serviceWork": "Related work",
         "serviceScope": "What I can build",
-        "aboutNote": "I handle development. My partner handles project communication and support.",
+        "aboutNote": "I handle architecture and development. My partner handles project communication and support.",
         "conceptShort": "Visual concept",
-        "techTitle": "Core technologies",
-        "techBody": "React, TypeScript, Swift, Python and FastAPI. PostgreSQL, Redis and message queues for data and integrations. LangGraph, vector search and PyTorch for AI.",
-        "aboutParagraphs": [
-          "I develop web services and iOS apps, including the interface, backend and data processing.",
-          "I integrate AI into working products: document search, agents with tools, machine learning and computer vision. I also work on 1C integrations.",
-          "10 years in software development. I work with local models, adapting and optimizing them for business use."
-        ],
-        "footerNote": "Web · Mobile · AI"
+        "techTitle": "Tools chosen for the task.",
+        "techBody": "React and TypeScript for the web; Swift for iOS; Python and FastAPI for services. PostgreSQL, Redis and message queues connect the data. AI work includes LangGraph, vector search, PyTorch and model evaluation."
       },
-      "name": "Eduard",
-      "solutions": {
-        "eyebrow": "Business use cases",
-        "title": "Bring me your next challenge",
-        "description": "Examples of products and features I can develop for your business.",
-        "items": [
-          {
-            "title": "Websites & customer portals",
-            "text": "Company websites, customer accounts, catalogues and request forms."
-          },
-          {
-            "title": "Internal tools",
-            "text": "CRM workflows, records, approvals and employee workspaces."
-          },
-          {
-            "title": "Mobile apps",
-            "text": "Apps for customers and teams, local data and connected services."
-          },
-          {
-            "title": "AI & automation",
-            "text": "Knowledge search, document processing and agents for business tasks."
-          },
-          {
-            "title": "Analytics & integrations",
-            "text": "Reporting, APIs, 1C data exchange and third-party services."
-          }
-        ]
-      }
+      "name": "Eduard"
     },
     "ru": {
       "meta": {
@@ -1230,39 +1196,39 @@
         "language": "Язык"
       },
       "hero": {
-        "eyebrow": "Fullstack-разработчик · 10 лет опыта",
+        "eyebrow": "FULLSTACK ENGINEER · APPLIED AI",
         "title": [
-          "Разработка",
-          "под ключ."
+          "Fullstack.",
+          "Applied AI."
         ],
-        "description": "Создаю сайты, приложения и сервисы для бизнеса. Разрабатываю серверную часть, подключаю AI и интегрирую продукт с вашими системами.",
+        "description": "Превращаю идеи продуктов и сложные рабочие процессы в ПО: веб-платформы, iOS-приложения, backend и AI-системы.",
         "primaryAction": "Смотреть проекты",
-        "secondaryAction": "Обсудить задачу",
+        "secondaryAction": "Обсудить проект",
         "capabilities": [
-          "Сайты",
+          "Web",
           "iOS",
           "Backend",
-          "AI-агенты",
+          "AI agents",
           "ML / CV",
-          "Интеграции 1С"
+          "1C"
         ],
-        "footnote": ""
+        "footnote": "От архитектуры и интерфейса до интеграций и запуска."
       },
       "work": {
         "eyebrow": "Портфолио",
-        "title": "Проекты",
-        "description": "Веб-сервисы, мобильные приложения и автоматизация. В каждом проекте — задача, моя работа и устройство решения.",
+        "title": "Инженерия в деталях",
+        "description": "Что делает каждый продукт, кому помогает и как устроен внутри.",
         "caseAction": "Подробнее о проекте",
         "closeAction": "Закрыть проект",
         "problemLabel": "Задача",
         "implementationLabel": "Что разработано",
         "resultLabel": "Как это работает",
         "conceptCaption": "Концепт интерфейса · Пример данных",
-        "conceptExplanation": "Экраны пересобраны для портфолио на демонстрационных данных. Описание относится к выполненной работе."
+        "conceptExplanation": "Презентационный концепт интерфейса с демонстрационными данными."
       },
       "services": {
         "eyebrow": "Услуги",
-        "title": "Что я разрабатываю",
+        "title": "Один продукт.\nВсе его части.",
         "items": [
           {
             "id": "web",
@@ -1347,12 +1313,11 @@
           {
             "id": "ml",
             "title": "Машинное обучение и CV",
-            "description": "Машинное обучение, компьютерное зрение и локальные модели под задачи бизнеса.",
+            "description": "Модели для текста и изображений: классификация, семантический поиск, детекция и сегментация с интеграцией в приложения.",
             "scope": [
               "Подготовка датасетов",
               "Обучение и оценка моделей",
-              "Инференс через API",
-              "Настройка и оптимизация локальных моделей"
+              "Инференс через API"
             ],
             "stack": [
               "PyTorch",
@@ -1386,7 +1351,7 @@
             ]
           }
         ],
-        "description": "Новый продукт, отдельная функция или доработка существующей системы."
+        "description": "Новый сервис, развитие приложения или автоматизация процесса. Связываю интерфейс, данные и бизнес-логику в работающую систему."
       },
       "process": {
         "eyebrow": "Как работаем",
@@ -1417,17 +1382,17 @@
       },
       "contact": {
         "eyebrow": "Контакт",
-        "title": "Обсудим вашу задачу",
-        "description": "Напишите, что нужно разработать. Если есть сайт, макеты или описание задачи, приложите ссылку — так будет проще обсудить объём работы.",
+        "title": "Что будем\nсоздавать дальше?",
+        "description": "Что хотите создать или улучшить? Для начала хватит короткого описания. Расскажите о задаче, существующем продукте и желаемых сроках.",
         "emailAction": "Написать о проекте",
         "githubAction": "Профиль GitHub"
       },
       "cases": [
         {
           "id": "job-search",
-          "title": "Подбор вакансий",
+          "title": "Платформа поиска работы",
           "category": "Веб-приложение · AI",
-          "brief": "Подбор вакансий, подготовка откликов и история собеседований в одном месте.",
+          "brief": "Профили, подбор вакансий, черновики откликов и учёт интервью в одном рабочем пространстве.",
           "problem": "Поиск работы включает разные резюме, площадки, тексты откликов и последующее общение. Сервис связывает эти действия с нужным профилем и конкретной вакансией.",
           "implementation": [
             "Веб-интерфейс для профилей, резюме, откликов и интервью.",
@@ -1488,9 +1453,9 @@
         },
         {
           "id": "campaign-intelligence",
-          "title": "Рекламная аналитика",
+          "title": "Аналитика рекламных кампаний",
           "category": "Аналитика / AI-ассистент",
-          "brief": "Отчёты по рекламе и ассистент, который отвечает на вопросы по данным кампаний.",
+          "brief": "Отчёты по кампаниям и AI-ассистент, который объясняет результаты по подключённым данным.",
           "problem": "Команде медиабаинга нужно сравнивать аккаунты, кампании и периоды, не собирая одинаковые отчёты вручную. Чтобы использовать ответ при принятии решения, важно понимать его источник, диапазон дат и доступную пользователю часть данных.",
           "implementation": [
             "Подключил источник статистики к сервису синхронизации и аналитическому интерфейсу.",
@@ -1552,9 +1517,9 @@
         },
         {
           "id": "campaign-operations",
-          "title": "Управление кампаниями",
+          "title": "Подготовка рекламных кампаний",
           "category": "Автоматизация / API-интеграции",
-          "brief": "Подготовка рекламных кампаний, проверка настроек и контроль заданий.",
+          "brief": "Проверяемый процесс работы с планами рекламных кампаний, согласованием и очередью заданий.",
           "problem": "Подготовка кампании объединяет аккаунты, таргетинг, бюджеты и распределение креативов. Оператору нужно проверить всю конфигурацию до выполнения, а затем иметь возможность установить, какую версию согласовали, кто её подтвердил и что произошло с заданием.",
           "implementation": [
             "Разработал структурированные планы с проверкой параметров и неизменяемыми снимками.",
@@ -1615,9 +1580,9 @@
         },
         {
           "id": "match-analytics",
-          "title": "Разбор игровых матчей",
+          "title": "Аналитика игровых матчей",
           "category": "Обработка данных / Веб-приложение",
-          "brief": "Анализ повторов CS2 и Dota 2: отчёты по игрокам и событиям матча.",
+          "brief": "Персональные отчёты по файлам повторов CS2 и Dota 2 с проверяемыми исходными событиями.",
           "problem": "Файл повтора матча содержит события, участников и временные отметки, но игроку нужен разбор собственной игры. Полезный отчёт должен связывать рассчитанные показатели с источником и показывать, когда данных повтора недостаточно для определённого вывода.",
           "implementation": [
             "Разработал загрузку файлов повторов, выбор участника и фоновый анализ.",
@@ -1679,9 +1644,9 @@
         },
         {
           "id": "sales-app",
-          "title": "Приложение для продаж",
+          "title": "Приложение для команды продаж",
           "category": "iOS · API · Backend",
-          "brief": "Продажи за день, выполнение плана и обучение сотрудников в приложении для iPhone.",
+          "brief": "Показатели, цели, обучение и поддержка в нативном приложении.",
           "problem": "Команде нужно фиксировать результаты дня, следить за целями и проходить обучение.",
           "implementation": [
             "Экраны SwiftUI: показатели, отчёты за день, рейтинг и обучение.",
@@ -1742,9 +1707,9 @@
         },
         {
           "id": "recipe-app",
-          "title": "Приложение с рецептами",
+          "title": "Рецепты и приготовление",
           "category": "iOS-приложение · SwiftUI",
-          "brief": "Избранные рецепты, пошаговое приготовление и встроенный таймер.",
+          "brief": "Каталог рецептов, избранное и пошаговый режим приготовления.",
           "problem": "Рецептом должно быть удобно пользоваться и при выборе блюда, и во время приготовления.",
           "implementation": [
             "Категории блюд, ингредиенты и пошаговый режим.",
@@ -1804,9 +1769,9 @@
         },
         {
           "id": "inventory-app",
-          "title": "Мобильный учёт запасов",
+          "title": "Учёт запасов и качества",
           "category": "iOS-приложение · Локальные данные",
-          "brief": "Учёт партий, поступлений, списаний и проверок качества на iPhone.",
+          "brief": "Партии продукции, движение остатков и проверки качества.",
           "problem": "Для учёта яичной продукции нужны остатки по партиям, показатели свежести и история движения.",
           "implementation": [
             "Создание, изменение и архивирование партий, учёт движения продукции.",
@@ -1884,9 +1849,9 @@
         },
         {
           "id": "app-planning",
-          "title": "Планирование продукта",
+          "title": "Планирование приложений",
           "category": "Веб-приложение · Desktop · AI",
-          "brief": "Подготовка требований и задания на разработку из идеи приложения.",
+          "brief": "Локальное рабочее пространство, которое превращает идею приложения в структурированное задание на разработку.",
           "problem": "Для разработки мало названия и общей идеи. Экраны, оформление, данные, проверки и материалы для магазина должны описывать один и тот же продукт.",
           "implementation": [
             "Пошаговый выбор визуальной темы, названия и идеи приложения.",
@@ -2013,9 +1978,9 @@
         },
         {
           "id": "personal-journal",
-          "title": "Личный дневник",
+          "title": "Личный дневник и динамика",
           "category": "iOS-приложение · Записи и графики",
-          "brief": "Заметки о прошедшем дне, личные цели и история наблюдений.",
+          "brief": "Ежедневные оценки, короткие заметки и история личных целей.",
           "problem": "Одна заметка описывает отдельный момент. Для сравнения разных дней нужны одинаковые поля, даты и удобный просмотр истории.",
           "implementation": [
             "Ежедневная запись с четырьмя шкалами, короткой заметкой и выбранной или введённой целью.",
@@ -2141,9 +2106,9 @@
         },
         {
           "id": "agent-workflows",
-          "title": "Автоматизация с AI",
+          "title": "AI-агенты для рабочих задач",
           "category": "AI-разработка · Backend",
-          "brief": "Агенты находят информацию, работают с инструментами и готовят действия на проверку.",
+          "brief": "Многошаговые AI-сценарии с поиском контекста, вызовами инструментов и подтверждением действий человеком.",
           "problem": "Один запрос может потребовать нескольких инструментов и решений. Процессу нужно сохранять контекст, обрабатывать ошибки вызовов и выделять действия, которые требуют подтверждения.",
           "implementation": [
             "Связал агентов через общее состояние, маршрутизацию и ограничения числа шагов в LangGraph.",
@@ -2207,9 +2172,9 @@
         },
         {
           "id": "knowledge-search",
-          "title": "Поиск по документам",
+          "title": "Поиск и ответы по документам",
           "category": "AI-интеграции · Поиск",
-          "brief": "Ответы на вопросы по внутренним документам со ссылками на источники.",
+          "brief": "Поиск по документам и ответы со ссылками на фрагменты, использованные при подготовке текста.",
           "problem": "Перед ответом ассистент должен найти подходящие материалы. Если доступного контекста недостаточно, это нужно учитывать при обработке запроса и проверке результата.",
           "implementation": [
             "Готовил документы, делил их на фрагменты и формировал векторные представления для поиска.",
@@ -2273,9 +2238,9 @@
         },
         {
           "id": "enterprise-integration",
-          "title": "Разработка и интеграции 1С",
+          "title": "Учёт и интеграции 1С",
           "category": "Корпоративная разработка · 1С",
-          "brief": "Договоры, платежи, отчётность и обмен данными между бизнес-системами.",
+          "brief": "Отдельные задачи разработки 1С: договоры, платежи, отчётность и обмены между системами.",
           "problem": "Изменения учёта должны соответствовать действующим правилам и данным. При обменах нужно учитывать сбои доставки и повторные сообщения, сохраняя понятный порядок обработки.",
           "implementation": [
             "Дорабатывал со стороны заказчика договоры аренды, графики платежей и параллельный учёт.",
@@ -2350,7 +2315,7 @@
         "menu": "Меню",
         "concept": "Концепт интерфейса",
         "privacy": "Исходные названия не раскрываются. Визуальные концепты подготовлены для портфолио.",
-        "about": "Эдуард,\nfullstack-разработчик",
+        "about": "Я Эдуард.\nFullstack-инженер.",
         "aboutBody": "Работаю с интерфейсами, серверной частью, мобильными приложениями и прикладным AI. Проектирую их вместе: от действий пользователя до обработки данных. В моём опыте есть агентские системы, поиск по документам, компьютерное зрение и корпоративные интеграции.",
         "email": "Написать письмо",
         "emailCopied": "Почта скопирована",
@@ -2374,11 +2339,11 @@
         "next": "Следующий проект",
         "previous": "Предыдущий проект",
         "projectCount": "проектов",
-        "readCase": "Смотреть проект",
+        "readCase": "Подробнее о проекте",
         "webviewLink": "Подробнее об интеграции WebView",
         "contactProject": "Обсудить похожую задачу",
         "portfolioNote": "Названия проектов обезличены. Кейс 1С объединяет несколько задач. Визуалы — презентационные концепты, а не скриншоты исходных приложений.",
-        "visuals": "Основные сценарии",
+        "visuals": "Как устроен интерфейс",
         "value": "Какую задачу закрывает",
         "galleryNote": "Презентационный концепт интерфейса с демонстрационными данными.",
         "openImage": "Открыть крупнее",
@@ -2389,45 +2354,12 @@
         "showing": "Показано",
         "serviceWork": "Примеры работ",
         "serviceScope": "Что могу разработать",
-        "aboutNote": "Я занимаюсь разработкой. Мой партнёр ведёт переговоры и поддержку.",
+        "aboutNote": "Я отвечаю за архитектуру и разработку. Мой партнёр ведёт общение по проекту и поддержку.",
         "conceptShort": "Визуальный концепт",
-        "techTitle": "Основной стек",
-        "techBody": "React, TypeScript, Swift, Python, FastAPI. Для данных и интеграций — PostgreSQL, Redis и очереди сообщений. Для AI — LangGraph, векторный поиск и PyTorch.",
-        "aboutParagraphs": [
-          "Разрабатываю веб-сервисы и iOS-приложения: интерфейс, серверную часть и работу с данными.",
-          "Встраиваю AI в рабочие процессы: поиск по документам, агенты с инструментами, машинное обучение и компьютерное зрение. Работаю с интеграциями 1С.",
-          "10 лет в разработке. Работаю с локальными моделями, их настройкой и оптимизацией под задачи бизнеса."
-        ],
-        "footerNote": "Веб · Приложения · AI"
+        "techTitle": "Инструменты под задачу.",
+        "techBody": "React и TypeScript для веба, Swift для iOS, Python и FastAPI для сервисов. PostgreSQL, Redis и очереди связывают данные. Для AI — LangGraph, векторный поиск, PyTorch и оценка качества моделей."
       },
-      "name": "Эдуард",
-      "solutions": {
-        "eyebrow": "Задачи бизнеса",
-        "title": "С чем можно обратиться",
-        "description": "Примеры продуктов и функций, которые можно разработать под вашу задачу.",
-        "items": [
-          {
-            "title": "Сайты и кабинеты клиентов",
-            "text": "Корпоративные сайты, личные кабинеты, каталоги и формы заявок."
-          },
-          {
-            "title": "Внутренние сервисы",
-            "text": "CRM, учёт, согласование заявок и рабочие места сотрудников."
-          },
-          {
-            "title": "Мобильные приложения",
-            "text": "Приложения для клиентов и команды, локальные данные и интеграции."
-          },
-          {
-            "title": "AI и автоматизация",
-            "text": "Поиск по базе знаний, обработка документов и агенты для рабочих задач."
-          },
-          {
-            "title": "Аналитика и интеграции",
-            "text": "Отчёты, API, обмен данными с 1С и подключение внешних сервисов."
-          }
-        ]
-      }
+      "name": "Эдуард"
     }
   },
   "projects": {
@@ -2552,17 +2484,19 @@
     }
   },
   "order": [
-    "job-search",
     "agent-workflows",
     "sales-app",
     "campaign-intelligence",
     "knowledge-search",
+    "job-search",
     "enterprise-integration",
     "recipe-app",
     "campaign-operations",
     "match-analytics",
     "inventory-app",
+    "incubation-planner",
     "personal-journal",
+    "care-journal",
     "app-planning"
   ]
 }
