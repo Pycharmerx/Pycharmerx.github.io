@@ -1,18 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
-import { motion, AnimatePresence, MotionConfig, useMotionValue, useSpring, useReducedMotion, useScroll } from 'motion/react';
 import { SquaresFourIcon } from '@phosphor-icons/react/dist/csr/SquaresFour';
-import { BrainIcon } from '@phosphor-icons/react/dist/csr/Brain';
-import { ArrowsLeftRightIcon } from '@phosphor-icons/react/dist/csr/ArrowsLeftRight';
 import { ArrowRightIcon } from '@phosphor-icons/react/dist/csr/ArrowRight';
 import { ArrowUpRightIcon } from '@phosphor-icons/react/dist/csr/ArrowUpRight';
 import { XIcon } from '@phosphor-icons/react/dist/csr/X';
 import { ListIcon } from '@phosphor-icons/react/dist/csr/List';
 import { CopyIcon } from '@phosphor-icons/react/dist/csr/Copy';
 import { CheckIcon } from '@phosphor-icons/react/dist/csr/Check';
-import { DesktopIcon } from '@phosphor-icons/react/dist/csr/Desktop';
-import { DeviceMobileIcon } from '@phosphor-icons/react/dist/csr/DeviceMobile';
-import { DatabaseIcon } from '@phosphor-icons/react/dist/csr/Database';
-import { CpuIcon } from '@phosphor-icons/react/dist/csr/Cpu';
 import { PlusIcon } from '@phosphor-icons/react/dist/csr/Plus';
 import { ArrowUpIcon } from '@phosphor-icons/react/dist/csr/ArrowUp';
 import '@fontsource-variable/manrope';
@@ -23,7 +16,6 @@ const CASE_HISTORY_KEY = 'kheladzePortfolioCase';
 const ORDER = content.order;
 const FILTERS = ['all', 'web', 'ios', 'backend', 'ai', 'enterprise'];
 const PROJECTS = content.projects;
-const SERVICE_ICONS = { web: DesktopIcon, ios: DeviceMobileIcon, backend: DatabaseIcon, ai: CpuIcon, ml: BrainIcon, enterprise: ArrowsLeftRightIcon };
 
 function storedLanguage() {
   try {
@@ -56,36 +48,10 @@ function isPlainClick(event) {
 }
 
 function Reveal({ children, className = '' }) {
-  return <motion.div className={className} initial={{ opacity: 0, y: 22 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .08 }} transition={{ duration: .6, ease: [.22, 1, .36, 1] }}>{children}</motion.div>;
-}
-
-function ScrollProgress() {
-  const { scrollYProgress } = useScroll();
-  return <motion.div className="scroll-progress" style={{ scaleX: scrollYProgress }} aria-hidden="true" />;
-}
-
-function HeroScene() {
-  const reducedMotion = useReducedMotion();
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const rotateX = useSpring(x, { stiffness: 100, damping: 22 });
-  const rotateY = useSpring(y, { stiffness: 100, damping: 22 });
-  function move(event) {
-    if (reducedMotion || event.pointerType !== 'mouse') return;
-    const rect = event.currentTarget.getBoundingClientRect();
-    x.set(((event.clientY - rect.top) / rect.height - .5) * -7);
-    y.set(((event.clientX - rect.left) / rect.width - .5) * 9);
-  }
-  return <div className="hero-scene" aria-hidden="true" onPointerMove={move} onPointerLeave={() => { x.set(0); y.set(0); }}>
-    <motion.img initial={{ opacity: 0, scale: .94 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1, ease: [.22, 1, .36, 1] }} style={reducedMotion ? undefined : { rotateX, rotateY }} src={`${import.meta.env.BASE_URL}assets/v4-hero-stack.webp`} width="1254" height="1254" alt="" fetchPriority="high" />
-    <span className="scene-note scene-note-top">INTERFACE<br />LOGIC<br />INTELLIGENCE</span>
-    <span className="scene-note scene-note-bottom">DESIGN<br />BUILD<br />CONNECT</span>
-    <span className="scene-coordinate">SYSTEM / 001</span>
-  </div>;
+  return <div className={className}>{children}</div>;
 }
 
 export function App() {
-  const reducedMotion = useReducedMotion();
   const [route, setRoute] = useState(readRoute);
   const [filter, setFilter] = useState('all');
   const [view, setView] = useState('grid');
@@ -104,7 +70,6 @@ export function App() {
   const language = route.language;
   const copy = content.locales[language];
   const activeService = copy.services.items.find(service => service.id === serviceId);
-  const ActiveServiceIcon = SERVICE_ICONS[activeService.id];
   const cases = Object.fromEntries(copy.cases.map((project) => [project.id, project]));
   const activeCase = route.caseId ? cases[route.caseId] : null;
   const isCaseOpen = Boolean(activeCase);
@@ -128,6 +93,10 @@ export function App() {
     document.title = activeCase ? `${activeCase.title} — ${copy.name}` : copy.meta.title;
     const description = document.querySelector('meta[name="description"]');
     if (description) description.content = activeCase ? activeCase.brief : copy.meta.description;
+    const socialTitle = document.querySelector('meta[property="og:title"]');
+    const socialDescription = document.querySelector('meta[property="og:description"]');
+    if (socialTitle) socialTitle.content = document.title;
+    if (socialDescription) socialDescription.content = description?.content || copy.meta.description;
     try {
       window.localStorage.setItem(LANGUAGE_KEY, language);
     } catch {
@@ -189,6 +158,7 @@ export function App() {
     const url = new URL(window.location.href);
     url.searchParams.set('lang', language);
     url.searchParams.set('case', id);
+    url.hash = '';
     return relativeUrl(url);
   }
 
@@ -263,9 +233,7 @@ export function App() {
   ];
 
   return (
-    <MotionConfig reducedMotion="user">
     <div className={`portfolio lang-${language}`} id="top">
-      <ScrollProgress />
       <a className="skip-link" href="#main">{copy.ui.skip}</a>
       <header className="header">
         <a className="wordmark" href="#top" aria-label={copy.name}><span className="brand-symbol" aria-hidden="true"><i /><i /><i /></span>{copy.name}</a>
@@ -276,61 +244,71 @@ export function App() {
         </div>
         <a className="primary-button header-cta" href="#contact">{copy.hero.secondaryAction}<ArrowUpRightIcon size={18} aria-hidden="true" /></a>
         <button className="menu-toggle" type="button" ref={menuButtonRef} aria-expanded={menuOpen} aria-controls={menuOpen ? 'mobile-navigation' : undefined} aria-label={menuOpen ? copy.ui.close : copy.ui.menu} onClick={() => setMenuOpen(open => !open)}>{menuOpen ? <XIcon size={25} aria-hidden="true" /> : <ListIcon size={25} aria-hidden="true" />}</button>
-        <AnimatePresence>{menuOpen ? <motion.nav initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: .18 }} className="mobile-nav" id="mobile-navigation" aria-label={copy.ui.menu}>{[...navLinks,{href:'#contact',label:copy.hero.secondaryAction}].map(link => <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>{link.label}<ArrowUpRightIcon size={20} aria-hidden="true" /></a>)}</motion.nav> : null}</AnimatePresence>
+        {menuOpen ? <nav className="mobile-nav" id="mobile-navigation" aria-label={copy.ui.menu}>{[...navLinks,{href:'#contact',label:copy.hero.secondaryAction}].map(link => <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>{link.label}<ArrowUpRightIcon size={20} aria-hidden="true" /></a>)}</nav> : null}
       </header>
       <main id="main" tabIndex={-1}>
         <section className="hero" aria-labelledby="hero-title">
-          <motion.div className="hero-copy" initial={{opacity:0,y:18}} animate={{opacity:1,y:0}} transition={{duration:.7,ease:[.22,1,.36,1]}}>
+          <div className="hero-copy">
             <p className="eyebrow">{copy.hero.eyebrow}</p>
             <h1 id="hero-title">{copy.hero.title.map((line,index) => <span key={line} className={index ? 'accent' : ''}>{line}</span>)}</h1>
             <p className="hero-description">{copy.hero.description}</p>
-            <a className="primary-button" href="#work">{copy.hero.primaryAction}<ArrowRightIcon size={23} aria-hidden="true" /></a>
+            <div className="hero-actions">
+              <a className="primary-button" href="#contact">{copy.hero.secondaryAction}<ArrowUpRightIcon size={21} aria-hidden="true" /></a>
+              <a className="text-link" href="#work">{copy.hero.primaryAction}<ArrowRightIcon size={19} aria-hidden="true" /></a>
+            </div>
             <p className="hero-footnote">{copy.hero.footnote}</p>
-          </motion.div>
-          <HeroScene />
+          </div>
+          <aside className="hero-selection" aria-labelledby="selection-title">
+            <div className="selection-heading"><p id="selection-title">{copy.hero.selectionTitle}</p></div>
+            <div className="selection-list">{(copy.hero.selectedProjects || []).map(item => <a className="selection-link" key={item.id} href={caseHref(item.id)} onClick={event => openCase(event, item.id)} aria-haspopup="dialog">
+              <img src={projectImage(item.id)} alt="" width="180" height="120" decoding="async" />
+              <div><span className="selection-kind">{item.label}</span><h2>{cases[item.id].title}</h2><p>{item.description}</p></div>
+              <ArrowUpRightIcon size={22} aria-hidden="true" />
+            </a>)}</div>
+            {copy.hero.selectionDisclosure ? <p className="selection-disclosure">{copy.hero.selectionDisclosure}</p> : null}
+            <a className="selection-all" href="#work">{copy.hero.selectionNote}<ArrowRightIcon size={18} aria-hidden="true" /></a>
+          </aside>
         </section>
         <nav className="capability-strip" aria-label={copy.ui.scope}>{copy.services.items.map((service,index) => <a href="#expertise" key={service.id} onClick={() => setServiceId(service.id)}><span>{String(index+1).padStart(2,'0')}</span>{copy.hero.capabilities[index]}<ArrowUpRightIcon size={15} aria-hidden="true" /></a>)}</nav>
         <section className="work-section" id="work" aria-labelledby="work-title">
           <Reveal><p className="eyebrow">{copy.work.eyebrow}</p><div className="section-heading"><h2 id="work-title" tabIndex={-1} ref={workHeadingRef}>{copy.work.title}<span className="project-total">({ORDER.length})</span></h2><p>{copy.work.description}</p></div></Reveal>
+          <p className="presentation-note">{copy.ui.portfolioNote}</p>
           <div className="work-controls">
             <div className="filters" role="group" aria-label={copy.work.eyebrow}>{FILTERS.map(id => <button key={id} type="button" className={filter === id ? 'selected' : ''} aria-pressed={filter === id} onClick={() => setFilter(id)}>{copy.ui[id]}<span>{id === 'all' ? ORDER.length : ORDER.filter(key => PROJECTS[key].filters.includes(id)).length}</span></button>)}</div>
             <div className="view-controls" role="group" aria-label={language === 'ru' ? 'Вид каталога' : 'Catalogue view'}><button type="button" aria-label={copy.ui.grid} title={copy.ui.grid} aria-pressed={view === 'grid'} onClick={() => setView('grid')}><SquaresFourIcon size={21} aria-hidden="true" /></button><button type="button" aria-label={copy.ui.list} title={copy.ui.list} aria-pressed={view === 'list'} onClick={() => setView('list')}><ListIcon size={23} aria-hidden="true" /></button></div>
           </div>
           <p className="sr-only" role="status">{copy.ui.showing}: {visibleProjects.length}</p>
           <div className={`project-grid view-${view} ${filter !== 'all' ? 'filtered' : ''}`}>
-            <AnimatePresence mode="popLayout">{visibleProjects.map((id,index) => { const project = cases[id]; return <motion.article layout="position" initial={{opacity:0,y:reducedMotion?0:24}} whileInView={{opacity:1,y:0}} exit={{opacity:0,transition:{duration:reducedMotion?0:.16}}} viewport={{once:true,amount:.08}} transition={{duration:reducedMotion?0:.5,ease:[.22,1,.36,1],opacity:{duration:reducedMotion?0:.35},layout:{duration:reducedMotion?0:.45}}} className="project" key={id}>
+            {visibleProjects.map((id,index) => { const project = cases[id]; return <article className="project" key={id}>
               <a className="project-link" href={caseHref(id)} onClick={event => openCase(event,id)} aria-haspopup="dialog" aria-label={`${copy.ui.detail}: ${project.title}`}>
                 <div className="case-visual"><img src={projectImage(id)} alt={`${project.title} · ${copy.ui.concept}`} width="1440" height="960" loading={index < 2 ? 'eager' : 'lazy'} decoding="async" /><span className="project-number">{String(ORDER.indexOf(id)+1).padStart(2,'0')}</span><span className="visual-label">{copy.ui.conceptShort}</span><span className="view-project-arrow" aria-hidden="true"><ArrowUpRightIcon size={30} /></span></div>
                 <div className="project-info"><p className="project-category">{project.category}</p><div className="project-title-row"><h3>{project.title}</h3><ArrowUpRightIcon size={25} aria-hidden="true" /></div><p className="project-brief">{project.brief}</p><div className="project-bottom"><span>{project.stack.slice(0,3).join(' · ')}</span><span className="project-cta">{copy.ui.readCase}<ArrowRightIcon size={16} aria-hidden="true" /></span></div></div>
               </a>
-            </motion.article>; })}</AnimatePresence>
+            </article>; })}
           </div>
-          <p className="presentation-note">{copy.ui.portfolioNote}</p>
         </section>
         <section className="expertise-section" id="expertise" aria-labelledby="expertise-title">
           <Reveal><p className="eyebrow">{copy.services.eyebrow}</p><div className="section-heading"><h2 id="expertise-title">{copy.services.title}</h2><p>{copy.services.description}</p></div></Reveal>
           <div className="expertise-layout">
-            <div className="expertise-nav" role="group" aria-label={copy.ui.scope}>{copy.services.items.map((service,index) => {const Icon=SERVICE_ICONS[service.id];return <button type="button" className={serviceId===service.id?'selected':''} aria-pressed={serviceId===service.id} aria-controls="service-panel" key={service.id} onClick={() => setServiceId(service.id)}>
+            <div className="expertise-nav" role="group" aria-label={copy.ui.scope}>{copy.services.items.map((service,index) => <button type="button" className={serviceId===service.id?'selected':''} aria-pressed={serviceId===service.id} aria-controls="service-panel" key={service.id} onClick={() => setServiceId(service.id)}>
               <span className="service-number">{String(index+1).padStart(2,'0')}</span>
-              <Icon className="service-tile-icon" size={30} weight="light" aria-hidden="true" />
               <span className="service-tile-title">{service.title}</span>
-              <small className="service-tile-stack" aria-hidden="true">{service.stack.slice(0,2).join(' / ')}</small>
               <ArrowUpRightIcon className="service-tile-arrow" size={19} aria-hidden="true" />
-            </button>;})}</div>
-            <motion.div id="service-panel" className={`service-panel service-${activeService.id}`} key={activeService.id} initial={{opacity:0,y:8}} animate={{opacity:1,y:0}} transition={{duration:.25}}>
-              <div className="service-topline"><span className="eyebrow">{copy.ui.serviceScope}</span><span className="service-code">/{activeService.id.toUpperCase()}</span></div>
-              <div className="service-panel-heading"><span className="service-panel-icon" aria-hidden="true"><ActiveServiceIcon size={29} weight="light" /></span><h3>{activeService.title}</h3></div><p className="service-description">{activeService.description}</p>
+            </button>)}</div>
+            <div id="service-panel" className={`service-panel service-${activeService.id}`} key={activeService.id}>
+              <div className="service-topline"><span className="eyebrow">{copy.ui.serviceScope}</span></div>
+              <div className="service-panel-heading"><h3>{activeService.title}</h3></div><p className="service-description">{activeService.description}</p>
               <ul className="service-deliveries">{activeService.scope.map(item => <li key={item}><CheckIcon size={18} aria-hidden="true" />{item}</li>)}</ul>
               <div className="stack-list">{activeService.stack.map(item => <span key={item}>{item}</span>)}</div>
               <div className="service-cases"><p className="eyebrow">{copy.ui.serviceWork}</p><div className="service-case-grid">{activeService.cases.map(id => <a className="service-case" key={id} href={caseHref(id)} onClick={event=>openCase(event,id)} aria-haspopup="dialog"><img src={projectImage(id)} width="1440" height="960" alt="" loading="lazy" /><span>{cases[id].title}</span><ArrowUpRightIcon size={18} aria-hidden="true" /></a>)}</div>{activeService.id==='ios'?<a className="service-extra-link" href={caseHref('hybrid-ios')} onClick={event=>openCase(event,'hybrid-ios')} aria-haspopup="dialog">{copy.ui.webviewLink}<ArrowUpRightIcon size={19} aria-hidden="true" /></a>:null}</div>
-            </motion.div>
+            </div>
           </div>
         </section>
         <section className="about-section" id="about" aria-labelledby="about-title">
-          <Reveal className="about-intro"><div className="about-topline"><p className="eyebrow">{copy.nav.process}</p><span className="brand-symbol about-mark" aria-hidden="true"><i /><i /><i /></span></div><h2 id="about-title">{copy.ui.about}</h2><p>{copy.ui.aboutBody}</p><div className="about-ownership"><p className="ownership-note">{copy.ui.aboutNote}</p><a className="text-link" href={content.identity.github} target="_blank" rel="noopener noreferrer">GitHub<ArrowUpRightIcon size={20} aria-hidden="true" /></a></div></Reveal>
+          <Reveal className="about-intro"><div className="about-topline"><p className="eyebrow">{copy.nav.process}</p></div><h2 id="about-title">{copy.ui.about}</h2><p>{copy.ui.aboutBody}</p><div className="about-ownership"><p className="ownership-note">{copy.ui.aboutNote}</p><a className="text-link" href={content.identity.github} target="_blank" rel="noopener noreferrer">GitHub<ArrowUpRightIcon size={20} aria-hidden="true" /></a></div></Reveal>
           <div className="process-panel"><p className="eyebrow">{copy.process.eyebrow}</p><div className="process-list">{copy.process.steps.map((step,index)=><details key={step.id} open={index===0?true:undefined}><summary><span>{String(index+1).padStart(2,'0')}</span><strong className="process-step-title">{step.title}</strong><PlusIcon className="details-icon" size={20} aria-hidden="true" /></summary><p>{step.description}</p></details>)}</div><div className="tech-note"><h3>{copy.ui.techTitle}</h3><p>{copy.ui.techBody}</p></div></div>
         </section>
-        <section className="contact-section" id="contact" aria-labelledby="contact-title"><Reveal><p className="eyebrow">{copy.contact.eyebrow}</p><div className="contact-heading"><h2 id="contact-title">{copy.contact.title}</h2><a className="contact-arrow" href={`mailto:${content.identity.email}`} aria-label={copy.hero.secondaryAction}><ArrowUpRightIcon size={68} weight="light" aria-hidden="true" /></a></div><p className="contact-description">{copy.contact.description}</p><div className="footer-contact"><a className="email-link" ref={emailRef} href={`mailto:${content.identity.email}`} aria-label={`${copy.ui.email}: ${content.identity.email}`}>{content.identity.email}</a><button className="copy-email" type="button" aria-label={copy.ui.copyEmail} title={copy.ui.copyEmail} onClick={copyEmail}>{emailCopied?<CheckIcon size={20} aria-hidden="true" />:<CopyIcon size={20} aria-hidden="true" />}</button><span className="copy-status" role="status" aria-live="polite">{emailCopied?copy.ui.emailCopied:''}</span></div></Reveal></section>
+        <section className="contact-section" id="contact" aria-labelledby="contact-title"><Reveal><p className="eyebrow">{copy.contact.eyebrow}</p><div className="contact-heading"><h2 id="contact-title">{copy.contact.title}</h2></div><p className="contact-description">{copy.contact.description}</p><div className="contact-actions"><a className="primary-button" href={`mailto:${content.identity.email}?subject=${encodeURIComponent(language === 'ru' ? 'Обсудить проект' : 'Project enquiry')}`}>{copy.ui.email}<ArrowUpRightIcon size={20} aria-hidden="true" /></a><a className="text-link" href={content.identity.github} target="_blank" rel="noopener noreferrer">GitHub<ArrowUpRightIcon size={18} aria-hidden="true" /></a></div><div className="footer-contact"><a className="email-link" ref={emailRef} href={`mailto:${content.identity.email}`} aria-label={`${copy.ui.email}: ${content.identity.email}`}>{content.identity.email}</a><button className="copy-email" type="button" aria-label={copy.ui.copyEmail} title={copy.ui.copyEmail} onClick={copyEmail}>{emailCopied?<CheckIcon size={20} aria-hidden="true" />:<CopyIcon size={20} aria-hidden="true" />}</button><span className="copy-status" role="status" aria-live="polite">{emailCopied?copy.ui.emailCopied:''}</span></div></Reveal></section>
       </main>
       <footer><a className="wordmark" href="#top">{copy.name}<span>.</span></a><span className="footer-note">FULLSTACK ENGINEER · APPLIED AI</span><a className="github-link" href={content.identity.github} target="_blank" rel="noopener noreferrer" aria-label={copy.contact.githubAction}>GitHub<ArrowUpRightIcon size={18} aria-hidden="true" /></a><a className="top-link" href="#top" aria-label={copy.ui.backToTop} title={copy.ui.backToTop}><ArrowUpIcon size={21} aria-hidden="true" /></a></footer>
 
@@ -349,21 +327,21 @@ export function App() {
                 {copy.ui.close}<XIcon size={22} aria-hidden="true" />
               </button>
             </div>
-            <motion.div className="case-intro" key={activeCase.id} initial={{opacity:0,y:reducedMotion?0:16}} animate={{opacity:1,y:0}} transition={{duration:reducedMotion?0:.4,ease:[.22,1,.36,1]}}>
+            <div className="case-intro" key={activeCase.id}>
               <p className="eyebrow">{activeCase.category}</p>
               <h2 id="case-title">{activeCase.title}</h2>
               <p className="case-lede">{activeCase.brief}</p>
-            </motion.div>
+            </div>
             <div className="case-cover">
+              <div className="case-facts">
+                {activeCase.audience ? <div><h3>{copy.ui.audience}</h3><p>{activeCase.audience}</p></div> : null}
+                {activeCase.role ? <div><h3>{copy.ui.role}</h3><p>{activeCase.role}</p></div> : null}
+                <div><h3>{copy.ui.stack}</h3><ul className="stack-list">{activeCase.stack.map(tool => <li key={tool}>{tool}</li>)}</ul></div>
+              </div>
               <figure>
                 <img src={projectImage(activeCase.id)} alt={`${activeCase.title} · ${copy.ui.concept}`} width="1440" height="960" decoding="async" />
                 <figcaption>{copy.work.conceptExplanation}</figcaption>
               </figure>
-              <div className="case-facts">
-                <div><h3>{copy.ui.audience}</h3><p>{activeCase.audience || copy.services.items[1].description}</p></div>
-                <div><h3>{copy.ui.role}</h3><p>{activeCase.role || copy.ui.roleValue}</p></div>
-                <div><h3>{copy.ui.stack}</h3><ul className="stack-list">{activeCase.stack.map(tool => <li key={tool}>{tool}</li>)}</ul></div>
-              </div>
             </div>
             <div className="case-layout">
               <nav className="case-toc" aria-label={copy.ui.detail}>
@@ -419,6 +397,5 @@ export function App() {
         ) : null}
       </dialog>
     </div>
-    </MotionConfig>
   );
 }

@@ -28,6 +28,6 @@ npm run preview
 
 The static website is built into `dist/client`. GitHub Actions builds, checks and deploys the site to GitHub Pages on pushes to `main`.
 
-Built with React, Vite and Motion. English/Russian content lives in `src/content.json`. Navigation supports direct case links, browser history, keyboard controls and reduced-motion preferences.
+Built with React and Vite. English/Russian content lives in `src/content.json`. Navigation supports direct case links, browser history, keyboard controls and reduced-motion preferences. The opening section links to three representative cases; the full catalogue remains filterable in gallery and list views.
 
 Contact: kheladzedev@gmail.com

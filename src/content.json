@@ -7,24 +7,24 @@
   "locales": {
     "en": {
       "meta": {
-        "title": "Eduard — Fullstack Engineer & Applied AI",
-        "description": "Web products, iOS apps, backend systems, AI agents, machine learning and 1C integrations. Engineering portfolio by Eduard."
+        "title": "Eduard | Web products, iOS & AI",
+        "description": "Web products, iPhone apps and AI assistants built by Eduard. Explore the projects, implementation details and ways to work together."
       },
       "nav": {
         "work": "Work",
-        "services": "Expertise",
+        "services": "Services",
         "process": "About",
-        "contact": "Contact",
+        "contact": "Get in touch",
         "language": "Language"
       },
       "hero": {
-        "eyebrow": "FULLSTACK ENGINEER · APPLIED AI",
+        "eyebrow": "Eduard / Fullstack developer",
         "title": [
-          "Fullstack.",
-          "Applied AI."
+          "Web products,",
+          "apps & AI."
         ],
-        "description": "I turn product ideas and complex workflows into software: web platforms, iOS apps, backend systems and applied AI.",
-        "primaryAction": "Explore the work",
+        "description": "I build software for everyday work: sales team apps, campaign analytics, document search and AI assistants connected to your tools.",
+        "primaryAction": "View projects",
         "secondaryAction": "Discuss a project",
         "capabilities": [
           "Web",
@@ -34,28 +34,48 @@
           "ML / CV",
           "1C"
         ],
-        "footnote": "From architecture and interface to integrations and launch."
+        "footnote": "I handle the interface, backend and integrations.",
+        "selectionTitle": "Start with a project",
+        "selectionNote": "All 14 projects",
+        "selectedProjects": [
+          {
+            "id": "agent-workflows",
+            "label": "Automate a workflow",
+            "description": "AI agents with tools and human approval."
+          },
+          {
+            "id": "sales-app",
+            "label": "Build an app for your team",
+            "description": "An iOS app for reporting, backed by its own API."
+          },
+          {
+            "id": "knowledge-search",
+            "label": "Find answers in documents",
+            "description": "Search and answers linked to source passages."
+          }
+        ],
+        "selectionDisclosure": "Images are interface concepts."
       },
       "work": {
         "eyebrow": "Portfolio",
-        "title": "Selected engineering",
-        "description": "Explore what each product does, who it serves and how I built it.",
-        "caseAction": "View project",
+        "title": "Projects & their problems",
+        "description": "Mobile apps, business tools and AI. Each case covers the task, my role and the implementation.",
+        "caseAction": "Read the case",
         "closeAction": "Close project",
         "problemLabel": "The task",
-        "implementationLabel": "What I built",
-        "resultLabel": "How it works",
+        "implementationLabel": "My contribution",
+        "resultLabel": "Implementation result",
         "conceptCaption": "Interface concept · Sample data",
-        "conceptExplanation": "Presentation concept with illustrative interface screens and sample data."
+        "conceptExplanation": "Portfolio illustration with sample data."
       },
       "services": {
         "eyebrow": "Services",
-        "title": "One product.\nEvery layer.",
+        "title": "What I can build",
         "items": [
           {
             "id": "web",
-            "title": "Fullstack & web",
-            "description": "Customer-facing websites, product workspaces and internal tools with the services behind them.",
+            "title": "Web applications",
+            "description": "Customer portals, reporting dashboards and internal tools, with the backend they need.",
             "scope": [
               "Web interfaces",
               "Product workflows",
@@ -73,8 +93,8 @@
           },
           {
             "id": "ios",
-            "title": "iOS & mobile",
-            "description": "Native applications with their own navigation, local data and device integrations. WebView modules where the product needs them.",
+            "title": "iPhone apps",
+            "description": "Native screens, local storage and API connections. Camera, file access and WebView where needed.",
             "scope": [
               "Native SwiftUI screens",
               "Local storage & app state",
@@ -93,7 +113,7 @@
           {
             "id": "backend",
             "title": "Backend & integrations",
-            "description": "APIs, business logic, permissions and background processing. Connect services without losing track of data or failed operations.",
+            "description": "APIs, access control and background jobs. Service integrations with error handling and retry rules.",
             "scope": [
               "APIs & access control",
               "Background jobs & queues",
@@ -113,8 +133,8 @@
           },
           {
             "id": "ai",
-            "title": "AI agents & knowledge",
-            "description": "Assistants that retrieve information and use tools. Explicit execution rules, approval steps and evaluation keep their behavior inspectable.",
+            "title": "AI assistants & search",
+            "description": "Answers from your documents and agents that use tools, with sources, execution history and approval steps.",
             "scope": [
               "Agent orchestration & tools",
               "RAG & document search",
@@ -134,8 +154,8 @@
           },
           {
             "id": "ml",
-            "title": "Machine learning & vision",
-            "description": "Models for text and images: classification, semantic search, object detection and segmentation, connected to application workflows.",
+            "title": "Text & image models",
+            "description": "Classification, semantic search, object detection and segmentation. Data preparation, model evaluation and app integration.",
             "scope": [
               "Dataset preparation",
               "Model training & evaluation",
@@ -154,8 +174,8 @@
           },
           {
             "id": "enterprise",
-            "title": "1C & business systems",
-            "description": "Customizations and integrations for accounting and operational workflows: documents, reporting, contracts and message exchange.",
+            "title": "1C & data exchange",
+            "description": "Contracts, payment schedules, reports and accounting changes. API and message-based exchange with other systems.",
             "scope": [
               "ERP / accounting customizations",
               "Contracts, payment plans & reports",
@@ -173,40 +193,40 @@
             ]
           }
         ],
-        "description": "Bring a new idea, an existing product or a process that needs to work better. I connect the interface, data and business logic."
+        "description": "I can build a new product or work on an existing one: its interface, API, mobile app or a specific integration."
       },
       "process": {
         "eyebrow": "Working together",
-        "title": "From scope to handover.",
-        "ownership": "I handle architecture and development. My partner handles project communication and support.",
+        "title": "Agree on the task. Then build.",
+        "ownership": "I develop the product. My partner handles project communication and support.",
         "steps": [
           {
             "id": "scope",
-            "title": "Define the scope",
-            "description": "Start with the problem, the people who use the product and the constraints. Agree on the first version, integrations and what counts as done."
+            "title": "Define the first version",
+            "description": "Agree on users, constraints and integrations. Write down what needs to work and how to check it."
           },
           {
             "id": "design",
-            "title": "Review the interface",
-            "description": "Map the main screens and review how people will use them. Existing designs can serve as the starting point."
+            "title": "Review the screens",
+            "description": "Work through the main user actions and screens. Use existing designs when available."
           },
           {
             "id": "build",
-            "title": "Build in stages",
-            "description": "Review working features as they take shape. Test user journeys, data flows and integrations before launch."
+            "title": "Review working features",
+            "description": "Build in stages and review the results. Check user flows, data and integrations before release."
           },
           {
             "id": "handover",
-            "title": "Prepare the handover",
-            "description": "Document deployment and configuration, and agree on support after launch."
+            "title": "Hand over the project",
+            "description": "Prepare setup and deployment instructions, then agree on ongoing support."
           }
         ]
       },
       "contact": {
         "eyebrow": "Contact",
-        "title": "What should we\nbuild next?",
-        "description": "What do you want to build or improve? A short description is enough to start. Share your priorities, any existing product and your target timeline.",
-        "emailAction": "Email about a project",
+        "title": "Tell me what you’re building.",
+        "description": "Share what you need, what already exists and your timeline. A few sentences or a link to the current product is enough to start.",
+        "emailAction": "Email me",
         "githubAction": "GitHub profile"
       },
       "cases": [
@@ -214,39 +234,39 @@
           "id": "job-search",
           "title": "Job-search platform",
           "category": "Web application · AI workflow",
-          "brief": "Profiles, vacancy matching, application drafts and interview tracking in one browser workspace.",
-          "problem": "A job search involves different resumes, job boards, application texts and follow-ups. The product keeps this work connected to the right profile and vacancy.",
+          "brief": "Vacancy matching, application drafts and interview history across several resumes.",
+          "problem": "Searching across several roles makes it easy to lose track of resume versions, letters and follow-ups. Each vacancy needs its own history.",
           "implementation": [
             "A browser interface for profiles, resumes, applications and interviews.",
             "Queued vacancy search, matching and cover-letter preparation.",
             "Profile-specific browser sessions and PostgreSQL records for prepared applications."
           ],
-          "whatResultIsVerified": "The preparation workflow saves application drafts with their vacancy, resume and supporting information. These records remain available for review; sending is a separate user-confirmed action.",
+          "whatResultIsVerified": "Each draft stores its vacancy, resume version and supporting facts. The user reviews the text and confirms sending as a separate action.",
           "stack": [
             "Next.js",
             "React",
             "TypeScript",
             "PostgreSQL"
           ],
-          "overview": "The project covers the working steps between choosing a search profile and reviewing an application. A user can keep several resumes, search through a connected source, evaluate a vacancy and prepare a letter without losing the context used to write it. The same website contains the application board and administration area.",
+          "overview": "A user selects a profile and resume, finds relevant vacancies and prepares a letter. Drafts retain the facts used to write them. Search, applications and interviews stay accessible in the browser.",
           "audience": "Job seekers managing several search directions and the operators maintaining the service.",
           "role": "Architecture, browser interface, backend workflows, model integration and application records.",
           "modules": [
             {
               "title": "Profiles and resumes",
-              "text": "A search uses an explicit profile and resume. Server checks verify ownership before reading resume content or saving an application."
+              "text": "A search uses a selected profile and resume. The server checks ownership before reading or saving data."
             },
             {
               "title": "Vacancy preparation",
-              "text": "The worker searches a connected source, removes duplicate vacancy IDs and reads the selected vacancy before requesting a match assessment."
+              "text": "The worker searches a connected source, removes duplicate vacancy IDs and reads descriptions before assessing the match."
             },
             {
               "title": "Application drafts",
-              "text": "Matching and drafting are separate stages. A draft records its resume version, model and supporting evidence alongside the letter text."
+              "text": "Matching and drafting run as separate stages. A draft records the resume version, model and facts used in the letter."
             },
             {
               "title": "Search workspace",
-              "text": "The application list supports profile and status filters. Saved vacancy details, letters and interview screens keep the next action visible."
+              "text": "Applications can be filtered by profile and status. Records contain the vacancy and letter; interviews have a separate section."
             }
           ],
           "flow": [
@@ -261,7 +281,7 @@
               "text": "PostgreSQL stores queued work and prepared applications. Checkpoints let the worker verify its execution state between browser and model operations."
             },
             {
-              "title": "Resume-bound generation",
+              "title": "Tying drafts to a resume",
               "text": "A passing match assessment precedes drafting. Each draft retains its resume fingerprint and the facts used to write it."
             }
           ],
@@ -270,21 +290,21 @@
             "Search workers, preparation services and database persistence.",
             "Administration screens and local deployment instructions."
           ],
-          "valueTitle": "A clear next step for every opportunity",
-          "valueText": "A candidate can keep profiles, relevant vacancies, drafts and interview dates together. Reviewing a prepared application becomes a distinct step, with the vacancy and resume context close at hand."
+          "valueTitle": "A history for every application",
+          "valueText": "Each record shows the selected resume, the prepared letter and the current application stage."
         },
         {
           "id": "campaign-intelligence",
           "title": "Campaign analytics",
           "category": "Analytics / AI assistant",
-          "brief": "Campaign reports and an AI assistant that explains performance using connected data.",
-          "problem": "A media-buying team needs to compare accounts, campaigns and reporting periods without rebuilding the same analysis. An answer is useful only when the reader can identify its source, date range and permitted data.",
+          "brief": "Advertising reports and an AI assistant for questions about campaigns, spend and profit.",
+          "problem": "Media buyers need to compare campaigns and periods without rebuilding reports. Every conclusion needs figures and dates that can be checked.",
           "implementation": [
             "Connected reporting data to a scheduled synchronization service and analytical workspace.",
             "Built an assistant for questions about campaign data, with access controls, source notes and saved conversations.",
             "Added team access, report presets and operational controls for administrators."
           ],
-          "whatResultIsVerified": "The workspace brings dashboards, detailed statistics and saved discussions together. Answers keep the reporting period and source visible.",
+          "whatResultIsVerified": "The app combines a dashboard, detailed reports and saved conversations. Assistant answers retain their reporting period and source.",
           "stack": [
             "React",
             "Python",
@@ -292,25 +312,25 @@
             "PostgreSQL",
             "LLM integration"
           ],
-          "overview": "The review starts with an overview of spend, revenue and profit. A user can follow a change into campaign or geographic breakdowns, then ask a focused question while keeping the reporting period visible.",
+          "overview": "The review starts with spend, revenue and profit for a selected period. Users open a campaign or geographic breakdown and ask about the data. The source and period remain visible with the answer.",
           "audience": "Media buyers and team leads reviewing campaign performance and deciding what to investigate.",
           "role": "Full-stack development across the reporting interface, API, data synchronization and assistant integration.",
           "modules": [
             {
               "title": "Performance overview",
-              "text": "Summary cards and comparison periods establish context. Detail views group results by teams, buyers, campaigns and other available dimensions."
+              "text": "Summary cards show spend, revenue and profit. Breakdowns group results by teams, buyers, campaigns and other available dimensions."
             },
             {
               "title": "Report workspace",
-              "text": "Filters, grouped dimensions and saved presets support recurring analysis. Data timestamps help the reader judge whether a report covers the intended period."
+              "text": "Filters and saved presets support recurring reports. Timestamps show when the data was updated."
             },
             {
               "title": "Ask about campaign data",
-              "text": "The assistant selects permitted sources and explains a bounded set of results. Answers retain their source and period alongside the conversation history."
+              "text": "The assistant uses sources the user can access. Conversations retain the question, answer, period and supporting data."
             },
             {
               "title": "Administration",
-              "text": "Operators can inspect synchronization, request logs and model usage. Versioned instructions let teams adjust answer style without expanding access to data."
+              "text": "Operators inspect synchronization, request logs and model usage. Versioned instructions adjust the answers while preserving access rules."
             }
           ],
           "flow": [
@@ -321,12 +341,12 @@
           ],
           "engineering": [
             {
-              "title": "One access boundary",
+              "title": "Access checks before retrieval",
               "text": "The API applies team and owner scope before reading analytics. A question about another team cannot grant access to its records."
             },
             {
-              "title": "Traceable answers",
-              "text": "PostgreSQL stores reporting snapshots and conversations. The assistant explains prepared evidence; it cannot change campaigns or advertising budgets."
+              "title": "The source behind each answer",
+              "text": "PostgreSQL stores report snapshots and conversations. The assistant explains these records. A person makes changes to campaigns and budgets."
             }
           ],
           "deliverables": [
@@ -334,46 +354,46 @@
             "Data synchronization and administration interface.",
             "Assistant integration with saved, attributable answers."
           ],
-          "valueTitle": "From campaign data to an answer",
-          "valueText": "A marketer can compare periods, inspect the numbers behind a report and ask a follow-up question in the same workspace. The answer stays connected to its source data."
+          "valueTitle": "Ask questions inside the report",
+          "valueText": "A marketer selects the data, asks a follow-up question and checks the answer against the figures in the same window."
         },
         {
           "id": "campaign-operations",
           "title": "Campaign operations",
           "category": "Workflow software / API integration",
-          "brief": "A reviewable workflow for campaign plans, approvals and execution jobs.",
-          "problem": "Campaign preparation combines accounts, targeting, budgets and creative assignments. An operator needs to verify the complete configuration before execution and later identify which version was approved, who approved it and what happened to the job.",
+          "brief": "Campaign plans with parameter checks, approval and queued execution.",
+          "problem": "Budgets, audiences and creatives need review before a campaign is created. Execution must use the approved version and leave a record of what happened.",
           "implementation": [
             "Built structured plans with validation and immutable configuration snapshots.",
             "Connected administrator approval to the exact plan and execution queue.",
-            "Added workstation agents, status tracking and provider integration boundaries."
+            "Added workstation agents, job status tracking and provider connections."
           ],
-          "whatResultIsVerified": "Operators can prepare and approve a plan, then track its queued execution. The provider integration is demonstrated in a sandbox, with campaign objects kept paused.",
+          "whatResultIsVerified": "Plans pass through approval and a job queue. The advertising provider integration is demonstrated in a test environment; created objects remain paused.",
           "stack": [
             "React",
             "FastAPI",
             "PostgreSQL",
             "Node.js"
           ],
-          "overview": "A campaign begins as a structured plan. Review brings its budget, audience settings and creative assignments together. Approval applies to that exact snapshot, giving the operator a consistent reference throughout execution and troubleshooting.",
+          "overview": "An operator fills in and reviews a plan. An administrator approves the saved version, which then accompanies the queued job. Changes require a new plan.",
           "audience": "Media buyers preparing campaign setups and administrators responsible for reviewing execution.",
           "role": "Full-stack development of the planning interface, workflow API, persistence and workstation agent.",
           "modules": [
             {
               "title": "Plan editor",
-              "text": "The form collects account context, targeting, budget and creative assignments. Validation checks required fields and whether ad-set budgets match the campaign total."
+              "text": "The form collects the account, audience, budget and creatives. Checks cover required fields and whether group budgets match the daily total."
             },
             {
               "title": "Approval",
-              "text": "The review view exposes the saved configuration and its fingerprint. An administrator grants a short-lived, single-use approval for that specific version."
+              "text": "The administrator reviews the saved parameters and approves that version. Approval is single-use and expires."
             },
             {
               "title": "Queue and status",
-              "text": "Jobs show whether work is waiting, claimed, running or finished with a recorded result. Operators can cancel work that remains in the queue."
+              "text": "Statuses show waiting, pickup, execution and the recorded result. A job can be cancelled before an agent claims it."
             },
             {
               "title": "Workstation agents",
-              "text": "Each agent belongs to an owner and connection. Only a matching device can receive a job; provider credentials stay on the workstation."
+              "text": "Only a device matching the owner and connection can claim the job. Provider credentials stay on the workstation."
             }
           ],
           "flow": [
@@ -384,12 +404,12 @@
           ],
           "engineering": [
             {
-              "title": "Exact configuration",
-              "text": "PostgreSQL preserves plans and job events. Hash-bound approval and idempotent submission link execution to the reviewed configuration and guard against duplicate jobs."
+              "title": "Executing the approved version",
+              "text": "PostgreSQL stores plans and job events. Approval uses a configuration hash; idempotent submission prevents duplicate jobs."
             },
             {
-              "title": "Bounded execution",
-              "text": "Agents use leases and heartbeats to report progress. Successful creation requires a verified PAUSED result, leaving campaign activation to a human operator."
+              "title": "Job progress and completion",
+              "text": "Agents claim jobs for a limited time and send status updates. Successful creation requires a verified PAUSED status. A person activates the campaign after review."
             }
           ],
           "deliverables": [
@@ -397,21 +417,21 @@
             "Persistent workflow API with execution records.",
             "Workstation agent and sandbox demonstration flow."
           ],
-          "valueTitle": "Review before execution",
-          "valueText": "A campaign plan can be checked and approved before execution jobs are created. Operators can inspect job status and history instead of treating a launch request as an invisible background action."
+          "valueTitle": "An approved plan and an execution record",
+          "valueText": "The operator can see which parameters were approved, which device received the job and how processing ended."
         },
         {
           "id": "match-analytics",
           "title": "Match analytics",
           "category": "Data processing / Web application",
-          "brief": "Personal reports from CS2 and Dota 2 replay files, with supporting match data.",
-          "problem": "A replay contains events, participants and timing information, but a player needs a focused review of their own match. Useful analysis must keep calculated statistics connected to source events and show where the replay cannot support a conclusion.",
+          "brief": "CS2 and Dota 2 replay analysis: player metrics, source events and match comparisons.",
+          "problem": "A replay contains many events. Players need a report about their own performance, with calculations they can check and visible gaps in the data.",
           "implementation": [
             "Built replay upload, participant selection and background analysis.",
-            "Connected game-specific parsers to player reports and downloadable evidence.",
+            "Connected game-specific parsers to player reports and downloadable source data.",
             "Added report history, metric comparisons and paired English and Russian interfaces."
           ],
-          "whatResultIsVerified": "A supported replay file produces a saved report for the selected player, with statistics linked to source events. Missing values remain visible, and compatible completed reports can be compared.",
+          "whatResultIsVerified": "A supported replay produces a player report linked to source events. Data gaps remain visible. Comparisons use compatible, completed reports.",
           "stack": [
             "Python",
             "FastAPI",
@@ -419,25 +439,25 @@
             "Background jobs",
             "Data analysis"
           ],
-          "overview": "The user uploads a supported replay file and selects a participant. Background processing extracts the relevant events, calculates game-specific statistics and saves a report. The player can inspect the supporting data and compare compatible completed matches.",
+          "overview": "A user uploads a supported replay and selects a player. A background worker extracts events and saves a personal report. Completed matches can be compared and source data exported.",
           "audience": "Individual CS2 and Dota 2 players reviewing their performance after a match.",
           "role": "Web application and backend development across upload, processing, reports and data validation.",
           "modules": [
             {
               "title": "Replay intake",
-              "text": "Upload checks cover file format, size and allowance. Content hashes identify duplicate replay files, while participant discovery helps users select the correct player."
+              "text": "Checks cover file format, size and upload limits. A content hash identifies repeated files. The user selects a player before analysis."
             },
             {
               "title": "Background analysis",
-              "text": "A separate worker processes queued tasks through game adapters. Parsing and player-specific reporting are separate stages, allowing compatible parsed data to serve multiple participants."
+              "text": "A worker runs the adapter for the selected game. Event extraction is separate from player reports, so compatible parsed data can serve several players."
             },
             {
               "title": "Player reports",
-              "text": "Reports combine measured statistics with source-linked observations. A downloadable evidence file keeps the underlying facts available for a closer review."
+              "text": "Metrics and observations link to source events. Data can be exported for inspection outside the app."
             },
             {
               "title": "History and comparison",
-              "text": "Saved reports support metric comparisons across matches. The comparison excludes explicitly incomplete results and keeps game and player identity consistent."
+              "text": "Comparisons check the game and player identity. Incomplete results are excluded from trend calculations."
             }
           ],
           "flow": [
@@ -448,12 +468,12 @@
           ],
           "engineering": [
             {
-              "title": "Reproducible processing",
-              "text": "Parser and pipeline versions participate in result identity. Reusing a compatible parse avoids repeating the same extraction while preserving the relationship to its source."
+              "title": "Reusing parsed data",
+              "text": "Results record the parser and processing versions. Compatible parsed data can be reused while retaining its link to the original file."
             },
             {
-              "title": "Explicit data quality",
-              "text": "Unknown values remain unknown. Validation checks provenance and rejects unsupported metrics; the interface keeps these limits visible instead of inventing complete statistics."
+              "title": "Handling incomplete data",
+              "text": "Validation rejects metrics unsupported by source data. The interface shows gaps and replay limitations."
             }
           ],
           "deliverables": [
@@ -461,46 +481,46 @@
             "Upload and background-processing backend with game adapters.",
             "Player reports, history and downloadable supporting data."
           ],
-          "valueTitle": "A match report you can inspect",
-          "valueText": "A player or analyst can move from a replay file to a personal report, then inspect the supporting events and tables. Structured data makes it easier to revisit the analysis and compare the underlying evidence."
+          "valueTitle": "Metrics linked to match events",
+          "valueText": "Players can check calculations against source events and compare their performance across completed matches."
         },
         {
           "id": "sales-app",
           "title": "Sales team app",
           "category": "iOS · API · Backend",
-          "brief": "Reporting, goals, learning and support in a native business app.",
-          "problem": "A sales team needs a place to record daily results, follow goals and access training.",
+          "brief": "An iOS app for daily sales reports, targets, training and employee support.",
+          "problem": "Sales staff need to report results, check targets and complete training from their phones.",
           "implementation": [
             "SwiftUI dashboards, daily reporting, rankings and learning modules.",
             "An authenticated API client with token refresh and typed responses.",
             "A FastAPI backend with PostgreSQL, employee-specific data and calculation endpoints."
           ],
-          "whatResultIsVerified": "The app reads business data through the API and records daily submissions and learning progress.",
+          "whatResultIsVerified": "The app retrieves data through an API and saves employee reports and training progress.",
           "stack": [
             "SwiftUI",
             "Swift",
             "FastAPI",
             "PostgreSQL"
           ],
-          "overview": "A native workspace for a sales employee, with a connected backend for daily reporting, individual goals, learning and support. The project covers the mobile screens and the API that supplies them. Dashboard, reporting and training data use the same employee context, so the app can move between these tasks without asking the user to re-enter their details.",
+          "overview": "I built the iPhone app and its backend. Daily reports, monthly targets, training progress and support conversations connect to each employee profile.",
           "audience": "Sales employees and the managers responsible for their results and training.",
           "role": "iOS interface, API integration, data models and backend endpoints.",
           "modules": [
             {
               "title": "Dashboard and goals",
-              "text": "The start screen brings together the employee profile, current indicators and monthly targets. The user can review the current position before moving into daily reporting or a detailed calculation."
+              "text": "The home screen shows the employee profile, current results and monthly targets, with access to daily reporting and the calculator."
             },
             {
               "title": "Daily reporting",
-              "text": "A dedicated form records the day's results and sends them to the backend. The history keeps earlier submissions available for review, while rankings provide a separate view of team performance."
+              "text": "A form sends results to the server. Earlier records remain in the history, while the ranking shows team performance."
             },
             {
               "title": "Learning and updates",
-              "text": "Learning modules have saved progress. A news feed tracks read items, keeping training materials and internal updates within the same app as day-to-day work."
+              "text": "The app saves training progress and tracks read news items. Work updates sit alongside reporting."
             },
             {
               "title": "Support and calculations",
-              "text": "The support area presents a personal contact and message history. Scenario calculations use structured inputs, so the screen can show the calculated result alongside the assumptions."
+              "text": "Support includes a manager contact and message history. The calculator shows its result together with the input parameters."
             }
           ],
           "flow": [
@@ -515,7 +535,7 @@
               "text": "The Swift client uses asynchronous requests and typed responses. Authentication and token refresh are handled in the network layer, keeping that logic out of individual SwiftUI screens."
             },
             {
-              "title": "Business data belongs on the server",
+              "title": "Server-side data and rules",
               "text": "FastAPI routes and PostgreSQL models separate employees, reports and learning progress. Screens request the data they need through dedicated endpoints, while user context controls which records they can access."
             }
           ],
@@ -524,15 +544,15 @@
             "An authenticated API client with refresh handling.",
             "Backend routes and data models for the mobile workflows."
           ],
-          "valueTitle": "One workspace for the sales team",
-          "valueText": "Employees can record results, check goals and find learning materials without switching between disconnected tools. Managers can work with structured reports rather than collecting updates in messages."
+          "valueTitle": "Daily work from a phone",
+          "valueText": "Employees submit reports, check their targets and continue training. Managers receive structured results."
         },
         {
           "id": "recipe-app",
           "title": "Recipe & cooking app",
           "category": "Native iOS · SwiftUI",
-          "brief": "Recipes, saved favorites and a step-by-step cooking mode.",
-          "problem": "A recipe needs to be convenient both when choosing a dish and while cooking it.",
+          "brief": "An iPhone recipe app with favorites, cooking steps and a timer.",
+          "problem": "A recipe needs to help people choose a dish and cook it. At the stove, the current step and timer are more useful than a long page of text.",
           "implementation": [
             "Recipe categories, ingredients and a step-by-step cooking view.",
             "Locally saved favorites and a countdown timer with pause and resume.",
@@ -544,25 +564,25 @@
             "UIKit",
             "Local storage"
           ],
-          "overview": "An iOS recipe catalogue built around two moments: choosing what to cook and following the recipe in the kitchen. Categories and recipe details support the first step; a focused cooking view and timer support the second. The main content is bundled with the app, and favorites are kept on the device.",
+          "overview": "Recipes are bundled with the app; favorites are stored on the device. Cooking has its own step-by-step screen and a timer with pause. Recipes can be shared through the iOS share sheet.",
           "audience": "People who want to find a dish, keep useful recipes and follow preparation steps on an iPhone.",
           "role": "SwiftUI screens, recipe models, local favorites and native sharing.",
           "modules": [
             {
               "title": "Browse and choose",
-              "text": "Recipes are grouped by category and presented with an image and cooking time. Each detail screen brings ingredients and instructions together, so users can judge the recipe before starting."
+              "text": "Categories, photos and cooking time help users pick a dish. Each recipe contains ingredients and instructions."
             },
             {
               "title": "A personal shortlist",
-              "text": "A recipe can be added to favorites from its detail screen and opened again in a dedicated collection. The saved selection is restored when the app is opened later."
+              "text": "Recipes can be saved from their detail screen. Favorites persist between app launches."
             },
             {
               "title": "Step-by-step cooking",
-              "text": "A separate cooking view shows the current instruction with forward and back controls. The navigation respects the first and last steps, keeping attention on the current part of the recipe."
+              "text": "The cooking screen shows one instruction at a time. Navigation handles the first and last steps."
             },
             {
               "title": "Timer and sharing",
-              "text": "The timer opens as its own sheet and supports starting, pausing and continuing the countdown. Recipes can also be passed to other apps through the standard iOS share sheet."
+              "text": "The timer supports start, pause and resume. The iOS share sheet sends a recipe to a chosen app."
             }
           ],
           "flow": [
@@ -574,11 +594,11 @@
           "engineering": [
             {
               "title": "One model for recipe content",
-              "text": "The recipe model holds the title, image, cooking time, ingredients, steps and category. The catalogue, detail view and cooking mode consume this common structure rather than maintaining separate copies."
+              "text": "A shared model stores the title, image, time, ingredients and steps. The catalogue, detail screen and cooking mode all use it."
             },
             {
               "title": "Local persistence with native presentation",
-              "text": "Favorites are encoded and stored locally. SwiftUI sheets separate cooking, timing and sharing from the browsing screen, while the system share sheet provides familiar destinations."
+              "text": "Favorites are saved on the device. Cooking and timing use separate SwiftUI screens; sharing uses the iOS share sheet."
             }
           ],
           "deliverables": [
@@ -586,15 +606,15 @@
             "Persistent favorites and a focused cooking view.",
             "A countdown timer and integration with iOS sharing."
           ],
-          "valueTitle": "From choosing a dish to cooking it",
-          "valueText": "The same app supports browsing at leisure and following a recipe at the stove. A shortlist helps the user return to recipes; a focused step view keeps the current action easy to read."
+          "valueTitle": "A recipe within reach while cooking",
+          "valueText": "Saved dishes stay in favorites. During cooking, the screen shows the current instruction and the timer tracks the time."
         },
         {
           "id": "inventory-app",
           "title": "Inventory & quality",
           "category": "Native iOS · Local storage",
-          "brief": "Product batches, stock movements and quality checks.",
-          "problem": "An egg-production inventory needs batch-level stock tracking, freshness checks and a movement history.",
+          "brief": "Egg inventory with batches, stock levels, sales and quality checks.",
+          "problem": "Producers need to know how much remains in each batch, when it was collected and which quality checks were recorded.",
           "implementation": [
             "Batch creation, editing and archiving, with stock movement records.",
             "Quantity validation, freshness indicators and quality checks.",
@@ -606,25 +626,25 @@
             "Swift",
             "Codable"
           ],
-          "overview": "An iOS stock-control application for egg production, with batch records, movements, quality checks and reports. The central object is the batch: its collection date, quantity, location and condition stay connected to subsequent events. A native WebKit integration is another part of the project, providing navigation and attachment selection for embedded web content.",
+          "overview": "A batch connects the collection date, quantity, storage location and later transactions. The app recalculates stock after a sale or withdrawal. A separate WebKit integration displays web content with native navigation and attachment selection.",
           "audience": "Small producers who need to track batches, remaining stock, freshness and sales.",
           "role": "SwiftUI interface, inventory calculations, local storage and WebKit integration.",
           "modules": [
             {
               "title": "Batch records",
-              "text": "Create, edit or archive a batch with its collection date, starting quantity and storage location. Freshness indicators use configurable age thresholds, helping the user choose which stock to handle first."
+              "text": "Batches can be created, edited and archived. Each record stores the collection date, quantity and location. Freshness thresholds are configurable."
             },
             {
               "title": "Stock movements",
-              "text": "Sales, usage, damage and other movement types update the current batch quantity. The movement history stays attached to the batch, making individual changes available for later review."
+              "text": "Sales, usage and damage update the remaining quantity. Each transaction stays linked to its batch."
             },
             {
               "title": "Quality and reporting",
-              "text": "Quality checks are recorded alongside stock events. Reports group inventory by location and age, summarize weekly activity and calculate sales totals from recorded transactions."
+              "text": "Reports group stock by location and age, with quality checks, weekly activity and recorded sales totals."
             },
             {
               "title": "Web content inside iOS",
-              "text": "A SwiftUI wrapper hosts WKWebView with navigation, media support and system dialogs. On supported iOS versions, web upload requests can use the camera, photo library or document picker."
+              "text": "A SwiftUI wrapper connects WKWebView with navigation, media and system dialogs. Supported iOS versions allow attachments from the camera, photo library or files."
             }
           ],
           "flow": [
@@ -648,8 +668,8 @@
             "Inventory metrics, reports and on-device persistence.",
             "A native WebView shell with navigation and attachment handling."
           ],
-          "valueTitle": "A traceable record for every batch",
-          "valueText": "Stock quantities, movements and quality observations stay attached to a batch. A small operation can see what was received, what changed and which checks were recorded without maintaining separate notes."
+          "valueTitle": "Stock and history for each batch",
+          "valueText": "A batch record brings together sales, withdrawals and quality checks."
         },
         {
           "id": "hybrid-ios",
@@ -673,14 +693,14 @@
           "id": "app-planning",
           "title": "App planning workspace",
           "category": "Web application · Desktop · AI",
-          "brief": "A local workspace that turns an app idea into a structured development brief.",
-          "problem": "An app concept needs more than a name. Screens, visual rules, data, testing and store materials need to describe the same product before implementation starts.",
+          "brief": "A local tool for planning an iOS app and exporting its development documents.",
+          "problem": "Screens, data, checks and store copy need to describe the same product version before development begins.",
           "implementation": [
             "A guided workflow for selecting a visual theme, name and app concept.",
             "Saved projects with document generation and ZIP export.",
             "An Electron desktop shell running a local Next.js server and SQLite database."
           ],
-          "whatResultIsVerified": "The generation route assembles and saves a specification pack. The export endpoint produces a ZIP from the stored project choices and generation seed.",
+          "whatResultIsVerified": "The tool saves projects and creates a ZIP using the selected parameters and saved generation variant.",
           "stack": [
             "Next.js",
             "React",
@@ -689,25 +709,25 @@
             "Electron",
             "OpenAI API"
           ],
-          "overview": "Web technology powers a local tool for organizing small iOS app ideas. Its output is a set of development documents covering the interface, data and checks for the implementation. The workflow connects an interactive wizard to server-side generation and downloadable files. The current application uses a single local user and stores projects on the computer.",
+          "overview": "A wizard collects the app idea, visual direction and screens, then generates development documents. Projects are stored locally in SQLite. The desktop version serves one user and requires no separate hosting.",
           "audience": "Developers preparing a brief for an iOS project or a coding assistant.",
           "role": "Interface development, generation logic, project storage, export endpoints and the desktop shell.",
           "modules": [
             {
               "title": "Guided project setup",
-              "text": "The wizard carries the chosen theme, name, premise, main interaction and screen list into the saved project, together with the selected coding tool."
+              "text": "The wizard saves the theme, name, app idea, main action and screens, along with the selected development tool."
             },
             {
               "title": "Idea preparation",
-              "text": "Model responses have a defined JSON shape. The generator checks categories, required content and duplicate titles before returning candidate ideas."
+              "text": "The model returns options as JSON. Validation checks categories, required fields and duplicate names."
             },
             {
               "title": "Project library",
-              "text": "SQLite stores the selected concept, metadata and generated brief. These fields provide the context for reopening a project and rebuilding its document pack."
+              "text": "SQLite stores the selected idea, store copy and development brief for reopening and exporting the project."
             },
             {
               "title": "Document export",
-              "text": "The pack includes an overview, design system, components, screens, data model, QA checklist and store materials. ZIP export adds an entry-point README."
+              "text": "The archive includes product scope, design system, components, screens, data model, checks and store materials. A README gives the starting point."
             }
           ],
           "flow": [
@@ -731,15 +751,15 @@
             "Specification generator and downloadable document archive.",
             "Local desktop runtime and packaging configuration."
           ],
-          "valueTitle": "A brief that is ready for implementation work",
-          "valueText": "A developer can turn an initial idea into a coherent set of requirements and screen descriptions, then export the documents together. Saved projects can be reopened and their document packs exported again."
+          "valueTitle": "Documents to start development",
+          "valueText": "Product, screen and data descriptions can be reviewed and handed to a developer in one archive. Saved variants can be exported again."
         },
         {
           "id": "incubation-planner",
           "title": "Incubation planner",
           "category": "Native iOS · Scheduling & records",
-          "brief": "Batch schedules, daily readings and hatch records in an iPhone application.",
-          "problem": "Several batches can be at different stages of incubation. Dates, daily checks and observations need to stay connected to the right batch.",
+          "brief": "Incubation schedules, daily measurements and hatch results for each batch.",
+          "problem": "Several batches can have different dates and stages. Measurements and observations need a clear link to the right batch.",
           "implementation": [
             "Batch planning with expected hatch dates and suggested candling and lockdown milestones.",
             "Daily temperature, humidity and weight records, with notes and configurable range checks.",
@@ -753,25 +773,25 @@
             "Codable",
             "UserNotifications"
           ],
-          "overview": "The app follows a batch from its start date to the recorded hatch result. A keeper chooses the bird type, sets the incubation length and adds the batch details. The application calculates the schedule, while daily forms capture what the keeper actually observes. Reports then summarize those records by month and bird type.",
+          "overview": "The user selects a bird species and incubation duration. The app calculates dates, schedules reminders and saves observations. Completed hatch results feed monthly and species summaries.",
           "audience": "Poultry keepers managing several incubation batches and wanting a consistent record of dates, conditions and outcomes.",
           "role": "iOS development: screens, batch models, date calculations, local persistence and notification integration.",
           "modules": [
             {
               "title": "Batch planning",
-              "text": "Create and edit batches with bird type, egg count, incubator, source and notes. Expected dates, current incubation day and progress remain tied to that batch."
+              "text": "A batch stores species, egg count, incubator, source and notes. It shows calculated dates and the current incubation day."
             },
             {
               "title": "Daily checks",
-              "text": "Record temperature, humidity, turning, water checks and optional egg weight. Reading history supports charts and flags values outside the configured ranges."
+              "text": "Forms record temperature, humidity, turning, water checks and optional weight. History feeds charts and flags readings outside the configured ranges."
             },
             {
               "title": "Candling records",
-              "text": "Log checked eggs and observations such as developing, clear or uncertain. Entries retain their batch and date for later review."
+              "text": "Records keep the number of eggs checked and observations: development, no signs or uncertainty. Each record has a date and batch."
             },
             {
               "title": "Hatch results",
-              "text": "Record hatched and unhatched counts, notes and completion date. The batch moves to completed status and contributes to the result summaries."
+              "text": "Entering hatch counts, unhatched eggs and the completion date closes the batch and adds its result to the summaries."
             }
           ],
           "flow": [
@@ -795,15 +815,15 @@
             "Data models and calculations for schedules, progress, weight changes and hatch rates.",
             "Local persistence and configurable daily and milestone reminders."
           ],
-          "valueTitle": "Daily checks with context",
-          "valueText": "The keeper can see what day a batch has reached, record readings and revisit earlier observations. Dates, reminders and hatch records form one timeline for each batch."
+          "valueTitle": "Schedules and observations by batch",
+          "valueText": "The home screen shows today's checks. Each batch opens its measurement history, observations and hatch result."
         },
         {
           "id": "personal-journal",
-          "title": "Personal journal & trends",
+          "title": "Personal journal",
           "category": "Native iOS · Journaling & charts",
-          "brief": "Daily self-ratings, short notes and a visual history of personal goals.",
-          "problem": "A single note captures one moment. Reviewing changes over time requires consistent entries, dates and a way to compare them.",
+          "brief": "Daily ratings, notes and goals with weekly and monthly charts.",
+          "problem": "Comparing days requires consistent scales and dated entries. Individual notes alone are hard to compare.",
           "implementation": [
             "A daily entry with four rating sliders, a short note and a selected or written goal.",
             "An archive with expandable entries, sorting and deletion confirmation.",
@@ -817,25 +837,25 @@
             "UserDefaults",
             "Custom charts"
           ],
-          "overview": "This journal combines a daily form with earlier entries. Energy, focus, anxiety and sense of direction use consistent scales. A note and goal add context. The latest entry, archive and period view all use the same saved data.",
+          "overview": "Users rate energy, focus, anxiety and sense of direction, then add a note and a goal. Saved entries appear in the archive and charts. Summary prompts follow predefined rules.",
           "audience": "People who want to keep brief personal notes and look back at their own ratings and goals over time.",
           "role": "Native iOS development: entry forms, archive interactions, local persistence, chart drawing and summary calculations.",
           "modules": [
             {
               "title": "Daily entry",
-              "text": "Four sliders accept self-ratings from zero to ten. The form includes a note of up to 140 characters and a goal selected from suggestions or entered as text."
+              "text": "Four scales from zero to ten, a note of up to 140 characters and a selected or custom goal."
             },
             {
               "title": "Entry archive",
-              "text": "Browse saved entries, expand a card and sort by date or calculated score. A confirmation dialog sits between selecting delete and removing a record."
+              "text": "Expandable entries can be sorted by date or a calculated score. Deleting an entry requires confirmation."
             },
             {
               "title": "Trends and averages",
-              "text": "Switch between seven and thirty days, choose a metric and inspect an individual chart point. Averages summarize the entries in that period."
+              "text": "Seven- and thirty-day charts support metric selection and individual data points. Averages use entries within the chosen period."
             },
             {
               "title": "Daily summary",
-              "text": "The home summary uses recent ratings to choose a predefined message. Goals and short notes keep the numerical view connected to the person's own words."
+              "text": "The home screen selects a predefined prompt from recent ratings. Notes and goals remain available alongside the numbers."
             }
           ],
           "flow": [
@@ -859,15 +879,15 @@
             "Local entry storage with same-day replacement and individual deletion.",
             "Interactive charts, period filters and rule-based summary logic."
           ],
-          "valueTitle": "A personal record that is easy to revisit",
-          "valueText": "Short daily entries create a history the user can browse by date or review as a trend. Ratings, notes and goals sit together so that a chart can be read alongside the context behind it."
+          "valueTitle": "Context behind the numbers",
+          "valueText": "A point on the chart can be read alongside the note and goal for that day, helping users recall the context of a rating."
         },
         {
           "id": "care-journal",
           "title": "Poultry care journal",
           "category": "Native iOS · Daily operations",
-          "brief": "Daily care tasks, flock records and practical instructions in one iPhone app.",
-          "problem": "Looking after several bird groups involves feeding, cleaning, supplies and observations. Each task needs a place, a due date and a record of completion.",
+          "brief": "Daily poultry care tasks, feed stock and an egg collection journal.",
+          "problem": "Feeding, cleaning and observations need links to a location or flock. A temporary carer also needs written instructions.",
           "implementation": [
             "Coop and bird-group records linked to tasks, egg entries and observations.",
             "Today's task list, feed quantities, low-stock thresholds and follow-up notes.",
@@ -881,25 +901,25 @@
             "Codable",
             "UserDefaults"
           ],
-          "overview": "The application organizes care around places and bird groups. Entries can belong to a specific coop or group, preserving their context. The main screen shows due work. Separate forms hold supplies, observations and instructions for someone taking over the routine.",
+          "overview": "The app connects locations and flocks to tasks, stock and observations. The home screen shows today's work. A separate section stores instructions that can be copied for a helper.",
           "audience": "Backyard poultry keepers and small homesteads managing multiple spaces, bird groups and daily care responsibilities.",
           "role": "iOS development: linked data models, SwiftUI forms, daily views, summary calculations and local storage.",
           "modules": [
             {
               "title": "Spaces and bird groups",
-              "text": "Record coops, brooders and other spaces with their status and cleaning interval. Bird groups have a type, breed, count and optional connection to a space."
+              "text": "Coops, brooders and other locations have a status and cleaning schedule. A flock stores species, breed, count and an optional location."
             },
             {
               "title": "Daily task board",
-              "text": "Tasks carry a date, category, priority and related coop. The list separates due, upcoming and completed items, with templates for common chores."
+              "text": "Tasks have a date, category, priority and location. Lists separate current, future and completed work; templates cover recurring duties."
             },
             {
               "title": "Supplies and observations",
-              "text": "Store feed quantities, units and low-stock thresholds. Care notes capture observations, actions taken and an optional date for a follow-up."
+              "text": "Feed records store quantity, units and a low-stock threshold. Observations include actions taken and an optional follow-up date."
             },
             {
               "title": "Egg-collection history",
-              "text": "Log collection counts, damaged eggs and sizes against a date and group. The summary shows daily, weekly and monthly totals with a recent-days chart."
+              "text": "Records contain collected and damaged eggs, sizes, date and flock. Summaries cover the day, week and month."
             }
           ],
           "flow": [
@@ -923,21 +943,21 @@
             "Forms for tasks, supplies, observations and sitter instructions.",
             "Local storage and date-based summaries across related records."
           ],
-          "valueTitle": "A consistent routine for everyday care",
-          "valueText": "Daily tasks, feed supplies and flock observations share the same records. Written care instructions make the routine easier to follow when the usual keeper is away."
+          "valueTitle": "Today's tasks and instructions for a helper",
+          "valueText": "Owners can review current tasks and feed stock, then copy saved care instructions when someone takes over."
         },
         {
           "id": "agent-workflows",
           "title": "AI agent workflows",
           "category": "AI engineering · Backend",
-          "brief": "Multi-step AI workflows that retrieve context, call tools and pause for human approval.",
-          "problem": "A request may require several tools and decisions. The process needs to retain context, handle failed calls and distinguish actions that require approval.",
+          "brief": "AI assistants that find information, call tools and request approval for actions.",
+          "problem": "A work task can require search, several tools and a human decision. The assistant needs to preserve state between steps and pause on errors or pending approval.",
           "implementation": [
             "Connected agents through shared state, routing and step limits in LangGraph.",
             "Integrated external tools through function calling and MCP, with argument checks and retry handling.",
             "Added approval points, regression evaluations and traces for investigating individual requests."
           ],
-          "whatResultIsVerified": "The workflow carries context between steps and resumes after human approval. Its tool choices and execution sequence can be inspected through traces and evaluation examples.",
+          "whatResultIsVerified": "The workflow passes context between steps and preserves it while awaiting approval. Traces show tool selection and the sequence of actions.",
           "stack": [
             "Python",
             "LangGraph",
@@ -947,25 +967,25 @@
             "Langfuse",
             "OpenTelemetry"
           ],
-          "overview": "My work covered orchestration and backend integration for workplace assistants. A request could retrieve information, choose a tool and continue according to its result. I worked on the state and execution rules behind that sequence, including the points where a person must review an action.",
+          "overview": "I developed execution logic and backend integrations for corporate assistants: state, routing, tool calls and pauses before actions that need human review.",
           "audience": "Teams connecting AI assistants to internal information and working tools.",
           "role": "Agent orchestration, tool integration, execution controls, evaluation and tracing.",
           "modules": [
             {
               "title": "Context and routing",
-              "text": "Shared state carries retrieved information and intermediate results. Routing chooses the next step, with a limit on how long execution can continue."
+              "text": "Shared state stores retrieved information and intermediate results. Routing chooses the next step; a step limit stops loops."
             },
             {
               "title": "Tool calls",
-              "text": "Function calling and MCP connect external capabilities. Argument checks, retries and fallback paths handle invalid inputs or failed tool responses."
+              "text": "Function calling and MCP connect external tools. Argument validation, retries and fallback paths handle invalid parameters and response errors."
             },
             {
               "title": "Human approval",
-              "text": "Irreversible operations require confirmation. The workflow retains its context while waiting and continues from that context after the decision."
+              "text": "The workflow pauses for approval before an irreversible operation. It preserves context for continuation after the decision."
             },
             {
               "title": "Evaluation and traces",
-              "text": "Regression examples check answers, tool selection and action order. Langfuse and OpenTelemetry help locate failures within an individual request."
+              "text": "Regression cases check answers, tool selection and action order. Langfuse and OpenTelemetry help locate errors at a specific step."
             }
           ],
           "flow": [
@@ -976,12 +996,12 @@
           ],
           "engineering": [
             {
-              "title": "Explicit execution rules",
-              "text": "Shared state links successive calls, and step limits bound the run. Idempotency handles repeated requests; error rules define when to retry, fall back or wait for a decision."
+              "title": "State and retries",
+              "text": "Defined transitions, step limits and idempotency govern execution. An error leads to a retry, a fallback or a pause for human input."
             },
             {
-              "title": "Changes checked against examples",
-              "text": "Prompt and model versions are compared on regression cases. Routing and caching changes are considered alongside answer quality, cost and latency."
+              "title": "Checking changes",
+              "text": "Prompts and models are compared on regression cases. Routing and caching changes are assessed against answer quality, cost and latency."
             }
           ],
           "deliverables": [
@@ -989,21 +1009,21 @@
             "Approval, retry and fallback handling.",
             "Regression evaluations and request tracing."
           ],
-          "valueTitle": "A process people can follow and review",
-          "valueText": "A multi-step request has an execution history and defined approval points. The team can investigate what the assistant did and where a decision needs human input."
+          "valueTitle": "See what the assistant did",
+          "valueText": "A request history shows completed steps, errors and actions awaiting a human decision."
         },
         {
           "id": "knowledge-search",
           "title": "Document search assistant",
           "category": "AI integration · Retrieval",
-          "brief": "Search across documents and answers connected to the passages used to write them.",
-          "problem": "A useful document assistant must find relevant material before generating an answer. It also needs a clear response when the available context is insufficient.",
+          "brief": "Answers from work documents, linked to the passages used to write them.",
+          "problem": "An answer may be spread across several documents. The assistant needs to retrieve relevant passages and handle questions the available material cannot answer.",
           "implementation": [
             "Prepared documents, split them into passages and generated embeddings for retrieval.",
             "Combined BM25 and vector search with reranking to select relevant context.",
             "Connected retrieval to answer generation, source references and quality checks."
           ],
-          "whatResultIsVerified": "The retrieval workflow supplies relevant document fragments to generation. Answers include source references, allowing the reader to open the material and check the response.",
+          "whatResultIsVerified": "The model receives retrieved passages as context. Answer links open the source material for review.",
           "stack": [
             "Python",
             "LangChain",
@@ -1013,25 +1033,25 @@
             "vLLM",
             "FastAPI"
           ],
-          "overview": "My contribution covered the search and model integration behind a document assistant. I worked on preparing the collection, selecting context and connecting it to generation. The same work included response checks, prompt and model versions, and participation in local inference deployment and error monitoring.",
+          "overview": "I prepared documents for retrieval, tuned context selection and connected answer generation. I evaluated prompt and model changes and contributed to local inference deployment and error monitoring.",
           "audience": "Teams looking for answers in a collection of working documents.",
           "role": "Document preparation, retrieval, model integration and answer evaluation.",
           "modules": [
             {
               "title": "Document preparation",
-              "text": "Documents are divided into passages and represented with embeddings. This prepares the material for search at the level of relevant fragments."
+              "text": "Documents are split into passages and embedded. Retrieval can return a relevant excerpt from a long document."
             },
             {
               "title": "Hybrid retrieval",
-              "text": "BM25 searches for matching terms while vector retrieval finds related meaning. Reranking helps select the passages passed to the model."
+              "text": "BM25 finds keyword matches; vector search finds semantic matches. Reranking selects passages for the model."
             },
             {
               "title": "Answers with sources",
-              "text": "Generation uses the retrieved context. Source references connect the response to the document passages a reader can inspect alongside the answer."
+              "text": "Generation uses the retrieved context. Answers link to passages so readers can check individual claims."
             },
             {
               "title": "Insufficient context",
-              "text": "The workflow handles questions the retrieved material cannot adequately support. These cases also inform checks when prompts or models change."
+              "text": "Evaluation includes questions the collection cannot answer. These cases are used when prompts or models change."
             }
           ],
           "flow": [
@@ -1042,12 +1062,12 @@
           ],
           "engineering": [
             {
-              "title": "Retrieval before generation",
-              "text": "Document preparation and search determine the context available to the model. Looking at retrieved passages helps separate search problems from generation problems."
+              "title": "Checking retrieval and generation separately",
+              "text": "Inspecting the retrieved passages helps locate an error in either context selection or answer generation."
             },
             {
-              "title": "Evaluation and local inference",
-              "text": "Answer quality is checked as prompt and model versions change. Local inference and error monitoring support investigation of the resulting service behavior."
+              "title": "Model evaluation and local inference",
+              "text": "Prompt and model changes go through quality checks. Error monitoring helps investigate failures in the connected service."
             }
           ],
           "deliverables": [
@@ -1055,21 +1075,21 @@
             "Answer generation with source references.",
             "Quality checks and local inference integration work."
           ],
-          "valueTitle": "An answer with material to check",
-          "valueText": "The reader can move from a question to an answer and then to its supporting passage. The source remains available when the wording needs closer review."
+          "valueTitle": "An answer linked to its document",
+          "valueText": "Readers can open the cited passage and check the wording in its original context."
         },
         {
           "id": "enterprise-integration",
           "title": "1C accounting & integrations",
           "category": "Enterprise development · 1C",
-          "brief": "Selected 1C work on contracts, payments, reporting and exchanges between business systems.",
-          "problem": "Accounting changes must fit existing rules and data. Integrations also need to handle interrupted delivery and repeated messages without losing track of processing.",
+          "brief": "1C development for lease contracts, payments, reconciliation and data exchange.",
+          "problem": "Accounting changes must fit existing rules and records. Integrations need duplicate protection and clear retry behavior when delivery fails.",
           "implementation": [
             "Developed customer-side changes for lease contracts, payment schedules and parallel accounting.",
             "Built reconciliation reports and worked on budget limits and request approval routes.",
             "Connected 1C exchanges through RabbitMQ, HTTP/REST, EnterpriseData and data-conversion rules."
           ],
-          "whatResultIsVerified": "The work includes accounting extensions, reports and system exchanges. Message processing uses acknowledgement after writing, idempotency and explicit retry handling.",
+          "whatResultIsVerified": "The work includes accounting changes, reports and integrations. Messages are acknowledged after writes, with duplicate protection and retry rules.",
           "stack": [
             "1C:Enterprise 8.3",
             "1C:ERP",
@@ -1079,25 +1099,25 @@
             "HTTP/REST",
             "1C:EDT"
           ],
-          "overview": "This case brings together separate assignments from my 1C practice: accounting changes and integration work. On the lease-accounting project, another contractor supplied the methodology and standard module. My role covered customer-side development, exchanges, reports, testing and acceptance of the changes within the existing system.",
+          "overview": "This case covers several 1C assignments. For the leasing work, another contractor supplied the methodology and standard module. I worked on the client side, adapting accounting, integrations and reports, and participating in testing and acceptance.",
           "audience": "Businesses extending 1C accounting processes or connecting them to operational systems.",
           "role": "Customer-side 1C development across accounting changes, reports and integrations.",
           "modules": [
             {
               "title": "Contracts and payments",
-              "text": "Changes covered lease contracts, payment schedules, security deposits and contract modifications, together with the records needed for parallel accounting."
+              "text": "Changes cover lease contracts, payment schedules, security deposits and amendments. Linked records support parallel accounting."
             },
             {
               "title": "Limits and approvals",
-              "text": "Separate assignments covered budget limits by item and cost center, plus request approval routes in the document-management system."
+              "text": "Budget limits by cost category and responsibility center. Separate assignments cover request approval routes."
             },
             {
               "title": "Reconciliation reports",
-              "text": "Reports built with the 1C Data Composition System support reconciliation. Data exchanges connect the accounting, budgeting and operational systems involved."
+              "text": "Data Composition System reports reconcile accounting records. Integrations connect accounting, budget and operational data."
             },
             {
               "title": "Message exchanges",
-              "text": "RabbitMQ integration acknowledges messages after writing. Idempotency, retries and an undelivered-message queue define how unsuccessful processing is handled."
+              "text": "RabbitMQ messages are acknowledged after a successful write. Duplicate protection, retries and a dead-letter queue handle processing failures."
             }
           ],
           "flow": [
@@ -1108,12 +1128,12 @@
           ],
           "engineering": [
             {
-              "title": "Changes within existing systems",
-              "text": "Configuration extensions, standard libraries and data-conversion rules support the required changes. The implementation respects the boundaries of the standard accounting solution."
+              "title": "Extending existing configurations",
+              "text": "Used extensions, standard libraries and data conversion rules within the existing workflows and standard application."
             },
             {
-              "title": "Processing and performance",
-              "text": "Technological logs help locate slow operations. Query and index changes, managed locks and batch processing address the identified causes."
+              "title": "Finding slow operations",
+              "text": "The technological log helps locate delays. Changes cover queries, indexes, managed locks and batch processing."
             }
           ],
           "deliverables": [
@@ -1121,8 +1141,8 @@
             "Reconciliation reports and data-exchange components.",
             "Testing, acceptance support and technical instructions."
           ],
-          "valueTitle": "Accounting and exchanges with clear rules",
-          "valueText": "The work supports structured contract and payment records, reconciled data and exchanges that can be retried. Each assignment fits the business process and configuration it extends.",
+          "valueTitle": "Accounting and exchange within an existing system",
+          "valueText": "Reports support reconciliation of contracts and payments. Failed exchanges can be retried under defined rules.",
           "flowTitle": "How I approach assignments"
         }
       ],
@@ -1137,8 +1157,8 @@
         "menu": "Menu",
         "concept": "Interface concept",
         "privacy": "Project names are omitted. Interface concepts were created for this portfolio.",
-        "about": "I’m Eduard.\nFullstack engineer.",
-        "aboutBody": "I work across interfaces, backend services, mobile apps and applied AI. I design how these parts work together, from user interactions to data processing. My experience includes agent orchestration, document search, computer vision and enterprise integrations.",
+        "about": "I'm Eduard.\nI build software.",
+        "aboutBody": "I build web products and iPhone apps, connect APIs and integrate AI models. My projects include tools for sales, advertising, job searches and inventory. My corporate work covers AI assistants, document search and 1C integrations.",
         "email": "Write an email",
         "emailCopied": "Email copied",
         "copyEmail": "Copy email",
@@ -1148,26 +1168,26 @@
         "scope": "Development scope",
         "role": "My role",
         "roleValue": "Architecture and development",
-        "detail": "View case study",
+        "detail": "Read the case",
         "backToTop": "Back to top",
-        "identityNote": "Fullstack engineer",
+        "identityNote": "Fullstack developer",
         "byline": "Eduard",
         "audience": "Who it is for",
         "overview": "Project context",
-        "modules": "Product modules",
+        "modules": "What the product does",
         "workflow": "The user journey",
         "engineering": "Engineering decisions",
-        "deliverables": "Scope of delivery",
+        "deliverables": "What I built",
         "next": "Next project",
         "previous": "Previous project",
         "projectCount": "projects",
-        "readCase": "Explore the case",
+        "readCase": "Read the case",
         "webviewLink": "Explore the WebView integration",
         "contactProject": "Discuss a similar project",
-        "portfolioNote": "Project names are anonymized. The 1C case brings together several assignments. Visuals are presentation concepts, not original screenshots.",
+        "portfolioNote": "Project names are anonymized. The 1C case covers several assignments. Images were created for this portfolio and show interface concepts with sample data.",
         "visuals": "Inside the product",
         "value": "What it helps with",
-        "galleryNote": "Presentation concept with illustrative interface screens and sample data.",
+        "galleryNote": "Portfolio concept with sample data.",
         "openImage": "View full size",
         "ai": "AI / ML",
         "enterprise": "1C",
@@ -1176,34 +1196,34 @@
         "showing": "Shown",
         "serviceWork": "Related work",
         "serviceScope": "What I can build",
-        "aboutNote": "I handle architecture and development. My partner handles project communication and support.",
+        "aboutNote": "I develop the product. My partner handles project communication and support.",
         "conceptShort": "Visual concept",
-        "techTitle": "Tools chosen for the task.",
-        "techBody": "React and TypeScript for the web; Swift for iOS; Python and FastAPI for services. PostgreSQL, Redis and message queues connect the data. AI work includes LangGraph, vector search, PyTorch and model evaluation."
+        "techTitle": "Tools I work with",
+        "techBody": "React and TypeScript for the web, Swift for iOS, Python and FastAPI for backend services. My AI work uses LangGraph, document retrieval and answer evaluation."
       },
       "name": "Eduard"
     },
     "ru": {
       "meta": {
-        "title": "Эдуард — Fullstack-инженер и AI-разработчик",
-        "description": "Веб-продукты, iOS-приложения, backend, AI-агенты, машинное обучение и интеграции 1С. Инженерное портфолио Эдуарда."
+        "title": "Эдуард | Веб-сервисы, iOS и AI",
+        "description": "Разрабатываю веб-сервисы, приложения для iPhone и AI-ассистентов. Проекты, технические решения и контакты Эдуарда."
       },
       "nav": {
         "work": "Проекты",
-        "services": "Разработка",
+        "services": "Услуги",
         "process": "Обо мне",
-        "contact": "Контакт",
+        "contact": "Написать",
         "language": "Язык"
       },
       "hero": {
-        "eyebrow": "FULLSTACK ENGINEER · APPLIED AI",
+        "eyebrow": "Эдуард / Fullstack-разработчик",
         "title": [
-          "Fullstack.",
-          "Applied AI."
+          "Веб-сервисы,",
+          "приложения и AI."
         ],
-        "description": "Превращаю идеи продуктов и сложные рабочие процессы в ПО: веб-платформы, iOS-приложения, backend и AI-системы.",
-        "primaryAction": "Смотреть проекты",
-        "secondaryAction": "Обсудить проект",
+        "description": "Разрабатываю инструменты для работы: приложение отдела продаж, аналитику рекламы, поиск по документам и AI-ассистентов с доступом к вашим сервисам.",
+        "primaryAction": "Посмотреть проекты",
+        "secondaryAction": "Обсудить задачу",
         "capabilities": [
           "Web",
           "iOS",
@@ -1212,28 +1232,48 @@
           "ML / CV",
           "1C"
         ],
-        "footnote": "От архитектуры и интерфейса до интеграций и запуска."
+        "footnote": "Беру на себя интерфейс, серверную часть и интеграции.",
+        "selectionTitle": "С чего начать",
+        "selectionNote": "Все 14 проектов",
+        "selectedProjects": [
+          {
+            "id": "agent-workflows",
+            "label": "Автоматизировать рабочий процесс",
+            "description": "AI-агенты с инструментами и подтверждением действий."
+          },
+          {
+            "id": "sales-app",
+            "label": "Сделать приложение для команды",
+            "description": "iOS, отчёты сотрудников и собственный API."
+          },
+          {
+            "id": "knowledge-search",
+            "label": "Найти ответ в документах",
+            "description": "Поиск и ответы со ссылками на источники."
+          }
+        ],
+        "selectionDisclosure": "Иллюстрации проектов: концепты интерфейсов."
       },
       "work": {
         "eyebrow": "Портфолио",
-        "title": "Инженерия в деталях",
-        "description": "Что делает каждый продукт, кому помогает и как устроен внутри.",
-        "caseAction": "Подробнее о проекте",
+        "title": "Проекты и задачи",
+        "description": "Мобильные приложения, рабочие сервисы и AI. В каждом кейсе: задача, моя роль и детали разработки.",
+        "caseAction": "Открыть кейс",
         "closeAction": "Закрыть проект",
         "problemLabel": "Задача",
-        "implementationLabel": "Что разработано",
-        "resultLabel": "Как это работает",
+        "implementationLabel": "Моя работа",
+        "resultLabel": "Результат разработки",
         "conceptCaption": "Концепт интерфейса · Пример данных",
-        "conceptExplanation": "Презентационный концепт интерфейса с демонстрационными данными."
+        "conceptExplanation": "Иллюстрация для портфолио с демонстрационными данными."
       },
       "services": {
         "eyebrow": "Услуги",
-        "title": "Один продукт.\nВсе его части.",
+        "title": "Что могу разработать",
         "items": [
           {
             "id": "web",
-            "title": "Fullstack и веб",
-            "description": "Сайты, личные кабинеты и рабочие инструменты вместе с сервисами, которые их обслуживают.",
+            "title": "Веб-сервисы",
+            "description": "Личные кабинеты, аналитические панели и внутренние инструменты. Интерфейс и серверная логика для работы с данными.",
             "scope": [
               "Веб-интерфейсы",
               "Продуктовые сценарии",
@@ -1251,8 +1291,8 @@
           },
           {
             "id": "ios",
-            "title": "iOS и мобильные приложения",
-            "description": "Нативные приложения со своей навигацией, локальными данными и функциями устройства. WebView-модули там, где они нужны продукту.",
+            "title": "Приложения для iPhone",
+            "description": "Нативные экраны, локальное хранение и подключение к API. Камера, файлы и WebView, если они нужны приложению.",
             "scope": [
               "Нативные экраны SwiftUI",
               "Хранение данных и состояние",
@@ -1271,7 +1311,7 @@
           {
             "id": "backend",
             "title": "Backend и интеграции",
-            "description": "API, бизнес-логика, права доступа и фоновые задачи. Соединяю сервисы и предусматриваю обработку сбоев и повторных запросов.",
+            "description": "API, права доступа, очереди и фоновые задачи. Обмен между сервисами с обработкой ошибок и повторных запросов.",
             "scope": [
               "API и права доступа",
               "Фоновые задачи и очереди",
@@ -1291,8 +1331,8 @@
           },
           {
             "id": "ai",
-            "title": "AI-агенты и работа со знаниями",
-            "description": "Ассистенты, которые находят информацию и используют инструменты. Правила выполнения, согласование действий и оценка качества помогают контролировать их работу.",
+            "title": "AI-ассистенты и поиск",
+            "description": "Ответы по вашим документам и агенты, которые работают с инструментами. С источниками, историей шагов и подтверждением действий.",
             "scope": [
               "Оркестрация агентов и инструменты",
               "RAG и поиск по документам",
@@ -1312,8 +1352,8 @@
           },
           {
             "id": "ml",
-            "title": "Машинное обучение и CV",
-            "description": "Модели для текста и изображений: классификация, семантический поиск, детекция и сегментация с интеграцией в приложения.",
+            "title": "Модели для текста и изображений",
+            "description": "Классификация, поиск по смыслу, распознавание объектов и сегментация. Подготовка данных, оценка модели и подключение к приложению.",
             "scope": [
               "Подготовка датасетов",
               "Обучение и оценка моделей",
@@ -1332,8 +1372,8 @@
           },
           {
             "id": "enterprise",
-            "title": "1С и бизнес-системы",
-            "description": "Доработки и интеграции для учётных и операционных процессов: документы, отчёты, договоры и обмен сообщениями.",
+            "title": "1С и обмен данными",
+            "description": "Договоры, графики платежей, отчёты и доработки учёта. Обмен между 1С и внешними системами через API и очереди.",
             "scope": [
               "Доработки ERP и учётных систем",
               "Договоры, планы оплат и отчёты",
@@ -1351,40 +1391,40 @@
             ]
           }
         ],
-        "description": "Новый сервис, развитие приложения или автоматизация процесса. Связываю интерфейс, данные и бизнес-логику в работающую систему."
+        "description": "Могу собрать новый продукт или подключиться к существующему: сделать интерфейс, API, мобильное приложение или отдельную интеграцию."
       },
       "process": {
         "eyebrow": "Как работаем",
-        "title": "От задачи до передачи проекта.",
-        "ownership": "Я отвечаю за архитектуру и разработку. Мой партнёр ведёт общение по проекту и поддержку.",
+        "title": "Сначала задача. Затем разработка.",
+        "ownership": "Я разрабатываю продукт. Мой партнёр ведёт общение по проекту и поддержку.",
         "steps": [
           {
             "id": "scope",
-            "title": "Определяем объём работы",
-            "description": "Разбираем задачу, пользователей и ограничения. Определяем первую версию, нужные интеграции и критерии готовности."
+            "title": "Определяем первую версию",
+            "description": "Уточняем пользователей, ограничения и нужные интеграции. Фиксируем, что должно работать и как это проверим."
           },
           {
             "id": "design",
-            "title": "Согласуем интерфейс",
-            "description": "Разбираем основные экраны и действия пользователя. Если дизайн уже есть, берём его за основу."
+            "title": "Согласуем экраны",
+            "description": "Разбираем основные действия пользователя и экраны. Готовый дизайн берём за основу."
           },
           {
             "id": "build",
-            "title": "Разрабатываем поэтапно",
-            "description": "Показываем работающие функции по мере готовности. Перед запуском проверяем сценарии пользователя, обработку данных и интеграции."
+            "title": "Показываем рабочие функции",
+            "description": "Разрабатываем по частям, обсуждаем результат. Перед запуском проверяем пользовательские сценарии, данные и интеграции."
           },
           {
             "id": "handover",
-            "title": "Готовим передачу проекта",
-            "description": "Описываем запуск и настройки, договариваемся о поддержке после выпуска."
+            "title": "Передаём проект",
+            "description": "Готовим инструкции по запуску и настройке. Договариваемся о дальнейшей поддержке."
           }
         ]
       },
       "contact": {
         "eyebrow": "Контакт",
-        "title": "Что будем\nсоздавать дальше?",
-        "description": "Что хотите создать или улучшить? Для начала хватит короткого описания. Расскажите о задаче, существующем продукте и желаемых сроках.",
-        "emailAction": "Написать о проекте",
+        "title": "Расскажите о задаче.",
+        "description": "Что нужно сделать, что уже есть и когда нужен результат. Можно начать с нескольких предложений или ссылки на текущий продукт.",
+        "emailAction": "Написать на почту",
         "githubAction": "Профиль GitHub"
       },
       "cases": [
@@ -1392,39 +1432,39 @@
           "id": "job-search",
           "title": "Платформа поиска работы",
           "category": "Веб-приложение · AI",
-          "brief": "Профили, подбор вакансий, черновики откликов и учёт интервью в одном рабочем пространстве.",
-          "problem": "Поиск работы включает разные резюме, площадки, тексты откликов и последующее общение. Сервис связывает эти действия с нужным профилем и конкретной вакансией.",
+          "brief": "Поиск вакансий, черновики откликов и история интервью для нескольких резюме.",
+          "problem": "При поиске по нескольким направлениям легко перепутать версии резюме, отправленные письма и договорённости. Нужна история по каждой вакансии.",
           "implementation": [
             "Веб-интерфейс для профилей, резюме, откликов и интервью.",
             "Поиск вакансий, оценка соответствия и подготовка писем через очередь заданий.",
             "Отдельные браузерные сессии профилей и сохранение подготовленных откликов в PostgreSQL."
           ],
-          "whatResultIsVerified": "Подготовленные отклики сохраняются вместе с вакансией, резюме и основанием текста. Черновик доступен для проверки; отправка выделена в отдельное действие с подтверждением пользователя.",
+          "whatResultIsVerified": "У каждого черновика сохранены вакансия, версия резюме и факты для письма. Пользователь проверяет текст и отдельно подтверждает отправку.",
           "stack": [
             "Next.js",
             "React",
             "TypeScript",
             "PostgreSQL"
           ],
-          "overview": "Проект охватывает работу от выбора направления поиска до проверки готового отклика. Пользователь хранит несколько резюме, ищет вакансии через подключённый источник, оценивает соответствие и готовит письмо. Данные, на основе которых оно написано, остаются связаны с откликом. Доска заявок, интервью и администрирование находятся на том же сайте, без отдельной установленной программы для пользователя.",
+          "overview": "Пользователь выбирает профиль и резюме, получает подходящие вакансии и готовит письмо. Отклик сохраняет связь с исходными фактами. Поиск, черновики и интервью доступны в браузере.",
           "audience": "Соискатели, которые ведут несколько направлений поиска, и операторы, обслуживающие сервис.",
           "role": "Архитектура, веб-интерфейс, серверные процессы, подключение модели и хранение откликов.",
           "modules": [
             {
               "title": "Профили и резюме",
-              "text": "Для поиска явно выбираются профиль и резюме. Сервер проверяет их принадлежность пользователю до чтения содержимого или сохранения нового отклика."
+              "text": "Поиск запускается с выбранным профилем и резюме. Перед чтением или сохранением сервер проверяет, кому принадлежат данные."
             },
             {
               "title": "Подготовка вакансий",
-              "text": "Обработчик выполняет поиск, исключает повторяющиеся ID и читает описание вакансии. Затем передаёт её на оценку соответствия выбранному резюме."
+              "text": "Обработчик ищет вакансии, исключает повторяющиеся ID и читает описание перед оценкой соответствия резюме."
             },
             {
               "title": "Черновики откликов",
-              "text": "Оценка вакансии и написание письма выполняются отдельно. Вместе с текстом сохраняются версия резюме, использованная модель и сведения об источнике фактов."
+              "text": "Оценка вакансии и написание письма идут отдельными этапами. Черновик хранит версию резюме, модель и использованные факты."
             },
             {
               "title": "Рабочее пространство",
-              "text": "Отклики можно фильтровать по профилю и статусу. В сохранённых записях доступны сведения о вакансии и письмо, а интервью вынесены в отдельный раздел."
+              "text": "Отклики фильтруются по профилю и статусу. В карточке доступны вакансия и письмо; интервью собраны в отдельном разделе."
             }
           ],
           "flow": [
@@ -1448,21 +1488,21 @@
             "Обработчики поиска, сервисы подготовки и хранение в базе данных.",
             "Раздел администрирования и инструкции по локальному развёртыванию."
           ],
-          "valueTitle": "Понятный следующий шаг по каждой вакансии",
-          "valueText": "Кандидат хранит профили, подходящие вакансии, черновики писем и даты интервью в одном месте. Подготовленный отклик можно проверить, сверяясь с вакансией и выбранным резюме."
+          "valueTitle": "История поиска по каждой вакансии",
+          "valueText": "В карточке видно, какое резюме выбрано, что написано в письме и на каком этапе находится отклик."
         },
         {
           "id": "campaign-intelligence",
           "title": "Аналитика рекламных кампаний",
           "category": "Аналитика / AI-ассистент",
-          "brief": "Отчёты по кампаниям и AI-ассистент, который объясняет результаты по подключённым данным.",
-          "problem": "Команде медиабаинга нужно сравнивать аккаунты, кампании и периоды, не собирая одинаковые отчёты вручную. Чтобы использовать ответ при принятии решения, важно понимать его источник, диапазон дат и доступную пользователю часть данных.",
+          "brief": "Статистика рекламы и AI-ассистент для вопросов по кампаниям, расходам и прибыли.",
+          "problem": "Медиабайерам нужны сравнения кампаний и периодов без ручной сборки одинаковых отчётов. Любой вывод нужно сверить с цифрами и датами.",
           "implementation": [
             "Подключил источник статистики к сервису синхронизации и аналитическому интерфейсу.",
             "Разработал ассистента для вопросов по статистике с проверкой доступа, указанием источников и сохранением диалогов.",
             "Добавил права команд, пресеты отчётов и инструменты администрирования."
           ],
-          "whatResultIsVerified": "Дашборд, подробная статистика и история обсуждений объединены в одном приложении. Вместе с ответом видны период отчёта и источник данных.",
+          "whatResultIsVerified": "Приложение объединяет дашборд, подробные отчёты и историю диалогов. Ответы ассистента привязаны к периоду и источнику данных.",
           "stack": [
             "React",
             "Python",
@@ -1470,25 +1510,25 @@
             "PostgreSQL",
             "LLM integration"
           ],
-          "overview": "Работа начинается с общего результата: расходов, дохода и прибыли за выбранный период. Изменение показателя можно разобрать по кампаниям или географии, а затем задать конкретный вопрос, сохранив контекст отчёта. Это помогает последовательно пройти от наблюдения к проверке предполагаемой причины.",
+          "overview": "Разбор начинается с расходов, дохода и прибыли за период. Дальше пользователь открывает кампанию или географию и задаёт вопрос по выбранным данным. Период и источник остаются рядом с ответом.",
           "audience": "Медиабайеры и руководители команд, которые регулярно разбирают результаты рекламы и определяют следующие проверки.",
           "role": "Разработка интерфейса, API, синхронизации данных и интеграции аналитического ассистента.",
           "modules": [
             {
               "title": "Обзор результатов",
-              "text": "Сводные карточки и сравнение периодов дают отправную точку для анализа. Детализация показывает результаты команд, байеров, кампаний и других доступных групп."
+              "text": "Карточки показывают расходы, доход и прибыль. Детализация группирует результаты по командам, байерам, кампаниям и другим доступным измерениям."
             },
             {
               "title": "Работа с отчётами",
-              "text": "Фильтры, измерения и сохранённые пресеты подходят для повторяющихся разборов. Отметка времени данных помогает проверить, соответствует ли отчёт нужному периоду."
+              "text": "Фильтры и сохранённые пресеты позволяют повторять разбор. Метка времени показывает актуальность данных."
             },
             {
               "title": "Вопросы по статистике",
-              "text": "Ассистент выбирает разрешённые источники и объясняет ограниченную выборку результатов. История сохраняет вопрос, ответ, период и основание, к которым можно вернуться позже."
+              "text": "Ассистент использует доступные пользователю источники. История сохраняет вопрос, ответ, период и данные, на которых он основан."
             },
             {
               "title": "Администрирование",
-              "text": "Оператор видит состояние синхронизации, журнал запросов и расход модели. Версии инструкций позволяют менять подачу ответов для команды, сохраняя установленные права доступа."
+              "text": "Оператор видит синхронизацию, журнал запросов и расход модели. Версии инструкций меняют подачу ответов в пределах существующих прав доступа."
             }
           ],
           "flow": [
@@ -1503,8 +1543,8 @@
               "text": "API применяет ограничения команды и владельца до чтения статистики. Упоминание чужой команды в вопросе не расширяет доступ пользователя."
             },
             {
-              "title": "Проверяемое основание",
-              "text": "PostgreSQL хранит снимки отчётов и диалоги. Ассистент объясняет подготовленные данные; изменение рекламы и бюджетов остаётся отдельным действием человека."
+              "title": "Источник каждого ответа",
+              "text": "PostgreSQL хранит снимки отчётов и диалоги. Ассистент объясняет эти данные. Кампании и бюджеты изменяет человек."
             }
           ],
           "deliverables": [
@@ -1512,46 +1552,46 @@
             "Синхронизация источника и инструменты оператора.",
             "Аналитический ассистент с сохранением ответов и их основания."
           ],
-          "valueTitle": "От статистики к понятному ответу",
-          "valueText": "Маркетолог сравнивает периоды, проверяет цифры в отчёте и задаёт уточняющий вопрос в том же рабочем окне. Ответ остаётся связанным с исходными данными."
+          "valueTitle": "Вопросы прямо в отчёте",
+          "valueText": "Маркетолог выбирает данные, задаёт уточняющий вопрос и сверяет ответ с цифрами в том же окне."
         },
         {
           "id": "campaign-operations",
           "title": "Подготовка рекламных кампаний",
           "category": "Автоматизация / API-интеграции",
-          "brief": "Проверяемый процесс работы с планами рекламных кампаний, согласованием и очередью заданий.",
-          "problem": "Подготовка кампании объединяет аккаунты, таргетинг, бюджеты и распределение креативов. Оператору нужно проверить всю конфигурацию до выполнения, а затем иметь возможность установить, какую версию согласовали, кто её подтвердил и что произошло с заданием.",
+          "brief": "Планы рекламных кампаний: параметры, согласование и выполнение через очередь.",
+          "problem": "Перед созданием кампании нужно проверить бюджеты, аудиторию и креативы. После согласования важно выполнить именно одобренную версию и сохранить историю задания.",
           "implementation": [
             "Разработал структурированные планы с проверкой параметров и неизменяемыми снимками.",
             "Связал подтверждение администратора с точной версией плана и очередью.",
-            "Добавил агентов рабочих станций, статусы и границы интеграции с провайдерами."
+            "Добавил агентов рабочих станций, статусы заданий и подключение провайдеров."
           ],
-          "whatResultIsVerified": "Оператор готовит и согласовывает план, затем отслеживает его выполнение через очередь. Интеграция с рекламной площадкой показана в тестовой среде; созданные объекты остаются на паузе.",
+          "whatResultIsVerified": "План проходит согласование и очередь заданий. Интеграция с рекламной площадкой показана в тестовой среде; созданные объекты остаются на паузе.",
           "stack": [
             "React",
             "FastAPI",
             "PostgreSQL",
             "Node.js"
           ],
-          "overview": "Работа начинается с заполнения плана. Экран проверки собирает бюджет, параметры аудитории и креативы в одном месте. Подтверждение относится к конкретному снимку, который затем сопровождает выполнение и помогает разбирать ошибки. Исправление оформляется новым планом, поэтому история согласованной версии сохраняется.",
+          "overview": "Оператор заполняет план и проверяет его перед отправкой. Администратор подтверждает сохранённую версию. Она сопровождает задание в очереди; исправления оформляются новым планом.",
           "audience": "Медиабайеры, которые готовят кампании, и администраторы, отвечающие за проверку перед выполнением.",
           "role": "Разработка интерфейса планирования, API процесса, хранения данных и агента рабочей станции.",
           "modules": [
             {
               "title": "Редактор плана",
-              "text": "Форма собирает параметры аккаунта, аудитории, бюджета и креативов. Проверка учитывает обязательные поля и соответствие суммы бюджетов групп общему дневному бюджету."
+              "text": "Форма собирает аккаунт, аудиторию, бюджет и креативы. Проверяет обязательные поля и соответствие бюджетов групп общему дневному бюджету."
             },
             {
               "title": "Согласование",
-              "text": "На экране доступны сохранённые параметры и отпечаток конфигурации. Администратор выдаёт одноразовое подтверждение с ограниченным сроком действия именно для этой версии."
+              "text": "Администратор просматривает сохранённые параметры и подтверждает их версию. Подтверждение одноразовое и ограничено по времени."
             },
             {
               "title": "Очередь и статусы",
-              "text": "Задание показывает ожидание, получение агентом, выполнение и записанный результат. Оператор может отменить работу, пока агент ещё не забрал её из очереди."
+              "text": "Статусы показывают ожидание, получение агентом, выполнение и результат. Задание можно отменить, пока агент его не забрал."
             },
             {
               "title": "Рабочие станции",
-              "text": "Агент привязан к владельцу и подключению. Получить задание может только подходящее устройство; учётные данные провайдера остаются на рабочей станции."
+              "text": "Задание получает устройство, подходящее по владельцу и подключению. Учётные данные провайдера остаются на рабочей станции."
             }
           ],
           "flow": [
@@ -1575,21 +1615,21 @@
             "API процесса с постоянной историей выполнения.",
             "Агент рабочей станции и сценарий демонстрации в тестовой среде."
           ],
-          "valueTitle": "Проверка плана до выполнения",
-          "valueText": "План кампании можно проверить и согласовать до создания заданий. Оператор видит состояние и историю обработки, поэтому запрос на запуск не теряется в непрозрачном фоновом процессе."
+          "valueTitle": "Согласованный план и история выполнения",
+          "valueText": "Оператор видит, какие параметры подтвердил администратор, какое устройство получило задание и чем закончилась обработка."
         },
         {
           "id": "match-analytics",
           "title": "Аналитика игровых матчей",
           "category": "Обработка данных / Веб-приложение",
-          "brief": "Персональные отчёты по файлам повторов CS2 и Dota 2 с проверяемыми исходными событиями.",
-          "problem": "Файл повтора матча содержит события, участников и временные отметки, но игроку нужен разбор собственной игры. Полезный отчёт должен связывать рассчитанные показатели с источником и показывать, когда данных повтора недостаточно для определённого вывода.",
+          "brief": "Разбор повторов CS2 и Dota 2: показатели игрока, исходные события и сравнение матчей.",
+          "problem": "В повторе матча много событий. Игроку нужен отчёт по своей игре, где можно проверить расчёты и увидеть, каких данных не хватает.",
           "implementation": [
             "Разработал загрузку файлов повторов, выбор участника и фоновый анализ.",
             "Связал игровые парсеры с отчётами по игрокам и выгрузкой исходных данных.",
             "Добавил историю, сравнение показателей и интерфейс на русском и английском."
           ],
-          "whatResultIsVerified": "Из поддерживаемого файла повтора формируется отчёт по выбранному игроку, а показатели связаны с исходными событиями. Пропуски данных остаются видны; совместимые завершённые отчёты можно сравнивать.",
+          "whatResultIsVerified": "Поддерживаемый повтор превращается в отчёт по игроку. Показатели связаны с исходными событиями; пропуски данных видны. Для сравнения используются совместимые завершённые отчёты.",
           "stack": [
             "Python",
             "FastAPI",
@@ -1597,25 +1637,25 @@
             "Background jobs",
             "Data analysis"
           ],
-          "overview": "Пользователь загружает поддерживаемый файл повтора и выбирает участника. Фоновая обработка извлекает события, рассчитывает показатели конкретной игры и сохраняет отчёт. Затем можно проверить исходные данные и сравнить совместимые завершённые матчи. История остаётся доступной после завершения обработки и помогает вернуться к предыдущему разбору.",
+          "overview": "Пользователь загружает поддерживаемый повтор и выбирает участника. Фоновый процесс извлекает события и сохраняет персональный отчёт. Готовые матчи можно сравнить, а исходные данные выгрузить.",
           "audience": "Игроки CS2 и Dota 2, которым нужен предметный разбор своей игры после матча.",
           "role": "Разработка веб-приложения и серверной обработки: загрузка, отчёты, история и проверка данных.",
           "modules": [
             {
               "title": "Загрузка повтора",
-              "text": "Проверяются формат, размер файла и доступный лимит загрузок. Хэш содержимого помогает находить повторы, а список участников позволяет выбрать нужного игрока перед анализом."
+              "text": "Проверяются формат, размер файла и лимит загрузок. Хэш находит повторные файлы. Перед анализом пользователь выбирает участника."
             },
             {
               "title": "Фоновый разбор",
-              "text": "Отдельный рабочий процесс получает задания и запускает адаптер выбранной игры. Извлечение событий отделено от персонального отчёта, поэтому совместимый результат разбора можно использовать для нескольких участников."
+              "text": "Рабочий процесс запускает адаптер нужной игры. Извлечение событий отделено от персонального отчёта: один совместимый разбор можно использовать для нескольких игроков."
             },
             {
               "title": "Отчёт по игроку",
-              "text": "Измеренные показатели сопровождаются наблюдениями, связанными с исходными событиями. Эти данные можно выгрузить отдельным файлом и подробнее проверить вне страницы отчёта."
+              "text": "Показатели и наблюдения связаны с исходными событиями. Данные можно выгрузить и проверить за пределами приложения."
             },
             {
               "title": "История и сравнение",
-              "text": "Сохранённые отчёты позволяют смотреть изменения показателей между матчами. Сравнение учитывает игру и идентичность участника, а явно неполные результаты исключает из расчёта динамики."
+              "text": "Сравнение проверяет игру и участника. Неполные результаты не попадают в расчёт динамики."
             }
           ],
           "flow": [
@@ -1626,12 +1666,12 @@
           ],
           "engineering": [
             {
-              "title": "Воспроизводимая обработка",
-              "text": "Версии парсера и процесса участвуют в идентификации результата. Повторное использование совместимого разбора сокращает повторное извлечение событий и сохраняет связь с исходным файлом повтора."
+              "title": "Повторное использование разбора",
+              "text": "Результат учитывает версии парсера и процесса. Совместимый разбор используется повторно и сохраняет связь с исходным файлом."
             },
             {
-              "title": "Явное качество данных",
-              "text": "Неизвестное значение остаётся неизвестным. Проверка учитывает происхождение показателей и отклоняет неподтверждённые значения; интерфейс показывает ограничения, когда повтор не даёт полной картины."
+              "title": "Проверка неполных данных",
+              "text": "Проверка отклоняет показатели без подтверждения в исходных данных. Интерфейс показывает пропуски и ограничения повтора."
             }
           ],
           "deliverables": [
@@ -1639,46 +1679,46 @@
             "Сервер загрузки и фоновой обработки с игровыми адаптерами.",
             "Отчёты по игрокам, история и выгружаемые исходные данные."
           ],
-          "valueTitle": "Разбор матча с доступом к исходным данным",
-          "valueText": "Игрок или аналитик загружает повтор, получает персональный отчёт и проверяет события и таблицы, на которых он основан. К разбору можно вернуться и изучить конкретные игровые эпизоды."
+          "valueTitle": "Показатели с привязкой к событиям матча",
+          "valueText": "Игрок может проверить расчёты по исходным событиям и сравнить свои показатели в нескольких завершённых матчах."
         },
         {
           "id": "sales-app",
           "title": "Приложение для команды продаж",
           "category": "iOS · API · Backend",
-          "brief": "Показатели, цели, обучение и поддержка в нативном приложении.",
-          "problem": "Команде нужно фиксировать результаты дня, следить за целями и проходить обучение.",
+          "brief": "iOS-приложение для отчётов за день, целей, обучения и поддержки сотрудников.",
+          "problem": "Сотрудникам отдела продаж нужно фиксировать результаты, следить за планом и проходить обучение с телефона.",
           "implementation": [
             "Экраны SwiftUI: показатели, отчёты за день, рейтинг и обучение.",
             "API-клиент с авторизацией, обновлением токенов и типизированными ответами.",
             "Сервер FastAPI и PostgreSQL: данные сотрудников, расчёты и учёт результатов."
           ],
-          "whatResultIsVerified": "Приложение получает данные через API и сохраняет результаты работы и прохождения обучения.",
+          "whatResultIsVerified": "Приложение получает данные через API и сохраняет отчёты сотрудников и прогресс обучения.",
           "stack": [
             "SwiftUI",
             "Swift",
             "FastAPI",
             "PostgreSQL"
           ],
-          "overview": "Нативное рабочее приложение сотрудника отдела продаж с серверной частью для отчётности, целей, обучения и поддержки. В проект входят мобильные экраны и API, через которое они получают данные. Показатели, ежедневные результаты и учебные материалы связаны с профилем сотрудника, поэтому при переходе между разделами не нужно заново вводить одни и те же сведения.",
+          "overview": "Разработал приложение для iPhone и серверную часть. Отчёты, месячные цели, учебный прогресс и обращения в поддержку связаны с профилем сотрудника.",
           "audience": "Сотрудники отдела продаж и руководители, которым нужны результаты работы и прогресс обучения.",
           "role": "Интерфейс iOS, подключение API, модели данных и серверные методы.",
           "modules": [
             {
               "title": "Показатели и цели",
-              "text": "Главный экран объединяет профиль сотрудника, текущие показатели и месячные цели. Отсюда можно оценить ситуацию и перейти к отчёту за день или расчёту конкретного сценария."
+              "text": "Главный экран показывает профиль, текущие результаты и месячные цели. Отсюда можно открыть отчёт за день или калькулятор."
             },
             {
               "title": "Отчётность за день",
-              "text": "Отдельная форма отправляет результаты на сервер. История сохраняет предыдущие записи для просмотра, а рейтинг позволяет отдельно посмотреть показатели команды."
+              "text": "Форма отправляет результаты на сервер. Предыдущие записи остаются в истории, а показатели команды доступны в рейтинге."
             },
             {
               "title": "Обучение и новости",
-              "text": "Учебные модули сохраняют прогресс прохождения. В новостях учитываются прочитанные материалы, поэтому рабочие обновления и обучение доступны рядом с основными задачами сотрудника."
+              "text": "Приложение сохраняет прогресс обучения и отмечает прочитанные новости. Рабочие обновления доступны рядом с отчётами."
             },
             {
               "title": "Поддержка и расчёты",
-              "text": "В разделе поддержки находятся контакт менеджера и история сообщений. Калькулятор принимает заданные параметры и показывает результат вместе с исходными условиями."
+              "text": "В поддержке доступны контакт менеджера и история сообщений. Калькулятор показывает результат вместе с исходными параметрами."
             }
           ],
           "flow": [
@@ -1702,15 +1742,15 @@
             "API-клиент с авторизацией и обновлением токенов.",
             "Серверные методы и модели данных мобильных сценариев."
           ],
-          "valueTitle": "Одно рабочее место для отдела продаж",
-          "valueText": "Сотрудник вносит результаты, следит за планом и открывает учебные материалы в одном приложении. Руководителю доступны структурированные отчёты вместо разрозненных сообщений."
+          "valueTitle": "Рабочие задачи с телефона",
+          "valueText": "Сотрудник отправляет отчёт за день, проверяет план и продолжает обучение. Руководитель получает результаты в структурированном виде."
         },
         {
           "id": "recipe-app",
           "title": "Рецепты и приготовление",
           "category": "iOS-приложение · SwiftUI",
-          "brief": "Каталог рецептов, избранное и пошаговый режим приготовления.",
-          "problem": "Рецептом должно быть удобно пользоваться и при выборе блюда, и во время приготовления.",
+          "brief": "Рецепты для iPhone: избранное, шаги приготовления и таймер.",
+          "problem": "Рецепт должен помогать и выбрать блюдо, и приготовить его. У плиты нужны текущий шаг и таймер, а не длинная страница текста.",
           "implementation": [
             "Категории блюд, ингредиенты и пошаговый режим.",
             "Избранное с локальным хранением и таймер с паузой и продолжением.",
@@ -1722,25 +1762,25 @@
             "UIKit",
             "Local storage"
           ],
-          "overview": "Каталог рецептов для iPhone, рассчитанный на два сценария: выбрать блюдо и пользоваться рецептом во время приготовления. Категории и карточки помогают с выбором, а пошаговый режим и таймер — во время готовки. Основные рецепты входят в состав приложения, а личная подборка сохраняется на устройстве.",
+          "overview": "Каталог хранит рецепты в приложении, а избранное на устройстве. Для готовки есть отдельный пошаговый экран и таймер с паузой. Рецептом можно поделиться через меню iOS.",
           "audience": "Пользователи iPhone, которым нужно выбрать блюдо, сохранить рецепт и пройти этапы приготовления.",
           "role": "Экраны SwiftUI, модели рецептов, локальное избранное и системная отправка.",
           "modules": [
             {
               "title": "Выбор блюда",
-              "text": "Рецепты сгруппированы по категориям и показаны с фотографией и временем приготовления. Карточка собирает ингредиенты и инструкции в одном месте, чтобы оценить рецепт до начала работы."
+              "text": "Категории, фотографии и время приготовления помогают выбрать блюдо. Карточка содержит ингредиенты и инструкции."
             },
             {
               "title": "Личная подборка",
-              "text": "Рецепт можно добавить в избранное прямо из карточки, а затем открыть в отдельном разделе. Сохранённая подборка восстанавливается при следующем запуске приложения."
+              "text": "Рецепт добавляется в избранное из карточки. Подборка сохраняется между запусками приложения."
             },
             {
               "title": "Пошаговое приготовление",
-              "text": "Отдельный экран показывает текущую инструкцию и кнопки перехода между шагами. Навигация учитывает начало и конец рецепта, поэтому пользователь видит именно текущий этап."
+              "text": "Экран показывает одну инструкцию за раз. Кнопки перехода учитывают первый и последний шаг рецепта."
             },
             {
               "title": "Таймер и отправка",
-              "text": "Таймер открывается отдельно и позволяет запустить, приостановить и продолжить отсчёт. Рецептом можно поделиться через системное меню iOS с доступными на устройстве приложениями."
+              "text": "Таймер можно запустить, поставить на паузу и продолжить. Системное меню iOS отправляет рецепт в выбранное приложение."
             }
           ],
           "flow": [
@@ -1752,11 +1792,11 @@
           "engineering": [
             {
               "title": "Общая модель рецепта",
-              "text": "Модель содержит название, изображение, время, ингредиенты, шаги и категорию. Каталог, подробная карточка и режим приготовления работают с одной структурой, без отдельных копий описания блюда."
+              "text": "Название, изображение, время, ингредиенты и шаги хранятся в общей модели. Её используют каталог, карточка и режим приготовления."
             },
             {
               "title": "Локальные данные и системные сценарии",
-              "text": "Избранное кодируется и сохраняется на устройстве. Модальные экраны SwiftUI отделяют приготовление, таймер и отправку от каталога, а системное меню отвечает за выбор получателя рецепта."
+              "text": "Избранное сохраняется на устройстве. Приготовление и таймер открываются в отдельных экранах SwiftUI; отправка использует системное меню iOS."
             }
           ],
           "deliverables": [
@@ -1764,15 +1804,15 @@
             "Избранное с сохранением и пошаговый режим.",
             "Таймер обратного отсчёта и системная отправка рецептов."
           ],
-          "valueTitle": "От выбора блюда до приготовления",
-          "valueText": "Приложение подходит и для спокойного выбора рецепта, и для работы у плиты. К сохранённым блюдам легко вернуться, а в пошаговом режиме перед глазами остаётся текущее действие."
+          "valueTitle": "Рецепт под рукой во время готовки",
+          "valueText": "Выбранное блюдо остаётся в избранном. Во время приготовления экран показывает текущую инструкцию, а таймер отсчитывает время."
         },
         {
           "id": "inventory-app",
           "title": "Учёт запасов и качества",
           "category": "iOS-приложение · Локальные данные",
-          "brief": "Партии продукции, движение остатков и проверки качества.",
-          "problem": "Для учёта яичной продукции нужны остатки по партиям, показатели свежести и история движения.",
+          "brief": "Учёт яичной продукции: партии, остатки, продажи и проверки качества.",
+          "problem": "Нужно знать, сколько продукции осталось в каждой партии, когда её собрали и какие проверки она прошла.",
           "implementation": [
             "Создание, изменение и архивирование партий, учёт движения продукции.",
             "Проверки количества, показатели свежести и контроль качества.",
@@ -1784,25 +1824,25 @@
             "Swift",
             "Codable"
           ],
-          "overview": "Приложение для учёта яичной продукции: партии, движение остатков, проверки качества и отчёты. Основная единица учёта здесь партия. Её дата сбора, количество, место хранения и состояние связаны с последующими операциями. В проект также входит интеграция WebKit для отображения веб-контента с нативной навигацией и выбором вложений.",
+          "overview": "Партия связывает дату сбора, количество, место хранения и дальнейшие операции. Приложение пересчитывает остатки после продажи или списания. Отдельная интеграция WebKit открывает веб-контент с нативной навигацией и выбором вложений.",
           "audience": "Небольшие производители, которым нужны остатки по партиям, контроль свежести и учёт продаж.",
           "role": "Интерфейс SwiftUI, расчёт остатков, локальное хранение и интеграция WebKit.",
           "modules": [
             {
               "title": "Учёт партий",
-              "text": "Партию можно создать, изменить или отправить в архив. В карточке хранятся дата сбора, исходное количество и место хранения. Показатели свежести используют настраиваемые возрастные пороги."
+              "text": "Партии можно создавать, изменять и архивировать. Дата сбора, количество и место хранения сохраняются в карточке. Возрастные пороги свежести настраиваются."
             },
             {
               "title": "Движение продукции",
-              "text": "Продажи, использование, повреждения и другие операции обновляют остаток партии. История движения сохраняет связь с исходной записью, чтобы можно было вернуться к отдельным изменениям."
+              "text": "Продажи, использование и повреждения меняют остаток. Каждая операция сохраняет связь с партией."
             },
             {
               "title": "Качество и отчёты",
-              "text": "Проверки качества ведутся рядом с операциями по запасам. Отчёты группируют продукцию по месту хранения и возрасту, показывают недельную активность и суммы зарегистрированных продаж."
+              "text": "Отчёты группируют остатки по месту хранения и возрасту. Показывают проверки качества, недельную активность и суммы зарегистрированных продаж."
             },
             {
               "title": "Веб-контент внутри iOS",
-              "text": "Обёртка SwiftUI подключает WKWebView с навигацией, медиа и системными диалогами. На поддерживаемых версиях iOS загрузка вложений использует камеру, фототеку или выбор документов."
+              "text": "Обёртка SwiftUI подключает WKWebView с навигацией, медиа и системными диалогами. На поддерживаемых версиях iOS вложения выбираются из камеры, фототеки или файлов."
             }
           ],
           "flow": [
@@ -1826,8 +1866,8 @@
             "Показатели запасов, отчёты и сохранение на устройстве.",
             "Нативная WebView-оболочка с навигацией и обработкой вложений."
           ],
-          "valueTitle": "История каждой партии",
-          "valueText": "Остатки, движения и результаты проверки качества привязаны к партии. Можно увидеть поступления, изменения количества и зафиксированные проверки без отдельных заметок по каждому процессу."
+          "valueTitle": "Остаток и история каждой партии",
+          "valueText": "По карточке партии можно проверить продажи, списания и результаты контроля качества."
         },
         {
           "id": "hybrid-ios",
@@ -1851,14 +1891,14 @@
           "id": "app-planning",
           "title": "Планирование приложений",
           "category": "Веб-приложение · Desktop · AI",
-          "brief": "Локальное рабочее пространство, которое превращает идею приложения в структурированное задание на разработку.",
-          "problem": "Для разработки мало названия и общей идеи. Экраны, оформление, данные, проверки и материалы для магазина должны описывать один и тот же продукт.",
+          "brief": "Локальный инструмент для подготовки задания на iOS-приложение и выгрузки документов.",
+          "problem": "Перед разработкой нужно согласовать экраны, данные, проверки и описание для магазина. Они должны относиться к одной версии продукта.",
           "implementation": [
             "Пошаговый выбор визуальной темы, названия и идеи приложения.",
             "Сохранение проектов, генерация документов и выгрузка ZIP-архива.",
             "Настольная оболочка Electron с локальным сервером Next.js и базой SQLite."
           ],
-          "whatResultIsVerified": "Сервис собирает и сохраняет задание на разработку. ZIP-архив создаётся на основе выбранных параметров проекта и сохранённого варианта генерации.",
+          "whatResultIsVerified": "Инструмент сохраняет проект и формирует ZIP с документами по выбранным параметрам и сохранённому варианту генерации.",
           "stack": [
             "Next.js",
             "React",
@@ -1867,25 +1907,25 @@
             "Electron",
             "OpenAI API"
           ],
-          "overview": "Веб-технологии используются в локальном инструменте для подготовки небольших iOS-приложений. На выходе получается комплект документов об интерфейсе, данных и проверках будущей реализации. Пошаговый мастер связан с серверной генерацией и выгрузкой файлов. Текущая версия работает с одним локальным пользователем и хранит проекты на компьютере, поэтому отдельный хостинг для настольной версии не нужен.",
+          "overview": "Мастер собирает идею приложения, оформление и экраны, затем формирует документы для разработки. Проекты хранятся локально в SQLite. Настольная версия рассчитана на одного пользователя и работает без отдельного хостинга.",
           "audience": "Разработчики, которые готовят задание для iOS-проекта или передают его ассистенту для разработки.",
           "role": "Интерфейс, логика генерации, хранение проектов, серверная выгрузка файлов и настольная оболочка.",
           "modules": [
             {
               "title": "Пошаговая подготовка",
-              "text": "Мастер сохраняет выбранную тему, название, суть приложения, основное действие и список экранов. В проект также попадает выбранный инструмент для последующей разработки."
+              "text": "Мастер сохраняет тему, название, суть приложения, основное действие и экраны. Можно выбрать инструмент для последующей разработки."
             },
             {
               "title": "Варианты идей",
-              "text": "Ответ модели имеет заданную структуру JSON. Перед показом вариантов генератор проверяет категории, обязательные поля и повторяющиеся названия внутри полученного набора."
+              "text": "Модель возвращает варианты в JSON. Генератор проверяет категории, обязательные поля и повторяющиеся названия."
             },
             {
               "title": "Библиотека проектов",
-              "text": "В SQLite хранятся выбранная идея, описание для магазина и готовое задание. Эти параметры используются при повторном открытии проекта и сборке документов."
+              "text": "SQLite хранит выбранную идею, описание для магазина и задание. Эти данные используются при повторном открытии и выгрузке проекта."
             },
             {
               "title": "Выгрузка документов",
-              "text": "В пакет входят описание продукта, дизайн-система, компоненты, экраны, модель данных, список проверок и материалы для магазина. Архив дополнен README с точкой входа."
+              "text": "Архив содержит описание продукта, дизайн-систему, компоненты, экраны, модель данных, проверки и материалы для магазина. README указывает, с чего начать."
             }
           ],
           "flow": [
@@ -1909,15 +1949,15 @@
             "Генератор задания и выгрузка архива документов.",
             "Настольная версия и конфигурация сборки установочного пакета."
           ],
-          "valueTitle": "Описание продукта для начала разработки",
-          "valueText": "Разработчик превращает идею в связанный набор требований и описаний экранов, затем выгружает документы одним архивом. Сохранённый проект можно открыть снова и повторно выгрузить его документы."
+          "valueTitle": "Документы для начала разработки",
+          "valueText": "Описание продукта, экранов и данных можно проверить и передать разработчику одним архивом. Сохранённый вариант доступен для повторной выгрузки."
         },
         {
           "id": "incubation-planner",
           "title": "Планировщик инкубации",
           "category": "iOS-приложение · Расписание и учёт",
-          "brief": "Расписание партий, ежедневные измерения и результаты вывода в приложении для iPhone.",
-          "problem": "Несколько партий могут находиться на разных этапах инкубации. Даты, ежедневные проверки и наблюдения нужно сохранять с привязкой к конкретной партии.",
+          "brief": "Расписание инкубации, ежедневные измерения и результаты вывода по каждой партии.",
+          "problem": "У нескольких партий разные даты и этапы. Измерения и наблюдения нужно записывать так, чтобы было понятно, к какой партии они относятся.",
           "implementation": [
             "Планирование партий: ожидаемая дата вывода, сроки овоскопирования и перехода к заключительному этапу.",
             "Записи температуры, влажности и веса, заметки и проверка настраиваемых диапазонов.",
@@ -1931,25 +1971,25 @@
             "Codable",
             "UserNotifications"
           ],
-          "overview": "Приложение сопровождает партию от закладки до записи результата вывода. Пользователь выбирает вид птицы, задаёт продолжительность инкубации и заполняет сведения о партии. Приложение рассчитывает даты, а ежедневные формы сохраняют фактические наблюдения владельца. Итоги можно просматривать по месяцам и видам птиц, возвращаясь к записям конкретной партии.",
+          "overview": "Пользователь задаёт вид птицы и срок инкубации. Приложение рассчитывает даты, напоминает о проверках и сохраняет наблюдения. После вывода результат попадает в сводки по месяцам и видам птиц.",
           "audience": "Владельцы небольших хозяйств, которым нужен общий журнал сроков, условий и результатов нескольких партий.",
           "role": "Разработка iOS-приложения: экраны, модели данных, расчёт дат, локальное хранение и подключение уведомлений.",
           "modules": [
             {
               "title": "Планирование партий",
-              "text": "Создание и изменение партии с видом птицы, количеством яиц, инкубатором, источником и заметками. Приложение показывает ожидаемые даты, текущий день инкубации и прогресс."
+              "text": "Карточка хранит вид птицы, количество яиц, инкубатор, источник и заметки. Показывает расчётные даты и текущий день инкубации."
             },
             {
               "title": "Ежедневные проверки",
-              "text": "Температура, влажность, переворачивание яиц, проверка воды и необязательная запись веса. История измерений используется для графиков и отметок о выходе за заданные границы."
+              "text": "Форма сохраняет температуру, влажность, переворачивание, проверку воды и вес. История строит графики и отмечает выход за заданные пределы."
             },
             {
               "title": "Овоскопирование",
-              "text": "Запись количества проверенных яиц и наблюдений: развитие, отсутствие признаков развития или неопределённый результат. У каждой записи сохраняются дата и связь с партией."
+              "text": "Запись сохраняет число проверенных яиц и наблюдения: развитие, отсутствие признаков или неопределённый результат. У каждой записи есть дата и партия."
             },
             {
               "title": "Результаты вывода",
-              "text": "Количество выведенных птенцов и яиц без вывода, дата завершения и заметки. После сохранения результата партия переходит в завершённые и включается в итоговые сводки."
+              "text": "После ввода количества птенцов, яиц без вывода и даты партия завершается. Результат включается в сводки."
             }
           ],
           "flow": [
@@ -1973,15 +2013,15 @@
             "Модели и расчёты расписания, прогресса, изменения веса и доли вывода.",
             "Локальное хранение, ежедневные уведомления и напоминания о ключевых датах."
           ],
-          "valueTitle": "Ежедневные проверки в контексте партии",
-          "valueText": "Пользователь видит текущий день инкубации, записывает показания и возвращается к прошлым наблюдениям. Даты, напоминания и результаты вывода собраны в одной истории партии."
+          "valueTitle": "Расписание и наблюдения по партии",
+          "valueText": "На главном экране видны проверки на сегодня. Из партии можно открыть прошлые измерения, наблюдения и результат вывода."
         },
         {
           "id": "personal-journal",
-          "title": "Личный дневник и динамика",
+          "title": "Личный дневник",
           "category": "iOS-приложение · Записи и графики",
-          "brief": "Ежедневные оценки, короткие заметки и история личных целей.",
-          "problem": "Одна заметка описывает отдельный момент. Для сравнения разных дней нужны одинаковые поля, даты и удобный просмотр истории.",
+          "brief": "Ежедневные оценки, заметки и цели с графиками за неделю и месяц.",
+          "problem": "Чтобы сравнить разные дни, нужны одинаковые шкалы и записи с датами. Одна заметка такой картины не даёт.",
           "implementation": [
             "Ежедневная запись с четырьмя шкалами, короткой заметкой и выбранной или введённой целью.",
             "Архив с раскрывающимися карточками, сортировкой и подтверждением удаления.",
@@ -1995,25 +2035,25 @@
             "UserDefaults",
             "Графики SwiftUI"
           ],
-          "overview": "Личный дневник объединяет короткую ежедневную форму и просмотр предыдущих записей. Энергию, концентрацию, тревогу и ощущение направления пользователь оценивает по одинаковым шкалам. Заметка и цель дополняют числа собственными словами. Между последней записью, архивом и графиками можно переходить без повторного ввода данных; каждый экран использует общий набор сохранённых записей.",
+          "overview": "Пользователь оценивает энергию, концентрацию, тревогу и ощущение направления, затем добавляет заметку и цель. Сохранённые записи доступны в архиве и на графиках. Подсказки выбираются по заданным правилам.",
           "audience": "Люди, которым нужен короткий личный дневник с возможностью сравнивать собственные оценки и цели за разные дни.",
           "role": "Разработка iOS-приложения: формы, взаимодействие с архивом, локальное хранение, отрисовка графиков и расчёт сводок.",
           "modules": [
             {
               "title": "Запись за день",
-              "text": "Четыре шкалы для оценок от нуля до десяти. К ним добавляются заметка длиной до 140 символов и цель из предложенного списка либо собственный текст."
+              "text": "Четыре шкалы от нуля до десяти, заметка до 140 символов и цель из списка или свой текст."
             },
             {
               "title": "Архив записей",
-              "text": "Просмотр и раскрытие карточек, сортировка по дате или рассчитанному показателю. Перед удалением отдельной записи пользователь подтверждает действие в диалоге."
+              "text": "Карточки раскрываются и сортируются по дате или рассчитанному показателю. Удаление требует подтверждения."
             },
             {
               "title": "Динамика и средние значения",
-              "text": "Периоды семь и тридцать дней, переключение показателя и выбор отдельной точки на графике. Средние значения рассчитываются по записям выбранного периода."
+              "text": "Графики за семь и тридцать дней с выбором показателя и отдельной точки. Средние считаются по записям выбранного периода."
             },
             {
               "title": "Краткая сводка",
-              "text": "На основе недавних оценок главный экран выбирает одну из заранее заданных подсказок. Цели и заметки сохраняют контекст, который нельзя передать одними числами."
+              "text": "Главный экран выбирает подсказку из готового набора по недавним оценкам. Заметки и цели остаются рядом с числами."
             }
           ],
           "flow": [
@@ -2037,15 +2077,15 @@
             "Локальное хранение с заменой записи текущего дня и удалением отдельных записей.",
             "Интерактивные графики, выбор периода и логика текстовых сводок."
           ],
-          "valueTitle": "Дневник, к которому удобно возвращаться",
-          "valueText": "Короткие ежедневные записи складываются в историю: её можно просматривать по датам или изучать на графике. Оценки, заметки и цели хранятся рядом и помогают вспомнить контекст конкретного дня."
+          "valueTitle": "Контекст за цифрами",
+          "valueText": "Точку на графике можно сопоставить с заметкой и целью за тот же день. Это помогает вспомнить, с чем была связана оценка."
         },
         {
           "id": "care-journal",
           "title": "Журнал ухода за птицей",
           "category": "iOS-приложение · Ежедневные задачи",
-          "brief": "Задачи по уходу, учёт групп птиц и инструкции в приложении для iPhone.",
-          "problem": "Уход за несколькими группами птиц включает кормление, уборку, проверку запасов и наблюдения. Задачам нужны место, срок и отметка о выполнении.",
+          "brief": "Ежедневные задачи по уходу за птицей, запасы корма и журнал сбора яиц.",
+          "problem": "Кормление, уборку и наблюдения нужно связывать с помещением или группой птиц. При передаче ухода помощнику нужны понятные инструкции.",
           "implementation": [
             "Помещения и группы птиц, связанные с задачами, записями сбора яиц и наблюдениями.",
             "Список дел на сегодня, учёт кормов, пороги малого остатка и записи для повторной проверки.",
@@ -2059,25 +2099,25 @@
             "Codable",
             "UserDefaults"
           ],
-          "overview": "Приложение организует повседневный уход вокруг помещений и групп птиц. Запись сбора или наблюдение можно связать с конкретной группой, чтобы сохранить контекст. Главный экран возвращает внимание к делам на сегодня. В отдельных формах хранятся сведения о запасах, заметки об уходе и письменные инструкции для человека, который временно принимает обязанности.",
+          "overview": "Приложение связывает помещения и группы птиц с задачами, запасами и наблюдениями. Главный экран показывает дела на сегодня. Отдельный раздел хранит инструкции, которые можно скопировать для помощника.",
           "audience": "Владельцы небольших хозяйств, которые ведут несколько помещений, группы птиц и ежедневные обязанности по уходу.",
           "role": "Разработка iOS-приложения: связанные модели данных, формы SwiftUI, ежедневные списки, расчёт сводок и локальное хранение.",
           "modules": [
             {
               "title": "Помещения и группы",
-              "text": "Курятники, брудеры и другие места с состоянием и периодичностью уборки. Для группы птиц задаются вид, порода, количество и необязательная связь с помещением."
+              "text": "Курятники, брудеры и другие места с состоянием и сроками уборки. Группа хранит вид, породу, количество и необязательную связь с помещением."
             },
             {
               "title": "Список ежедневных дел",
-              "text": "У задачи есть дата, категория, приоритет и помещение. Список разделяет текущие, будущие и завершённые дела; для обычных обязанностей предусмотрены шаблоны."
+              "text": "У задачи есть дата, категория, приоритет и место. Список разделяет текущие, будущие и завершённые дела; обычные обязанности можно создать из шаблона."
             },
             {
               "title": "Запасы и наблюдения",
-              "text": "Количество корма, единицы измерения и порог малого остатка. В заметках сохраняются наблюдения, принятые меры и необязательная дата повторной проверки."
+              "text": "Для корма сохраняются количество, единицы и порог малого остатка. В наблюдениях есть принятые меры и дата повторной проверки."
             },
             {
               "title": "История сбора яиц",
-              "text": "Количество собранных и повреждённых яиц, распределение по размерам, дата и группа. Сводка показывает итоги дня, недели и месяца, а график — последние дни."
+              "text": "Запись содержит количество собранных и повреждённых яиц, размеры, дату и группу. Сводки показывают день, неделю и месяц."
             }
           ],
           "flow": [
@@ -2101,21 +2141,21 @@
             "Формы задач, кормов, наблюдений и инструкций для помощника.",
             "Локальное хранение и сводки по датам для связанных записей."
           ],
-          "valueTitle": "Понятный порядок ежедневного ухода",
-          "valueText": "Ежедневные задачи, запасы корма и наблюдения за группами птиц собраны вместе. Инструкции по уходу помогают передать привычный порядок действий человеку, который временно подменяет владельца."
+          "valueTitle": "Дела на сегодня и инструкции для помощника",
+          "valueText": "Владелец видит текущие задачи и остатки корма. При передаче обязанностей можно скопировать сохранённый порядок ухода."
         },
         {
           "id": "agent-workflows",
           "title": "AI-агенты для рабочих задач",
           "category": "AI-разработка · Backend",
-          "brief": "Многошаговые AI-сценарии с поиском контекста, вызовами инструментов и подтверждением действий человеком.",
-          "problem": "Один запрос может потребовать нескольких инструментов и решений. Процессу нужно сохранять контекст, обрабатывать ошибки вызовов и выделять действия, которые требуют подтверждения.",
+          "brief": "AI-ассистенты, которые ищут информацию, вызывают инструменты и запрашивают подтверждение действий.",
+          "problem": "Рабочая задача может потребовать поиска, нескольких инструментов и решения человека. Ассистенту нужно сохранять состояние между шагами и останавливаться при ошибках или ожидании подтверждения.",
           "implementation": [
             "Связал агентов через общее состояние, маршрутизацию и ограничения числа шагов в LangGraph.",
             "Подключил внешние инструменты через function calling и MCP, добавил проверку аргументов и обработку повторов.",
             "Добавил подтверждение действий, регрессионные проверки и трассировку отдельных запросов."
           ],
-          "whatResultIsVerified": "Контекст передаётся между шагами и сохраняется на время подтверждения человеком. Выбор инструментов и последовательность действий можно разобрать по трассировке и примерам для проверки качества.",
+          "whatResultIsVerified": "Сценарий передаёт контекст между шагами и сохраняет его на время согласования. Трассировка показывает выбранные инструменты и порядок действий.",
           "stack": [
             "Python",
             "LangGraph",
@@ -2125,25 +2165,25 @@
             "Langfuse",
             "OpenTelemetry"
           ],
-          "overview": "Моя работа охватывала логику выполнения и серверные интеграции корпоративных ассистентов. Сценарий находил информацию, выбирал инструмент и продолжал работу с учётом полученного результата. Я разрабатывал состояние и правила переходов между этими шагами, включая остановку перед действием, которое должен проверить человек.",
+          "overview": "Я разрабатывал логику выполнения и серверные интеграции корпоративных ассистентов: состояние, переходы между шагами, вызовы инструментов и паузы перед действиями, которые проверяет человек.",
           "audience": "Команды, которые подключают AI-ассистентов к внутренней информации и рабочим инструментам.",
           "role": "Логика агентных сценариев, интеграции инструментов, контроль выполнения, оценка качества и трассировка.",
           "modules": [
             {
               "title": "Контекст и переходы",
-              "text": "Общее состояние хранит найденные сведения и промежуточные результаты. Маршрутизация определяет следующий шаг, а ограничение длины сценария не позволяет продолжать его бесконечно."
+              "text": "Общее состояние хранит найденные сведения и промежуточные результаты. Маршрутизация выбирает следующий шаг, а лимит шагов останавливает зациклившийся сценарий."
             },
             {
               "title": "Вызовы инструментов",
-              "text": "Function calling и MCP связывают сценарий с внешними возможностями. Проверка аргументов, повторные попытки и запасные пути обрабатывают неверные параметры или ошибки ответа."
+              "text": "Function calling и MCP подключают внешние инструменты. Проверка аргументов, повторы и запасные пути обрабатывают неверные параметры и ошибки ответа."
             },
             {
               "title": "Подтверждение человеком",
-              "text": "Необратимые операции требуют согласования. На время ожидания процесс сохраняет контекст и после решения продолжает работу с теми же исходными сведениями."
+              "text": "Перед необратимой операцией сценарий ждёт согласования. Контекст сохраняется, чтобы после решения продолжить с теми же данными."
             },
             {
               "title": "Проверки и трассировка",
-              "text": "Регрессионные примеры проверяют ответы, выбор инструментов и порядок действий. Langfuse и OpenTelemetry помогают найти ошибку на конкретном шаге запроса."
+              "text": "Регрессионные примеры проверяют ответы, инструменты и порядок действий. Langfuse и OpenTelemetry позволяют найти ошибку на конкретном шаге."
             }
           ],
           "flow": [
@@ -2154,12 +2194,12 @@
           ],
           "engineering": [
             {
-              "title": "Явные правила выполнения",
-              "text": "Состояние, ограничения шагов и идемпотентность задают порядок обработки. Для ошибок предусмотрены условия повтора, запасного действия или ожидания решения человека."
+              "title": "Состояние и повторы",
+              "text": "У сценария заданы переходы, лимит шагов и правила повторной обработки. Ошибка приводит к повтору, запасному действию или ожиданию решения человека."
             },
             {
-              "title": "Изменения проверяются на примерах",
-              "text": "Версии промптов и моделей сравниваются на регрессионном наборе. Изменения маршрутизации и кеширования рассматриваются вместе с качеством ответов, стоимостью и задержкой."
+              "title": "Проверка изменений",
+              "text": "Промпты и модели сравниваются на регрессионном наборе. При изменении маршрутизации или кеширования проверяются качество ответов, стоимость и задержка."
             }
           ],
           "deliverables": [
@@ -2167,21 +2207,21 @@
             "Подтверждения, повторные попытки и обработка ошибок.",
             "Регрессионные проверки и трассировка запросов."
           ],
-          "valueTitle": "Процесс, который можно проследить и проверить",
-          "valueText": "У многошагового запроса есть история выполнения и точки подтверждения. Команда может разобраться, что сделал ассистент и какое решение ещё должен принять человек."
+          "valueTitle": "Видно, что сделал ассистент",
+          "valueText": "История запроса показывает выполненные шаги, ошибки и действия, которые ожидают решения человека."
         },
         {
           "id": "knowledge-search",
           "title": "Поиск и ответы по документам",
           "category": "AI-интеграции · Поиск",
-          "brief": "Поиск по документам и ответы со ссылками на фрагменты, использованные при подготовке текста.",
-          "problem": "Перед ответом ассистент должен найти подходящие материалы. Если доступного контекста недостаточно, это нужно учитывать при обработке запроса и проверке результата.",
+          "brief": "Ответы по рабочим документам со ссылками на использованные фрагменты.",
+          "problem": "Нужный ответ часто находится в нескольких документах. Ассистент должен найти подходящие фрагменты и учитывать вопросы, для которых материалов недостаточно.",
           "implementation": [
             "Готовил документы, делил их на фрагменты и формировал векторные представления для поиска.",
             "Объединил BM25 и векторный поиск с повторным ранжированием найденных фрагментов.",
             "Связал поиск с генерацией ответа, ссылками на источники и проверками качества."
           ],
-          "whatResultIsVerified": "Найденные фрагменты передаются модели как контекст для ответа. Ссылки позволяют открыть исходный документ и сверить ответ с материалом, на котором он основан.",
+          "whatResultIsVerified": "Модель получает найденные фрагменты как контекст. Ссылки в ответе открывают исходный материал для проверки.",
           "stack": [
             "Python",
             "LangChain",
@@ -2191,25 +2231,25 @@
             "vLLM",
             "FastAPI"
           ],
-          "overview": "Моя часть работы — поиск и подключение модели внутри ассистента по документам. Я готовил коллекцию, настраивал выбор контекста и связывал его с генерацией. Также проверял ответы при смене промптов и моделей, участвовал в развёртывании локального инференса и мониторинге ошибок сервиса.",
+          "overview": "Я готовил документы для поиска, настраивал выбор контекста и подключал генерацию ответов. Проверял изменения промптов и моделей, участвовал в развёртывании локального инференса и мониторинге ошибок.",
           "audience": "Команды, которым нужны ответы по рабочей коллекции документов с возможностью проверить источник.",
           "role": "Подготовка документов, поиск, подключение моделей и оценка качества ответов.",
           "modules": [
             {
               "title": "Подготовка документов",
-              "text": "Материалы разделяются на фрагменты и получают векторные представления. Это позволяет искать конкретные отрывки с нужной информацией внутри более длинных документов."
+              "text": "Документы делятся на фрагменты и получают векторные представления. Поиск возвращает нужный отрывок внутри длинного материала."
             },
             {
               "title": "Гибридный поиск",
-              "text": "BM25 находит совпадения по словам, а векторный поиск — по смыслу. Повторное ранжирование помогает выбрать фрагменты, которые затем попадут в контекст модели."
+              "text": "BM25 ищет совпадения по словам, векторный поиск ищет по смыслу. Повторное ранжирование отбирает фрагменты для модели."
             },
             {
               "title": "Ответы с источниками",
-              "text": "Генерация использует найденный контекст. Ссылки связывают ответ с исходными фрагментами, чтобы читатель мог открыть документ и проверить конкретное утверждение."
+              "text": "Генерация использует найденный контекст. Ответ содержит ссылки на фрагменты, чтобы читатель мог проверить утверждения."
             },
             {
               "title": "Недостаток контекста",
-              "text": "В обработке предусмотрены вопросы, на которые найденные материалы не дают достаточного основания для ответа. Такие примеры учитываются при проверке изменений промптов и моделей."
+              "text": "Проверки включают вопросы, на которые коллекция не даёт ответа. Эти примеры используются при смене промптов и моделей."
             }
           ],
           "flow": [
@@ -2220,12 +2260,12 @@
           ],
           "engineering": [
             {
-              "title": "Поиск перед генерацией",
-              "text": "Подготовка документов и поиск определяют, какие сведения получит модель. Просмотр найденных фрагментов помогает отличить ошибку поиска от ошибки при составлении ответа."
+              "title": "Раздельная проверка поиска и ответа",
+              "text": "Просмотр найденных фрагментов помогает понять, где возникла ошибка: при выборе контекста или составлении ответа."
             },
             {
-              "title": "Проверка качества и локальный запуск",
-              "text": "Ответы проверяются при изменении версий промптов и моделей. Локальный инференс и мониторинг ошибок помогают разбирать поведение подключённого сервиса."
+              "title": "Оценка моделей и локальный инференс",
+              "text": "Смена промпта или модели проходит проверку качества. Мониторинг ошибок помогает разбирать сбои подключённого сервиса."
             }
           ],
           "deliverables": [
@@ -2233,21 +2273,21 @@
             "Генерация ответов со ссылками на источники.",
             "Проверки качества и работа по подключению локального инференса."
           ],
-          "valueTitle": "Ответ, который можно сверить с документом",
-          "valueText": "От вопроса можно перейти к ответу, а затем к исходному фрагменту. Документ остаётся доступным, когда формулировку нужно проверить подробнее."
+          "valueTitle": "Ответ со ссылкой на документ",
+          "valueText": "Читатель может открыть использованный фрагмент и проверить формулировку в исходном контексте."
         },
         {
           "id": "enterprise-integration",
           "title": "Учёт и интеграции 1С",
           "category": "Корпоративная разработка · 1С",
-          "brief": "Отдельные задачи разработки 1С: договоры, платежи, отчётность и обмены между системами.",
-          "problem": "Изменения учёта должны соответствовать действующим правилам и данным. При обменах нужно учитывать сбои доставки и повторные сообщения, сохраняя понятный порядок обработки.",
+          "brief": "Доработки 1С: договоры аренды, платежи, сверка данных и обмен между системами.",
+          "problem": "Учётные доработки должны работать с существующими правилами и данными. Обменам нужны защита от дублей и понятный порядок повторной обработки при сбоях.",
           "implementation": [
             "Дорабатывал со стороны заказчика договоры аренды, графики платежей и параллельный учёт.",
             "Разрабатывал отчёты сверки, участвовал в реализации бюджетных лимитов и маршрутов согласования заявок.",
             "Подключал обмены 1С через RabbitMQ, HTTP/REST, EnterpriseData и правила конвертации данных."
           ],
-          "whatResultIsVerified": "В состав работ входят доработки учёта, отчёты и обмены. Для сообщений реализованы подтверждение после записи, защита от повторной обработки и правила повторных попыток.",
+          "whatResultIsVerified": "Работа включала изменения учёта, отчёты и обмены. Сообщения подтверждаются после записи; предусмотрены защита от повторной обработки и повторные попытки.",
           "stack": [
             "1С:Предприятие 8.3",
             "1С:ERP",
@@ -2257,25 +2297,25 @@
             "HTTP/REST",
             "1C:EDT"
           ],
-          "overview": "Здесь собраны отдельные задачи из моей практики 1С: доработки учёта и интеграционные работы. В проекте аренды методологию и типовой блок предоставлял другой подрядчик. Моя зона ответственности включала изменения со стороны заказчика, обмены, отчёты, тестирование и приёмку доработок в существующей системе.",
+          "overview": "Кейс объединяет несколько задач из моей практики 1С. В проекте аренды другой подрядчик предоставлял методологию и типовой блок. Я дорабатывал систему со стороны заказчика: учёт, обмены, отчёты, тестирование и приёмку.",
           "audience": "Компании, которые дорабатывают учётные процессы 1С или связывают их с другими рабочими системами.",
           "role": "Разработчик 1С со стороны заказчика: доработки учёта, отчёты и интеграции.",
           "modules": [
             {
               "title": "Договоры и платежи",
-              "text": "Доработки охватывали договоры аренды, графики платежей, обеспечительные взносы и изменения договоров. Связанные записи использовались для ведения параллельного учёта."
+              "text": "Доработки договоров аренды, графиков платежей, обеспечительных взносов и изменений договора. Связанные записи используются для параллельного учёта."
             },
             {
               "title": "Лимиты и согласование",
-              "text": "Отдельные задачи включали бюджетные лимиты по статьям и центрам финансовой ответственности, а также маршруты согласования заявок в системе документооборота."
+              "text": "Бюджетные лимиты по статьям и центрам финансовой ответственности. Отдельные задачи касались маршрутов согласования заявок."
             },
             {
               "title": "Отчёты сверки",
-              "text": "Отчёты на СКД помогают сверять учётные сведения. Обмены связывают бухгалтерский, бюджетный и операционный контуры, участвующие в конкретной задаче."
+              "text": "Отчёты на СКД сверяют учётные сведения. Обмены связывают бухгалтерские, бюджетные и операционные данные."
             },
             {
               "title": "Обмен сообщениями",
-              "text": "Интеграция с RabbitMQ подтверждает сообщение после записи. Идемпотентность, повторы и очередь недоставленных сообщений определяют порядок действий при неуспешной обработке."
+              "text": "RabbitMQ получает подтверждение после записи. Защита от дублей, повторы и очередь недоставленных сообщений задают обработку сбоев."
             }
           ],
           "flow": [
@@ -2286,12 +2326,12 @@
           ],
           "engineering": [
             {
-              "title": "Доработки существующих систем",
-              "text": "Для изменений используются расширения, стандартные библиотеки и правила конвертации данных. Разработка учитывает границы типового учётного решения и уже работающих процессов."
+              "title": "Доработки конфигураций",
+              "text": "Использовал расширения, стандартные библиотеки и правила конвертации данных с учётом существующих процессов и типового решения."
             },
             {
-              "title": "Обработка и производительность",
-              "text": "Технологический журнал помогает найти медленные операции. Запросы, индексы, управляемые блокировки и порционная обработка дорабатываются с учётом найденных причин."
+              "title": "Поиск медленных операций",
+              "text": "Технологический журнал помогает найти причину задержки. Доработки затрагивали запросы, индексы, управляемые блокировки и порционную обработку."
             }
           ],
           "deliverables": [
@@ -2299,8 +2339,8 @@
             "Отчёты сверки и компоненты обмена данными.",
             "Тестирование, участие в приёмке и технические инструкции."
           ],
-          "valueTitle": "Понятные правила учёта и обмена",
-          "valueText": "Договоры и платежи получают структурированные записи, данные можно сверять, а обмены — повторять по заданным правилам. Каждая доработка решает задачу конкретного процесса и конфигурации.",
+          "valueTitle": "Учёт и обмен в существующей системе",
+          "valueText": "Договоры и платежи можно сверять по отчётам, а неуспешный обмен повторять по заданным правилам.",
           "flowTitle": "Подход к задачам"
         }
       ],
@@ -2315,8 +2355,8 @@
         "menu": "Меню",
         "concept": "Концепт интерфейса",
         "privacy": "Исходные названия не раскрываются. Визуальные концепты подготовлены для портфолио.",
-        "about": "Я Эдуард.\nFullstack-инженер.",
-        "aboutBody": "Работаю с интерфейсами, серверной частью, мобильными приложениями и прикладным AI. Проектирую их вместе: от действий пользователя до обработки данных. В моём опыте есть агентские системы, поиск по документам, компьютерное зрение и корпоративные интеграции.",
+        "about": "Я Эдуард.\nРазрабатываю продукты.",
+        "aboutBody": "Пишу веб-сервисы и приложения для iPhone, подключаю API и AI-модели. В портфолио есть инструменты для продаж, рекламы, поиска работы и учёта. В корпоративных проектах занимался AI-ассистентами, поиском по документам и интеграциями 1С.",
         "email": "Написать письмо",
         "emailCopied": "Почта скопирована",
         "copyEmail": "Скопировать почту",
@@ -2326,26 +2366,26 @@
         "scope": "Объём разработки",
         "role": "Моя роль",
         "roleValue": "Архитектура и разработка",
-        "detail": "Подробнее о проекте",
+        "detail": "Открыть кейс",
         "backToTop": "Наверх",
-        "identityNote": "Fullstack engineer",
+        "identityNote": "Fullstack-разработчик",
         "byline": "Эдуард",
         "audience": "Для кого",
         "overview": "О проекте",
-        "modules": "Возможности продукта",
+        "modules": "Что умеет продукт",
         "workflow": "Сценарий пользователя",
         "engineering": "Технические решения",
-        "deliverables": "Что входит в разработку",
+        "deliverables": "Что разработано",
         "next": "Следующий проект",
         "previous": "Предыдущий проект",
         "projectCount": "проектов",
-        "readCase": "Подробнее о проекте",
+        "readCase": "Открыть кейс",
         "webviewLink": "Подробнее об интеграции WebView",
         "contactProject": "Обсудить похожую задачу",
-        "portfolioNote": "Названия проектов обезличены. Кейс 1С объединяет несколько задач. Визуалы — презентационные концепты, а не скриншоты исходных приложений.",
+        "portfolioNote": "Названия проектов обезличены. Кейс 1С объединяет несколько задач. Изображения показывают концепты интерфейсов с демонстрационными данными.",
         "visuals": "Как устроен интерфейс",
         "value": "Какую задачу закрывает",
-        "galleryNote": "Презентационный концепт интерфейса с демонстрационными данными.",
+        "galleryNote": "Концепт для портфолио с демонстрационными данными.",
         "openImage": "Открыть крупнее",
         "ai": "AI / ML",
         "enterprise": "1C",
@@ -2354,10 +2394,10 @@
         "showing": "Показано",
         "serviceWork": "Примеры работ",
         "serviceScope": "Что могу разработать",
-        "aboutNote": "Я отвечаю за архитектуру и разработку. Мой партнёр ведёт общение по проекту и поддержку.",
+        "aboutNote": "Я разрабатываю продукт. Мой партнёр ведёт общение по проекту и поддержку.",
         "conceptShort": "Визуальный концепт",
-        "techTitle": "Инструменты под задачу.",
-        "techBody": "React и TypeScript для веба, Swift для iOS, Python и FastAPI для сервисов. PostgreSQL, Redis и очереди связывают данные. Для AI — LangGraph, векторный поиск, PyTorch и оценка качества моделей."
+        "techTitle": "С чем работаю",
+        "techBody": "React и TypeScript для веба, Swift для iOS, Python и FastAPI для серверной части. В AI-проектах использую LangGraph, поиск по документам и проверки качества ответов."
       },
       "name": "Эдуард"
     }
